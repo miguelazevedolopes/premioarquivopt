@@ -11,8 +11,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='mt-5'>
-        <h1 className='display-1 fw-bolder'>Memória Política</h1>
-        <h3>Descriçãozinha mini do projeto, frase impactful.</h3>
+        <div className='flex-col m-auto'>
+          <h1 className='text-5xl lg:text-7xl font-extrabold inline-block'>Memória Política</h1>
+          <h3 className='text-2xl mt-0'>Descriçãozinha mini do projeto, frase impactful.</h3>
+          <div className='flex justify-center items-center h-80 w-100 bg-black mt-10'>
+            <h2 className='text-white text-center'>Aqui é para meter uma wordcloud geral?</h2>
+          </div>
+        </div>
+
       </main>
     </>
   )
