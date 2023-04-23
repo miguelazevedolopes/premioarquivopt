@@ -24,6 +24,11 @@ a:hover {
     color: inherit;
 }
 
+.opacity-hover:hover {
+    opacity: 0.65;
+    color: black;
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
