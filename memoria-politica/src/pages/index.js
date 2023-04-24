@@ -28,7 +28,8 @@ export default function Home() {
     { text: 'Liberdade', value: 2000     },
     { text: 'Segurança', value: 500      },
     { text: 'Orçamento', value: 400      },
-    { text: 'Política', value: 3000      }
+    { text: 'Política', value: 3000      },
+    { text: 'Igualdade', value: 700      },
     ];
 
     
@@ -56,14 +57,14 @@ export default function Home() {
       </Head>
       <main className='mt-5'>
         <div className='flex-col m-auto'>
-          <a href='/' className='text-5xl lg:text-7xl font-extrabold inline-block select-none'>Memória Política</a>
+          <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>Memória Política</a>
           <h3 className='text-2xl mt-0 select-none'>Descriçãozinha mini do projeto, frase impactful.</h3>
           <div className='bg-black h-100 w-100 mt-10'>
             { isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
-                            rotate='0' fill='white' onWordClick={onWordClick} /*onWordMouseOver={onWordMouseOver} onWordMouseOut={onWordMouseOut}*/  /> }
+                            rotate={0} fill='white' onWordClick={onWordClick} /*onWordMouseOver={onWordMouseOver} onWordMouseOut={onWordMouseOut}*/  /> }
           </div>
+          <a href='/' className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Conheça os Partidos</a>
         </div>
-
       </main>
     </>
   )
