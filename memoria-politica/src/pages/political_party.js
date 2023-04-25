@@ -1,14 +1,17 @@
 import Head from 'next/head'
 import {useState, useEffect, useCallback } from 'react'
 import WordCloud from 'react-d3-cloud'
-import { redirect } from 'next/dist/server/api-utils'
+import { useRouter } from "next/router";
 
 // esta foi a unica biblioteca de wordclouds que consegui meter a funcionar
 // se arranjarem uma melhor aceito
 
-export default function Home() {
+export default function PoliticalParty() {
   const [isClient, setIsClient] = useState(false)
-  /*const [hoveredWord, setHoveredWord] = useState(null);*/
+
+  const router = useRouter();
+  const query = router.query;
+
 
   useEffect(() => {
     setIsClient(true)
@@ -60,14 +63,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title >Memória Política</title>
+        <title >query.name</title>
         <meta name="description" content="Um arquivo das páginas web dos partidos políticos Portugueses." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='mt-5'>
         <div className='flex-col m-auto'>
-          <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>Memória Política</a>
+          <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>{query.name}</a>
           <h3 className='text-2xl mt-0 select-none'>Descriçãozinha mini do projeto, frase impactful.</h3>
           <div className='bg-black h-100 w-100 mt-10'>
             { isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'

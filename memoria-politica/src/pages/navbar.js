@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from 'next/link'
 
 
 export default function Navbar() {
@@ -17,28 +18,60 @@ export default function Navbar() {
               showDropdown ? "" : "hidden"}`}>
                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PS</a>
+                    <Link href={{ pathname: "/political_party",            
+                                  query: {
+                                    name: 'Partido Socialista',
+                                  }, // the data
+                      }}  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PS</Link>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PSD</a>
+                  <Link href={{ pathname: "/political_party",            
+                                  query: {
+                                    name: 'Partido Social Democrata',
+                                  }, // the data
+                      }}  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PSD</Link>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">CH</a>
+                  <Link href={{ pathname: "/political_party",            
+                                  query: {
+                                    name: 'Chega',
+                                  }, // the data
+                      }}  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">CH</Link>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">IL</a>
+                  <Link href={{ pathname: "/political_party",            
+                                  query: {
+                                    name: 'Iniciativa Liberal',
+                                  }, // the data
+                      }}  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">IL</Link>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PCP</a>
+                  <Link href={{ pathname: "/political_party",            
+                                  query: {
+                                    name: 'Partido Comunista Português',
+                                  }, // the data
+                      }}  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PCP</Link>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BE</a>
+                  <Link href={{ pathname: "/political_party",            
+                                  query: {
+                                    name: 'Bloco de Esquerda',
+                                  }, // the data
+                      }}  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BE</Link>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PAN</a>
+                  <Link href={{ pathname: "/political_party",            
+                                  query: {
+                                    name: 'PAN',
+                                  }, // the data
+                      }}  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PAN</Link>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Livre</a>
+                  <Link href={{ pathname: "/political_party",            
+                                  query: {
+                                    name: 'Livre',
+                                  }, // the data
+                      }}  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">LIVRE</Link>
                   </li>
                 </ul>
             </div>
