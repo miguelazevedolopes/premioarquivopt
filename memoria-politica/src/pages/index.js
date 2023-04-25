@@ -6,6 +6,14 @@ import { redirect } from 'next/dist/server/api-utils'
 // esta foi a unica biblioteca de wordclouds que consegui meter a funcionar
 // se arranjarem uma melhor aceito
 import ps from '../../public/ps.png'
+import psd from '../../public/psd.png'
+import ch from '../../public/chega.png'
+import il from '../../public/il.png'
+import pan from '../../public/pan.png'
+import livre from '../../public/livre.png'
+import be from '../../public/bloco.png'
+import pcp from '../../public/pcp.png'
+
 import Image from 'next/image'
 
 export default function Home() {
@@ -55,21 +63,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-white mt-5 mb-20'>
-        <div className='flex-col m-auto'>
+      <main className='bg-white p-0 sm:mt-5 sm:mb-20'>
+        <div className='flex-col p-0 sm:m-auto'>
 
           {/* Titulo do Projecto */}
           <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>Memória Política</a>
-          <h3 className='text-2xl mt-0 select-none'>Descriçãozinha mini do projeto, frase impactful.</h3>
+          <h3 className='sm:text-2xl mt-0 select-none'>Descriçãozinha mini do projeto, frase impactful.</h3>
 
           {/* WordCloud */}
-          <div className='bg-black mt-10 pt-10'>
+          <div className='bg-black mt-10 py-3 sm:pt-10'>
             {isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
               rotate={0} fill='white' onWordClick={onWordClick} onWordMouseOver={onWordMouseOver} onWordMouseOut={onWordMouseOut} />}
           </div>
 
           {/* Conheça os Partidos */}
-          <div className='flex flex-wrap w-full justify-around mt-10 p-10 bg-gray-200'>
+          <div className='flex flex-wrap w-full sm:justify-around mt-10 sm:p-10 items-center bg-gray-200'>
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>Conheça os Partidos</h2>
 
             <div className='flex flex-col w-1/5 m-7'>
@@ -83,63 +91,63 @@ export default function Home() {
 
             <div className='flex flex-col w-1/5 m-7'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <Image className='rounded-full object-cover m-auto' src={psd} alt="PSD" />
                 <div className='flex justify-around mt-8'>
-                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Social Democrata</h1>
                 </div>
               </a>
             </div>
 
             <div className='flex flex-col w-1/5 m-7'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <Image className='rounded-full object-cover m-auto' src={ch} alt="CH" />
                 <div className='flex justify-around mt-8'>
-                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Chega</h1>
                 </div>
               </a>
             </div>
 
             <div className='flex flex-col w-1/5 m-7'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <Image className='rounded-full object-cover m-auto' src={il} alt="IL" />
                 <div className='flex justify-around mt-8'>
-                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Iniciativa Liberal</h1>
                 </div>
               </a>
             </div>
 
             <div className='flex flex-col w-1/5 m-7'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <Image className='rounded-full object-cover m-auto' src={pcp} alt="PCP" />
                 <div className='flex justify-around mt-8'>
-                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Comunista Português</h1>
                 </div>
               </a>
             </div>
 
             <div className='flex flex-col w-1/5 m-7'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <Image className='rounded-full object-cover m-auto' src={be} alt="BE" />
                 <div className='flex justify-around mt-8'>
-                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Bloco de Esquerda</h1>
                 </div>
               </a>
             </div>
 
             <div className='flex flex-col w-1/5 m-7'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <Image className='rounded-full object-cover m-auto' src={pan} alt="PAN" />
                 <div className='flex justify-around mt-8'>
-                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Pessoas-Animais-Natureza</h1>
                 </div>
               </a>
             </div>
 
             <div className='flex flex-col w-1/5 m-7'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <Image className='rounded-full object-cover m-auto' src={livre} alt="Livre" />
                 <div className='flex justify-around mt-8'>
-                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Livre</h1>
                 </div>
               </a>
             </div>
