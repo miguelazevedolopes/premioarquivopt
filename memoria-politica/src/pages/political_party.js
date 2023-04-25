@@ -41,15 +41,6 @@ export default function PoliticalParty() {
     window.location.href = '/';
     console.log(`onWordClick: ${word}`);
   }, []);
-  // não consegui por a dar hover tentem if u want
-  /*const onWordMouseOver = useCallback((word) => {
-    setHoveredWord(word);
-    console.log(`onWordMouseOver: ${word}`);
-  }, []);
-  const onWordMouseOut = useCallback((word) => {
-    setHoveredWord(null);
-    console.log(`onWordMouseOut: ${word}`);
-  }, []);*/
 
   function handleWordMouseOver(event, word) {
     console.log(`Mouse over: ${word.text}`);
@@ -63,7 +54,7 @@ export default function PoliticalParty() {
   return (
     <>
       <Head>
-        <title >query.name</title>
+        <title >{query.name}</title>
         <meta name="description" content="Um arquivo das páginas web dos partidos políticos Portugueses." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

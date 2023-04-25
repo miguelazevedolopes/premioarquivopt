@@ -77,7 +77,7 @@ export default function Navbar() {
             </div>
         </li>
         <li className="mr-10 p-7">
-          <a className="font-bold text-xl" href="#">Procure a verdade</a>
+          <a className="font-bold text-xl" href="#procure-verdade">Procure a verdade</a>
         </li>
       </ul>
     </>
