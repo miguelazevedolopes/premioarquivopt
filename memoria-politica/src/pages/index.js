@@ -55,7 +55,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='mt-5 mb-20'>
+      <main className='bg-white mt-5 mb-20'>
         <div className='flex-col m-auto'>
 
           {/* Titulo do Projecto */}
