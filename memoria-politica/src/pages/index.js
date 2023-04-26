@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import { useState, useEffect, useCallback } from 'react'
 import WordCloud from 'react-d3-cloud'
-import { redirect } from 'next/dist/server/api-utils'
+import Image from 'next/image'
+import Search from './search'
 
-// esta foi a unica biblioteca de wordclouds que consegui meter a funcionar
-// se arranjarem uma melhor aceito
 import ps from '../../public/ps.png'
 import psd from '../../public/psd.png'
 import ch from '../../public/chega.png'
@@ -13,8 +12,6 @@ import pan from '../../public/pan.png'
 import livre from '../../public/livre.png'
 import be from '../../public/bloco.png'
 import pcp from '../../public/pcp.png'
-
-import Image from 'next/image'
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false)
@@ -71,13 +68,13 @@ export default function Home() {
           <h3 className='sm:text-2xl mt-0 select-none'>Descriçãozinha mini do projeto, frase impactful.</h3>
 
           {/* WordCloud */}
-          <div className='bg-black mt-10 py-3 sm:pt-10'>
+          <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
             {isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
               rotate={0} fill='white' onWordClick={onWordClick} onWordMouseOver={onWordMouseOver} onWordMouseOut={onWordMouseOut} />}
           </div>
 
           {/* Conheça os Partidos */}
-          <div className='flex flex-wrap w-full sm:justify-around mt-10 sm:p-10 items-center bg-gray-200'>
+          <div className='flex flex-wrap w-full sm:justify-around mt-10 sm:p-10 items-center bg-gray-200 shadow-lg'>
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>Conheça os Partidos</h2>
 
             <div className='flex flex-col w-1/5 m-7'>
@@ -157,8 +154,18 @@ export default function Home() {
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Procure a verdade</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
-
-            <input type="search" name="" id="" className='bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-gray-500 block w-full pl-10 p-2.5' />
+            <Search />
+            <div className='flex flex-wrap w-full sm:justify-between mt-10 items-stretch'>
+              <a href="#" className="flex max-w-sm p-6 my-2 bg-black border border-gray-200 items-center shadow hover:bg-black-900">
+                  <h5 className="mb-2 text-white text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o grupo parlamentar do PSD em 2019?</h5>
+              </a>
+              <a href="#" className="flex max-w-sm p-6 my-2 border bg-black border-gray-200 items-center shadow hover:bg-black-900">
+                <h5 className="mb-2 text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual a posição dos partidos sobre o aborto?</h5>
+              </a>
+              <a href="#" className="flex max-w-sm p-6 my-2 bg-black border border-gray-200 items-center shadow hover:bg-black-900">
+                <h5 className="mb-2 text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?</h5>
+              </a>
+            </div>
           </div>
 
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from 'next/link'
 import { useRouter } from "next/router";
 
@@ -12,11 +12,15 @@ export default function Navbar() {
 
   const router = useRouter();
 
+  useEffect(() => {
+    setShowDropdown(false); // close dropdown on route change
+  }, [router]);
+
   return (
     <>
       <div className="flex w-full justify-between">
-        <div className="ml-10 p-7 flex">
-          {router.route=='/' ? "" : <a href="/" className="self-center font-bold text-3xl">Memória Política</a>}
+        <div className="sm:ml-12 py-7 pl-10 sm:px-12 flex">
+          {router.route=='/' ? "" : <a href="/" className="self-center font-bold text-2xl sm:text-3xl">Memória Política</a>}
           
         </div>
         <ul className="bg-white flex justify-end p-6 relative">
@@ -77,7 +81,7 @@ export default function Navbar() {
                   <Link href={{
                     pathname: "/political_party",
                     query: {
-                      name: 'PAN',
+                      name: 'Pessoas-Animais-Natureza',
                     }, // the data
                   }} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PAN</Link>
                 </li>
