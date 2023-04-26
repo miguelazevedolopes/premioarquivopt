@@ -74,10 +74,10 @@ export default function Home() {
           </div>
 
           {/* Conheça os Partidos */}
-          <div className='flex flex-wrap w-full sm:justify-around mt-10 sm:p-10 items-center bg-gray-200 shadow-lg'>
+          <div className='flex flex-wrap w-full sm:justify-around mt-10 px-36 p-10 items-center bg-gray-200 shadow-lg'>
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>Conheça os Partidos</h2>
 
-            <div className='flex flex-col w-1/5 m-7'>
+            <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
                 <div className='flex justify-around mt-8'>
@@ -86,7 +86,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className='flex flex-col w-1/5 m-7'>
+            <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={psd} alt="PSD" />
                 <div className='flex justify-around mt-8'>
@@ -95,7 +95,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className='flex flex-col w-1/5 m-7'>
+            <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={ch} alt="CH" />
                 <div className='flex justify-around mt-8'>
@@ -104,7 +104,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className='flex flex-col w-1/5 m-7'>
+            <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={il} alt="IL" />
                 <div className='flex justify-around mt-8'>
@@ -113,7 +113,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className='flex flex-col w-1/5 m-7'>
+            <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={pcp} alt="PCP" />
                 <div className='flex justify-around mt-8'>
@@ -122,7 +122,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className='flex flex-col w-1/5 m-7'>
+            <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={be} alt="BE" />
                 <div className='flex justify-around mt-8'>
@@ -131,7 +131,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className='flex flex-col w-1/5 m-7'>
+            <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={pan} alt="PAN" />
                 <div className='flex justify-around mt-8'>
@@ -140,7 +140,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className='flex flex-col w-1/5 m-7'>
+            <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={livre} alt="Livre" />
                 <div className='flex justify-around mt-8'>
