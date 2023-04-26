@@ -40,7 +40,3 @@ a:hover {
         opacity: 0.0;
     }
 }
-.react-wordcloud .wordcloud-word:hover {
-    scale: 1.2 !important;
-    font-weight: bold !important;
-  }

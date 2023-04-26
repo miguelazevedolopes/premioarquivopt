@@ -2,6 +2,10 @@ import Head from 'next/head'
 import {useState, useEffect, useCallback } from 'react'
 import WordCloud from 'react-d3-cloud'
 import { useRouter } from "next/router";
+import Timeline from '@/pages/timeline'
+
+import ps from '../../public/ps.png'
+import Image from 'next/image'
 
 // esta foi a unica biblioteca de wordclouds que consegui meter a funcionar
 // se arranjarem uma melhor aceito
@@ -62,13 +66,46 @@ export default function PoliticalParty() {
       <main className='mt-5'>
         <div className='flex-col m-auto'>
           <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>{query.name}</a>
-          <h3 className='text-2xl mt-0 select-none'>Descriçãozinha mini do projeto, frase impactful.</h3>
+          <h3 className='text-2xl mt-0 select-none'>Descriçãozinha mini do partido, frase impactful.</h3>
           <div className='bg-black h-100 w-100 mt-10'>
             { isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
                             rotate={0} fill='white' onWordClick={onWordClick}   onWordMouseOver={handleWordMouseOver} 
                             onWordMouseOut={handleWordMouseOut}   /> }
           </div>
-          <a href='/' className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Conheça os Partidos</a>
+          {/* Conheça os Deputados */}
+          <div className='flex flex-wrap w-full justify-around mt-10 p-10 bg-gray-200'>
+            <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>Conheça os Deputados</h2>
+
+            <div className='flex flex-col w-1/5 m-7'>
+              <a href="" className='flex flex-col w-fit p-5'>
+                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <div className='flex justify-around mt-8'>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                </div>
+              </a>
+            </div>
+
+            <div className='flex flex-col w-1/5 m-7'>
+              <a href="" className='flex flex-col w-fit p-5'>
+                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <div className='flex justify-around mt-8'>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                </div>
+              </a>
+            </div>
+
+            <div className='flex flex-col w-1/5 m-7'>
+              <a href="" className='flex flex-col w-fit p-5'>
+                <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
+                <div className='flex justify-around mt-8'>
+                  <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
+                </div>
+              </a>
+            </div>
+
+          </div>
+            
+
         </div>
       </main>
     </>
