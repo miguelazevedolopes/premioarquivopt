@@ -155,14 +155,14 @@ export default function Home() {
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Procure a verdade</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
             <Search />
-            <div className='transition-all h-48 flex flex-wrap w-full sm:justify-between mt-10 items-stretch flex-nowrap'>
-              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 bg-black border border-gray-200 items-center shadow hover:bg-black-900">
+            <div className='transition-all h-48 flex flex-wrap w-full justify-between mt-10 items-stretch flex-nowrap'>
+              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-white text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o grupo parlamentar do PSD em 2019?</h5>
               </a>
-              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 items-center shadow hover:bg-black-900">
+              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual a posição dos partidos sobre o aborto?</h5>
               </a>
-              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 bg-black border border-gray-200 items-center shadow hover:bg-black-900">
+              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?</h5>
               </a>
             </div>
