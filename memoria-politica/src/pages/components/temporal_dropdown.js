@@ -10,7 +10,7 @@ function TemporalDropdown() {
     { value: 2, label: 'February' },
     { value: 3, label: 'March' },
     { value: 4, label: 'April' },
-    { value: 5, label: 'May' },
+    { value: 5, label: 'May' }, 
     { value: 6, label: 'June' },
     { value: 7, label: 'July' },
     { value: 8, label: 'August' },

@@ -3,6 +3,7 @@ import {useState, useEffect, useCallback } from 'react'
 import WordCloud from 'react-d3-cloud'
 import { useRouter } from "next/router";
 import TemporalDropdown from './components/temporal_dropdown';
+import Timeline from './components/timeline';
 
 import ps from '../../public/ps.png'
 import Image from 'next/image'
@@ -111,7 +112,7 @@ export default function PoliticalParty() {
 
           </div>
 
-          {/* <TimelineComponent items={items}></TimelineComponent> */}
+          <Timeline></Timeline>
 
             
         </div>
