@@ -41,7 +41,6 @@ a:hover {
     }
 }
 
-
 .text-center{
   text-align: center;
 }
@@ -50,6 +49,25 @@ a:hover {
  margin-top: 100px;
 }
   
+.past dot-label{
+  width: 100px !important;
+
+}
+.present dot-label{
+  width: 100px !important;
+
+}
+.future dot-label{
+  width: 100px !important;
+
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 .temporal-dropdown {
   display: flex;
   align-items: center;
