@@ -2,7 +2,7 @@ import Head from 'next/head'
 import {useState, useEffect, useCallback } from 'react'
 import WordCloud from 'react-d3-cloud'
 import { useRouter } from "next/router";
-import Timeline from '@/pages/timeline'
+import TemporalDropdown from './components/temporal_dropdown';
 
 import ps from '../../public/ps.png'
 import Image from 'next/image'
@@ -16,7 +16,7 @@ export default function PoliticalParty() {
   const router = useRouter();
   const query = router.query;
 
-
+  
   useEffect(() => {
     setIsClient(true)
   }, [])
@@ -40,6 +40,12 @@ export default function PoliticalParty() {
     { text: 'Igualdade', value: 700      },
     ];
 
+  
+  const [selectedParty, setSelectedParty] = useState('PS');
+
+  const handlePartyChange = (event) => {
+    setSelectedParty(event.target.value);
+  };
     
   const onWordClick = useCallback((word) => {
     window.location.href = '/';
@@ -53,7 +59,7 @@ export default function PoliticalParty() {
   function handleWordMouseOut(event, word) {
     console.log(`Mouse out: ${word.text}`);
   }
-  
+
 
   return (
     <>
@@ -74,8 +80,8 @@ export default function PoliticalParty() {
           </div>
           {/* Conheça os Deputados */}
           <div className='flex flex-wrap w-full justify-around mt-10 p-10 bg-gray-200'>
+            <TemporalDropdown></TemporalDropdown>
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>Conheça os Deputados</h2>
-
             <div className='flex flex-col w-1/5 m-7'>
               <a href="" className='flex flex-col w-fit p-5'>
                 <Image className='rounded-full object-cover m-auto' src={ps} alt="PS" />
@@ -104,8 +110,10 @@ export default function PoliticalParty() {
             </div>
 
           </div>
-            
 
+          {/* <TimelineComponent items={items}></TimelineComponent> */}
+
+            
         </div>
       </main>
     </>
