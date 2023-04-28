@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from 'react'
 import WordCloud from 'react-d3-cloud'
 import Image from 'next/image'
 import Search from './search'
+import HemiCycle from './hemicycle'
 
 import ps from '../../public/ps.png'
 import psd from '../../public/psd.png'
@@ -74,7 +75,7 @@ export default function Home() {
           </div>
 
           {/* Conheça os Partidos */}
-          <div className='flex flex-wrap w-full sm:justify-around mt-10 sm:px-36 sm:py-10 p-0 items-center bg-gray-200 shadow-lg'>
+          <div className='flex flex-wrap w-full sm:justify-around mt-10 sm:px-36 sm:py-10 p-0 items-center bg-gray-200 shadow-lg '>
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>Conheça os Partidos</h2>
 
             <div className='flex flex-col w-1/6 m-10 items-strech'>
@@ -148,9 +149,14 @@ export default function Home() {
                 </div>
               </a>
             </div>
-
+            {/* Representação da Assembleia da República */}
+            <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>A sua Participação na Assembleia</h2>
+            <div id="parlamento" className='flex justify-center items-center w-full h-full'>
+              <HemiCycle width={800} height={600} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]}/>
+            </div>
           </div>
 
+          {/* Procure a Verdade */}
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Procure a verdade</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
