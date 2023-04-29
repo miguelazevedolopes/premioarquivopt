@@ -39,7 +39,7 @@ const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs }) => 
   for (let j = arcs.length - 1; j >= 0; j--){
     for(let i = 0; i < arcs[j]; i++){
 
-      const angle = (Math.PI / arcs[j])
+      const angle = (Math.PI/ (arcs[j]-1))
       const cx = Math.round(Math.cos(-angle * i)*(hemiRadius - offset*(arcs.length - j)) + baseX/2, 2)
       const cy = Math.round(Math.sin(-angle * i)*(hemiRadius - offset*(arcs.length - j)) + baseY/2, 2)
 

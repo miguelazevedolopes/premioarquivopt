@@ -115,7 +115,6 @@ export default function PoliticalParty() {
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
-            <Timeline></Timeline>
           </div>
 
           <div id="procure-verdade" className='flex flex-col'>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import HorizontalTimeline from "react-horizontal-timeline";
 
   
@@ -36,4 +36,4 @@ function Timeline() {
   );
 }
   
-export default Timeline;
+export default Timeline;*/
