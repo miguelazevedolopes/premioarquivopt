@@ -34,7 +34,7 @@ function TemporalDropdown() {
     
     
     <div className="temporal-dropdown">
-      <select name="month" value={month} onChange={handleDropdownChange} className="temporal-dropdown__select temporal-dropdown__select--month">
+      <select name="month" value={month} onChange={handleDropdownChange} className="temporal-dropdown__select temporal-dropdown__select--month"> 
         {months.map((m) => (
           <option key={m.value} value={m.value}>
             {m.label}

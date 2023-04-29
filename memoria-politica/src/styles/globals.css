@@ -46,9 +46,15 @@ a:hover {
 }
  
 .root-div{
- margin-top: 100px;
+ margin-top: 50px;
 }
   
+.events-wrapper{
+overflow-y:visible !important;
+/* overflow-x:hidden !important; */
+
+}
+
 .past dot-label{
   width: 100px !important;
 
@@ -87,10 +93,24 @@ a:hover {
   -moz-appearance: none;
 }
 
-/* .temporal-dropdown__select option:hover {
-  background-color: #f1f1f1;
-} */
+.temporal-dropdown__select option {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-family: '__Epilogue_dfeb11';
+  padding: 10px;
+  }
 
+.temporal-dropdown__select option:hover {
+  background-color: gray;
+  color: white;
+  opacity: 0.8; /* add opacity property */
+  }
+
+.temporal-dropdown__select option:selected {
+  background-color: blue;
+  color: white;
+  }
 .temporal-dropdown__select:focus {
   outline: none;
   border-color: #bdc1c5;
@@ -110,11 +130,11 @@ a:hover {
   color: #a7a5a5;
 }
 
-.temporal-dropdown__select--month option {
+/* .temporal-dropdown__select--month option {
   background-color: #fff;
   color: #333;
 }
-
+ */
 
 .temporal-dropdown__select--year {
   width: 80px;
@@ -130,8 +150,12 @@ a:hover {
 }
 
 
-.temporal-dropdown__select--year option {
+/* .temporal-dropdown__select--year option {
   background-color: #fff;
   color: #333;
-}
+} */
 
+#myChart{
+  width: 500px !important;
+  height: 500px !important;
+}
