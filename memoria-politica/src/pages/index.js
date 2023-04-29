@@ -4,6 +4,7 @@ import WordCloud from 'react-d3-cloud'
 import Image from 'next/image'
 import Search from './search'
 import HemiCycle from './hemicycle'
+import Link from 'next/link'
 
 import ps from '../../public/ps.png'
 import psd from '../../public/psd.png'
@@ -80,7 +81,12 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10 items-strech'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={ps} alt="PS" />
+                <Link href={{
+                    pathname: "/political_party",
+                    query: {
+                      name: 'Partido Socialista',
+                    }, // the data
+                  }}><Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={ps} alt="PS" /></Link>
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
                 </div>
@@ -89,16 +95,26 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={psd} alt="PSD" />
+                <Link href={{
+                    pathname: "/political_party",
+                    query: {
+                      name: 'Partido Social Democrata',
+                    }, // the data
+                  }}><Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={psd} alt="PSD" /></Link>
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Social Democrata</h1>
                 </div>
               </a>
             </div>
 
-            <div className='flex flex-col w-1/6 m-10'>
+             <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={ch} alt="CH" />
+                <Link href={{
+                      pathname: "/political_party",
+                      query: {
+                        name: 'Chega',
+                      }, // the data
+                    }}><Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={ch} alt="CH" /></Link>
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Chega</h1>
                 </div>
@@ -107,7 +123,12 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={il} alt="IL" />
+                <Link href={{
+                      pathname: "/political_party",
+                      query: {
+                        name: 'Iniciativa Liberal',
+                      }, // the data
+                    }}><Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={il} alt="IL" /></Link>
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Iniciativa Liberal</h1>
                 </div>
@@ -116,7 +137,12 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={pcp} alt="PCP" />
+                <Link href={{
+                      pathname: "/political_party",
+                      query: {
+                        name: 'Partido Comunista Português',
+                      }, // the data
+                    }}><Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={pcp} alt="PCP" /></Link>
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Comunista Português</h1>
                 </div>
@@ -125,7 +151,12 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={be} alt="BE" />
+                <Link href={{
+                      pathname: "/political_party",
+                      query: {
+                        name: 'Bloco de Esquerda',
+                      }, // the data
+                    }}><Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={be} alt="BE" /></Link>
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Bloco de Esquerda</h1>
                 </div>
@@ -134,21 +165,33 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={pan} alt="PAN" />
+                <Link href={{
+                      pathname: "/political_party",
+                      query: {
+                        name: 'Pessoas-Animais-Natureza',
+                      }, // the data
+                    }}><Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={pan} alt="PAN" /></Link>
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Pessoas-Animais-Natureza</h1>
                 </div>
               </a>
             </div>
 
+            
             <div className='flex flex-col w-1/6 m-10'>
               <a href="" className='flex flex-col w-fit p-5'>
-                <Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={livre} alt="Livre" />
+                <Link href={{
+                      pathname: "/political_party",
+                      query: {
+                        name: 'Livre',
+                      }, // the data
+                    }}><Image className='rounded-full object-cover m-auto hover:scale-125 ease-in duration-500' src={livre} alt="Livre" /></Link>
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Livre</h1>
                 </div>
               </a>
-            </div>
+            </div> 
+            
             {/* Representação da Assembleia da República */}
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'>A sua representatividade na Assembleia da República</h2>
             <div id="parlamento" className='flex justify-center items-center w-full h-full'>
