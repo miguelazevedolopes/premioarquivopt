@@ -53,16 +53,6 @@ const events = [{
   title: "Event Title",
   description: "pretty description"
 },
-{
-  date: "2020-01-01",
-  title: "Event Title",
-  description: "pretty description"
-},
-{
-  date: "2020-01-01",
-  title: "Event Title",
-  description: "pretty description"
-},
 ]
 
 
@@ -75,7 +65,7 @@ const Timeline = ({ width, height }) => {
 
     let style = {
       height: `${Math.round(height / 2)}px`,
-      transform: `translate(${(index * width / (events.length - 1)) - 2 * index-1}px,${yOffset * (Math.round(height / 2))-2}px)`
+      transform: `translate(${(index * width / (events.length - 1)) - 2 * index - 2}px,${yOffset * (Math.round(height / 2))-2}px)`
     }
 
     let styleDescription = {
