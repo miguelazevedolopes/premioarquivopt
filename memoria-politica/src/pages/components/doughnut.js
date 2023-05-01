@@ -2,7 +2,15 @@ import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Chart from 'chart.js/auto';
 
-function DoughnutChart() {
+function DoughnutChart(props) {
+
+  const politicalParty = props.politicalParty;
+
+  const [labels, setLabels] = useState(['Red', 'Blue', 'Yellow']);
+  const [backgroundColors, setBackgroundColors] = useState(['Red', 'Blue', 'Yellow']);
+
+  const [data, setData] = useState([Math.random() * 100, Math.random() * 100, Math.random() * 100]);
+
   const chartRef = useRef();
   const [isChartInView, setIsChartInView] = useState(false);
   const { ref, inView } = useInView({
@@ -11,22 +19,56 @@ function DoughnutChart() {
 
   useEffect(() => {
     if (inView) {
-      setIsChartInView(true);
+      setIsChartInView(true); 
+    }
+    else{
+      setIsChartInView(false); 
     }
   }, [inView]);
 
   useEffect(() => {
-    if (isChartInView) {
+    if(politicalParty == 'Partido Socialista'){
+      setLabels(['PSD', 'IL', 'CHEGA']);
+      setData([4118, 410, 20]);
+      setBackgroundColors(['#f68a21', '#52c1ec', '#333399'])
+    }
+    else if(politicalParty == 'Partido Social Democrata'){
+      setLabels(['PS', 'IL', 'CHEGA']);
+      setData([6917, 271, 16]);
+      setBackgroundColors(['#ff66ff', '#52c1ec', '#333399'])
+    }
+    else if(politicalParty == 'Chega'){
+      setLabels(['PSD', 'PS']);
+      setData([123, 87]);
+      setBackgroundColors(['#f68a21', '#ff66ff'])
+    }
+    else if(politicalParty == 'Iniciativa Liberal'){
+      setLabels(['PSD', 'PS', 'CHEGA']);
+      setData([4118, 410, 20]);
+      setBackgroundColors(['#f68a21', '#ff66ff', '#333399'])
+    }
+    else if(politicalParty == 'Partido Comunista Português'){
+      setLabels(['PSD', 'IL', 'CHEGA']);  
+      setData([4118, 410, 20]);
+      setBackgroundColors(['#f68a21', '#52c1ec', '#333399'])
+    }
+    else if(politicalParty == 'Bloco de Esquerda'){
+      setLabels(['PSD', 'IL', 'CHEGA']);
+      setData([4118, 410, 20]);
+      setBackgroundColors(['#f68a21', '#52c1ec', '#333399'])
+    }
+
+    if (isChartInView  ) {
       const ctx = chartRef.current.getContext('2d');
       const chart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-          labels: ['Red', 'Blue', 'Yellow'],
+          labels: labels,
           datasets: [
             {
-              label: 'My First Dataset',
-              data: [Math.random() * 100, Math.random() * 100, Math.random() * 100],
-              backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+              label: 'Mentions of other Political Parties',
+              data: data,
+              backgroundColor: backgroundColors,
               hoverOffset: 4,
             },
           ],
