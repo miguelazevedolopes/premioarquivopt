@@ -4,26 +4,42 @@ import WordCloud from 'react-d3-cloud'
 import { useRouter } from "next/router";
 import TemporalDropdown from './components/temporal_dropdown';
 import Timeline from './components/timeline';
-import { PieChart } from './components/piechart';
 import DoughnutChart from './components/doughnut';
 import ps from '../../public/ps.png'
 import Image from 'next/image'
+import commonWordsData from '../../public/common-words.json'
 
-// esta foi a unica biblioteca de wordclouds que consegui meter a funcionar
-// se arranjarem uma melhor aceito
+function parseData(party) {
+  const data = [];
+
+  const values = Object.values(party);
+  const totalValue = values.reduce((acc, cur) => parseInt(cur) + acc, 0);
+
+  for (const [key, value] of Object.entries(party)) {
+    const text = key.trim();
+    const mappedValue = Math.floor((parseInt(value) / totalValue) * 10000);
+    const clampedValue = Math.min(mappedValue, 10000);
+    data.push({ text, value: clampedValue * 3});
+  }
+
+  console.log(data)
+  return data;
+}
+
 
 export default function PoliticalParty() {
+  const router = useRouter();
   const [isClient, setIsClient] = useState(false)
 
-  const router = useRouter();
   const query = router.query;
 
-  
+  let data = query.name ? parseData(commonWordsData[query.name][0]) : [];
+
   useEffect(() => {
     setIsClient(true)
-  }, [])
+  }, []) 
 
-  const data = [
+  const data1 = [
     { text: 'Democracia', value: 7000    },
     { text: 'Parlamento', value: 4500    },
     { text: 'Eleições', value: 200       },
