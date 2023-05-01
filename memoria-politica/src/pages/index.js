@@ -178,7 +178,7 @@ export default function Home() {
             {/* Representação da Assembleia da República */}
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'>A sua representatividade na Assembleia da República</h2>
             <div id="parlamento" className='flex justify-center items-center w-full h-full'>
-              <HemiCycle width={900} height={400} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]}/>
+              <HemiCycle width={900} height={460} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]}/>
             </div>
           </div>
 
