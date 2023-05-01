@@ -97,7 +97,7 @@ export default function Navbar() {
             </div>
           </li>
           <li className="mr-3 items-center p-3 sm:mr-10 sm:p-7">
-            <a className="font-bold sm:text-xl" href="/search_page">Procure a verdade</a>
+            <a className="font-bold sm:text-xl" href="/#procure-verdade">Procure a verdade</a>
           </li>
         </ul>
       </div>
