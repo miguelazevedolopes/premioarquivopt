@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from 'react'
 import WordCloud from 'react-d3-cloud'
 import Image from 'next/image'
 import Search from './search'
-import HemiCycle from './hemicycle'
+import HemiCycle from './components/hemicycle'
 import Link from 'next/link'
 
 import ps from '../../public/ps.png'
