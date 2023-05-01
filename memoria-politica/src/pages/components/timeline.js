@@ -1,39 +1,106 @@
-/*import React, { useState } from "react";
-import HorizontalTimeline from "react-horizontal-timeline";
+const events = [{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+{
+  date: "2020-01-01",
+  title: "Event Title",
+  description: "pretty description"
+},
+]
 
-  
-function Timeline() {
-  const [value, setValue] = useState(0);
-  const [previous, setPrevious] = useState(0);
-  
-  // Values should be only date
-  const VALUES = ["2021-01-01", "2021-01-15", "2021-03-22"];
-  
-  // Description array corresponding to values
-  const description = [
-    "The event of 1 Jan 2021 : Happy New Year",
-    "The event of 15 Jan 2021 : Festival",
-    "The event of 22 March 2021 : Board Exam",
-  ];
-  
-  return (
-    <div className="root-div">
-      <div style={{ width: "80%",
-                    height: "100px", 
-                    margin: "0 auto" }}>
-        <HorizontalTimeline
-          styles={{ outline: "#DFA867", foreground: "#19295C" }}
-          index={value}
-          indexClick={(index) => {
-            setValue(index);
-            setPrevious(value);
-          }}
-          values={VALUES}
-        />
+
+const Timeline = ({ width, height }) => {
+
+  const eventDivs = []
+  for (let index = 0; index < events.length; index++) {
+    const event = events[index];
+    const yOffset = (-1 * index % 2)
+
+    let style = {
+      height: `${Math.round(height / 2)}px`,
+      transform: `translate(${(index * width / (events.length - 1)) - 2 * index-1}px,${yOffset * (Math.round(height / 2))-2}px)`
+    }
+
+    eventDivs.push(
+      <div style={style} className="block w-[2px] bg-black">
+        <div className={`my-2 h-full -translate-x-1/2	w-fit flex flex-col justify-start text-center ${yOffset == 0 ? '' : '-'}translate-y-full`}>
+          <h2 className="text-lg font-bold w-fit whitespace-nowrap	" >{event.title}</h2>
+          <h4 className="text-xs">{event.date}</h4>
+          <p className="text-xs ">
+            {event.description}
+          </p>
+        </div>
       </div>
-      <div className="text-center">{description[value]}</div>
+    )
+  }
+
+  return (
+
+    <div style={{ width: `${width}px`, height: `${height}px`, "padding-top": `${Math.round(height / 2)}px` }} className="my-40">
+      <div className="h-[2px] w-full bg-black"></div>
+      <div className="flex">
+        {eventDivs}
+      </div>
     </div>
   );
 }
-  
-export default Timeline;*/
+
+export default Timeline;
+
