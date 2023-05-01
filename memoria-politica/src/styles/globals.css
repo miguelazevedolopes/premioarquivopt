@@ -159,3 +159,12 @@ overflow-y:visible !important;
   width: 500px !important;
   height: 500px !important;
 }
+
+.search-results{
+  padding-top:50px;
+}
+
+#searchForm{
+  padding-top: 50px;
+}
+

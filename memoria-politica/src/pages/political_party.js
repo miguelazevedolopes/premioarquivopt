@@ -3,8 +3,6 @@ import {useState, useEffect, useCallback } from 'react'
 import WordCloud from 'react-d3-cloud'
 import { useRouter } from "next/router";
 import TemporalDropdown from './components/temporal_dropdown';
-import Timeline from './components/timeline';
-import { PieChart } from './components/piechart';
 import DoughnutChart from './components/doughnut';
 import ps from '../../public/ps.png'
 import Image from 'next/image'
@@ -18,6 +16,7 @@ export default function PoliticalParty() {
   const router = useRouter();
   const query = router.query;
 
+  const politicalParty = query.name;
   
   useEffect(() => {
     setIsClient(true)
@@ -120,7 +119,7 @@ export default function PoliticalParty() {
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Outros Partidos</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
-            <DoughnutChart></DoughnutChart>
+            <DoughnutChart politicalParty = {politicalParty}></DoughnutChart>
           </div>
             
         </div>
