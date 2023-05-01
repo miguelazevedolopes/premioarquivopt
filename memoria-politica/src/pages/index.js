@@ -80,7 +80,6 @@ export default function Home() {
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>Conheça os Partidos</h2>
 
             <div className='flex flex-col w-1/6 m-10 items-strech'>
-              <a href="" className='flex flex-col w-fit p-5'>
                 <Link href={{
                     pathname: "/political_party",
                     query: {
@@ -90,11 +89,9 @@ export default function Home() {
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Socialista</h1>
                 </div>
-              </a>
             </div>
 
-            <div className='flex flex-col w-1/6 m-10'>
-              <a href="" className='flex flex-col w-fit p-5'>
+             <div className='flex flex-col w-1/6 m-10'>
                 <Link href={{
                     pathname: "/political_party",
                     query: {
@@ -104,11 +101,9 @@ export default function Home() {
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Social Democrata</h1>
                 </div>
-              </a>
             </div>
 
              <div className='flex flex-col w-1/6 m-10'>
-              <a href="" className='flex flex-col w-fit p-5'>
                 <Link href={{
                       pathname: "/political_party",
                       query: {
@@ -118,11 +113,9 @@ export default function Home() {
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Chega</h1>
                 </div>
-              </a>
             </div>
 
             <div className='flex flex-col w-1/6 m-10'>
-              <a href="" className='flex flex-col w-fit p-5'>
                 <Link href={{
                       pathname: "/political_party",
                       query: {
@@ -132,11 +125,9 @@ export default function Home() {
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Iniciativa Liberal</h1>
                 </div>
-              </a>
             </div>
 
             <div className='flex flex-col w-1/6 m-10'>
-              <a href="" className='flex flex-col w-fit p-5'>
                 <Link href={{
                       pathname: "/political_party",
                       query: {
@@ -146,11 +137,9 @@ export default function Home() {
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Partido Comunista Português</h1>
                 </div>
-              </a>
             </div>
 
             <div className='flex flex-col w-1/6 m-10'>
-              <a href="" className='flex flex-col w-fit p-5'>
                 <Link href={{
                       pathname: "/political_party",
                       query: {
@@ -160,11 +149,9 @@ export default function Home() {
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Bloco de Esquerda</h1>
                 </div>
-              </a>
             </div>
 
             <div className='flex flex-col w-1/6 m-10'>
-              <a href="" className='flex flex-col w-fit p-5'>
                 <Link href={{
                       pathname: "/political_party",
                       query: {
@@ -174,12 +161,10 @@ export default function Home() {
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Pessoas-Animais-Natureza</h1>
                 </div>
-              </a>
             </div>
 
             
             <div className='flex flex-col w-1/6 m-10'>
-              <a href="" className='flex flex-col w-fit p-5'>
                 <Link href={{
                       pathname: "/political_party",
                       query: {
@@ -189,9 +174,7 @@ export default function Home() {
                 <div className='flex justify-around mt-8'>
                   <h1 className='text-center text-lg w-fit m-auto font-bold'>Livre</h1>
                 </div>
-              </a>
             </div> 
-            
             {/* Representação da Assembleia da República */}
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'>A sua representatividade na Assembleia da República</h2>
             <div id="parlamento" className='flex justify-center items-center w-full h-full'>
