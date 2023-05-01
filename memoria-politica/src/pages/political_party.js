@@ -74,7 +74,7 @@ export default function PoliticalParty() {
         <div className='flex-col m-auto'>
           <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>{query.name}</a>
           <h3 className='text-2xl mt-0 select-none'>Descriçãozinha mini do partido, frase impactful.</h3>
-          <div className='bg-black h-100 w-100 mt-10'>
+          <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
             { isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
                             rotate={0} fill='white' onWordClick={onWordClick}   onWordMouseOver={handleWordMouseOver} 
                             onWordMouseOut={handleWordMouseOut}   /> }
@@ -114,6 +114,10 @@ export default function PoliticalParty() {
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
+            <div className='flex justify-around'>
+              <Timeline width={1200} height={200}></Timeline>
+
+            </div>
           </div>
 
           <div id="procure-verdade" className='flex flex-col'>
