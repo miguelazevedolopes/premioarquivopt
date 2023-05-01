@@ -4,10 +4,26 @@ from os import system
 import json
 import datetime
 
+
+def divide_text(text):
+    t=text
+    start=0
+    end=1000000
+    texts = []
+    while(len(text[start:])>=1000000):
+        texts.append(text[start:end])
+        start=end
+        end+=1000000
+    texts.append(text[end:])
+    return texts
+        
+
+
 clear = lambda: system('clear')
 nlp = spacy.load("pt_core_news_lg")
 
-parties = ['chega','bloco','il','livre','pan','pcp','ps','psd']
+# parties = ['chega','bloco','il','livre','pan','pcp','ps','psd']
+parties = ['pcp','ps','psd']
 
 for k in range(len(parties)):
     party=parties[k]
@@ -27,19 +43,34 @@ for k in range(len(parties)):
 
         year = df['date'][index].year
         text =  df['text'][index]
+        
         # Status print
         i+=1
         clear()
         print("Party "+str(k+1)+"/"+str(len(parties)))
-        print("Status: "+ str(round(i*100/size))+"%")
+        print("Status: "+ str(i*100/size)+"%")
 
-        doc = nlp(text)
-        for ent in doc.ents:
-            if(ent.label_=='PER'):
-                if(ent.text in dictionary[year].keys()):
-                    dictionary[year][ent.text]+=1
-                else:
-                    dictionary[year][ent.text]=1
+
+        if(len(text)>=1000000):
+            texts = divide_text(text)
+            for t in texts:
+                doc = nlp(t)
+                for ent in doc.ents:
+                    if(ent.label_=='PER'):
+                        if(ent.text in dictionary[year].keys()):
+                            dictionary[year][ent.text]+=1
+                        else:
+                            dictionary[year][ent.text]=1
+        else:
+            doc = nlp(text)
+            for ent in doc.ents:
+                if(ent.label_=='PER'):
+                    if(ent.text in dictionary[year].keys()):
+                        dictionary[year][ent.text]+=1
+                    else:
+                        dictionary[year][ent.text]=1
+
+        
 
 
     for i in range(1996,2023):
