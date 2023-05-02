@@ -2,28 +2,6 @@ import {useState, useEffect, useCallback } from 'react'
 import Search from './components/search'
 import Head from 'next/head'
 
-function FAQsBox({ title, description }) {
-    return (
-      <div className="bg-white p-4 my-2 shadow-lg">
-        <h2 className="text-xl font-bold mb-2">{title}</h2>
-        <p className="text-gray-700">{description}</p>
-      </div>
-    );
-  }
-
-function FAQs({ faqs }) {
-    return (
-      <div className='search-results'>
-        {faqs.map((result) => (
-          <FAQsBox
-            key={result.id}
-            title={result.title}
-            description={result.description}
-          />
-        ))}
-      </div>
-    );
-  }
 
 const faqs = [
     {
@@ -64,10 +42,16 @@ export default function SearchPage() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
           <div className='flex-col p-0 sm:m-auto'>
-          {/* Procure a Verdade */}
-          <div id="procure-verdade" className='flex flex-col'>
+          <div id="faq" className='flex flex-col mx-12'>
               <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10 flex justify-center items-center'>FAQ</h2>
-              <FAQs faqs = {faqs}></FAQs>
+              <div className='mt-5'>
+                {faqs.map((result) => (
+                  <div key={result.id} className="bg-white p-4 my-2 shadow-lg">
+                    <h2 className="text-xl font-bold mb-2">{result.title}</h2>
+                    <p className="text-gray-700">{result.description}</p>
+                  </div>
+                ))}
+              </div>
           </div>
       </div>   
     </> 
