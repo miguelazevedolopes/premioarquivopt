@@ -7,7 +7,7 @@ function getPersonalities(party, year){
     let personalitiesElements = []
         personalities.forEach(personality => {
             personalitiesElements.push(
-                <div key={personality["name"]} className='w-1/4 p-5'>
+                <div key={personality["name"]} className={`w-1/${personalities.length} p-5`}>
                     <a target='_blank' href={personality["wiki"]?personality["wiki"]: ''} className=''>
                         <img className='w-52 h-52 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
                         <div className='flex justify-around mt-8'>
