@@ -7,6 +7,18 @@ import commonWordsData from '../../public/common-words.json'
 import Timeline from './components/timeline';
 import Personalities from './components/personalities';
 
+const textColor = {
+  'Partido Socialista': 'text-[#ff66ff]',
+  'Partido Social Democrata': 'text-[#f68a21]',
+  'Chega': 'text-[#333399]',
+  'Iniciativa Liberal': 'text-[#52c1ec]',
+  'Partido Comunista Português': 'text-[#EC1B24]',
+  'Bloco de Esquerda': 'text-[#000000]',
+  'Pessoas-Animais-Natureza': 'text-[#036A84]',
+  'Livre': 'text-[#00CD8C]'
+}
+
+
 function parseData(party) {
   const data = [];
 
@@ -54,7 +66,7 @@ export default function PoliticalParty() {
       </Head>
       <main className='mt-5'>
         <div className='flex-col m-auto'>
-          <a href='' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>{query.name}</a>
+          <h1 href='' className={`text-5xl lg:text-8xl ${textColor[query.name]} font-extrabold inline-block select-none`}>{query.name}</h1>
           <h3 className='text-2xl mt-0 select-none'>Descriçãozinha mini do partido, frase impactful.</h3>
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
             { isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
@@ -68,7 +80,7 @@ export default function PoliticalParty() {
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
             <div className='flex justify-around'>
-                <Timeline width={1200} height={200}></Timeline>
+                <Timeline width={1000} height={300}></Timeline>
             </div>
           </div>
 
