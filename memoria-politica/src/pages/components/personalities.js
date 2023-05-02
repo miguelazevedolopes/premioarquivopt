@@ -8,8 +8,8 @@ function getPersonalities(party, year){
         personalities.forEach(personality => {
             personalitiesElements.push(
                 <div key={personality["name"]} className={`w-1/${personalities.length} p-5`}>
-                    <a target="personalidades" href={personality["wiki"]?personality["wiki"]: ''} className=''>
-                        <img className='w-52 h-52 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
+                    <a target="personalidades" href={personality["wiki"]?personality["wiki"]: ''}>
+                        <img className='w-52 h-52 hover:scale-125 ease-in duration-500 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
                         <div className='flex justify-around mt-8'>
                             <h1 className='text-center text-lg w-fit m-auto font-bold'>{personality["name"]}</h1>
                         </div>
