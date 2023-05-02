@@ -1,7 +1,6 @@
 import {useState, useEffect, useCallback } from 'react'
 import Search from './components/search'
 
-
 const textColor = {
   PS: 'text-[#ff66ff]',
   PSD: 'text-[#f68a21]',
@@ -13,7 +12,7 @@ const textColor = {
   LIVRE: 'text-[#00CD8C]'
 }
 
-async function solrSearch(searchTerm, party, start, dateRange){
+async function solrSearch(searchTerm, party, start=0, dateRange){
 
   const baseRequestUrl="http://localhost:8983/solr/parties/select?hl=on&hl.method=unified&defType=edismax&indent=true";
   party= (party!=null && party!='') ? '&fq=party:' + party : ''
@@ -31,6 +30,8 @@ async function solrSearch(searchTerm, party, start, dateRange){
     body: query+'&qf=title^5 text'+party+dateRange+'&rows=10'+start+"&stopwords=true&synonyms=true"
   })
 
+  console.log(response.body)
+
   const data = await response.json();
   return data;
 }
@@ -38,6 +39,11 @@ async function solrSearch(searchTerm, party, start, dateRange){
 export default function SearchPage() {
   const [searchResults, setSearchResults] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [abv, setAbv] = useState(null);
+  const [party, setParty] = useState(null);
+  const [dateRange, setDateRange] = useState(null);
+  const [start, setStart] = useState(null);
 
   useEffect( () => {(
     async () => {
@@ -45,16 +51,43 @@ export default function SearchPage() {
       const queryParam = urlParams.get('q');
       setSearchTerm(queryParam);
 
-      const abv = urlParams.get('abv')
-      const party = urlParams.get('party')
-      const dateRange = urlParams.get('date')
-      const start = urlParams.get('start')
+      setAbv(urlParams.get('abv'))
+      setParty(urlParams.get('party'))
+      setDateRange(urlParams.get('date'))
+      setStart(urlParams.get('start'))
 
       const results = await solrSearch(abv? abv: searchTerm, party, start, dateRange);
       setSearchResults(results.response.docs);
 
     })();
   }, [searchTerm]);
+
+  const handlePrevious = useCallback(() => {
+    if (currentPage > 1) {
+      const newPage = currentPage - 1;
+      setCurrentPage(newPage);
+      const newStart = (newPage - 1) * 10;
+      solrSearch(abv? abv: searchTerm, party, newStart, dateRange)
+        .then((results) => {
+          setSearchResults(results.response.docs);
+        })
+        .catch((error) => console.error(error));
+    }
+  }, [currentPage, searchTerm, party, dateRange]);
+
+  const handleNext = useCallback(() => {
+    if (searchResults.length === 10) {
+      const newPage = currentPage + 1;
+      setCurrentPage(newPage);
+      const newStart = (newPage - 1) * 10;
+      console.log(abv)
+      solrSearch(abv? abv: searchTerm, party, newStart, dateRange)
+        .then((results) => {
+          setSearchResults(results.response.docs);
+        })
+        .catch((error) => console.error(error));
+    }
+  }, [currentPage, searchTerm, party, dateRange, searchResults]);
 
 
   return (
@@ -83,6 +116,18 @@ export default function SearchPage() {
               <h2 className="text-xl text-center mb-2">Não foram encontrados resultados.</h2>
               }
             </div>
+              <div id="pagination" className='flex justify-center mt-10'>
+              { currentPage > 1 ?               
+              <a href="#" className="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" onClick={handlePrevious}>
+                <svg aria-hidden="true" className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path></svg>
+                Previous
+              </a> : <></>
+              }
+              <a href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" onClick={handleNext}>
+                Next
+                <svg aria-hidden="true" className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+              </a>
+              </div>
         </div>
     </div>  
     )

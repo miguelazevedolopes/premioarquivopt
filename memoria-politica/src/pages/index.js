@@ -42,18 +42,6 @@ export default function Home() {
     { text: 'Igualdade', value: 700 },
   ];
 
-
-  const onWordClick = useCallback((event, d) => {
-    console.log(`onWordClick: ${d.text}`);
-  }, []);
-  const onWordMouseOver = useCallback((event, d) => {
-    console.log(`onWordClick: ${d.text}`);
-  }, []);
-  const onWordMouseOut = useCallback((event, d) => {
-    console.log(`onWordClick: ${d.value}`);
-  }, []);
-
-
   return (
     <>
       <Head>
@@ -72,7 +60,7 @@ export default function Home() {
           {/* WordCloud */}
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
             {isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
-              rotate={0} fill='white' onWordClick={onWordClick} onWordMouseOver={onWordMouseOver} onWordMouseOut={onWordMouseOut} />}
+              rotate={0} fill='white' />}
           </div>
 
           {/* Conheça os Partidos */}

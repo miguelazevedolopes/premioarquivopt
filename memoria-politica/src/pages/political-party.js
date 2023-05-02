@@ -42,18 +42,6 @@ export default function PoliticalParty() {
   const handlePartyChange = (event) => {
     setSelectedParty(event.target.value);
   };
-    
-  const onWordClick = useCallback((word) => {
-    // console.log(`onWordClick: ${word}`);
-  }, []);
-
-  function handleWordMouseOver(event, word) {
-    // console.log(`Mouse over: ${word.text}`);
-  }
-  
-  function handleWordMouseOut(event, word) {
-    // console.log(`Mouse out: ${word.text}`);
-  }
 
 
   return (
@@ -70,8 +58,7 @@ export default function PoliticalParty() {
           <h3 className='text-2xl mt-0 select-none'>Descriçãozinha mini do partido, frase impactful.</h3>
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
             { isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
-                            rotate={0} fill='white' onWordClick={onWordClick}   onWordMouseOver={handleWordMouseOver} 
-                            onWordMouseOut={handleWordMouseOut}   /> }
+                            rotate={0} fill='white'  /> }
           </div>
 
           {/* Personalidades */}

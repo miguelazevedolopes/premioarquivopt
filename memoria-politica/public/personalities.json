@@ -27,54 +27,840 @@
                 "image": "fr.jpeg"
             }
         ],
-        "2002": [
-
-        ],
+        "2002": [],
         "2003": [],
-        "2004": [],
-        "2005": [],
-        "2006": [],
+        "2004": [
+            {
+                "name": "Jorge Sampaio",
+                "wiki": "https://pt.wikipedia.org/wiki/Jorge_Sampaio",
+                "image": "jorge_sampaio.jpg"
+            },
+            {
+                "name": "Fernando Rosas",
+                "wiki": "https://pt.wikipedia.org/wiki/Fernando_Rosas",
+                "image": "fr.jpeg"
+            },
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "António Abreu",
+                "wiki": "https://pt.wikipedia.org/wiki/Ant%C3%B3nio_Abreu",
+                "image": "antonio_abreu.jpg"
+            }
+        ],
+        "2005": [
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "Luís Nunes",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Luís+Nunes",
+                "image": "default.jpg"
+            },
+            {
+                "name": "João Eduardo",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=João+Eduardo",
+                "image": "default.jpg"
+            },
+            {
+                "name": "Santana Lopes",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Santana_Lopes",
+                "image": "sl.jpg"
+            }
+        ],
+        "2006": [
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "Cavaco Silva",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Cavaco+Silva",
+                "image": "cs.png"
+            },
+            {
+                "name": "Sérgio Godinho",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Sérgio+Godinho",
+                "image": "sg.jpg"
+            },
+            {
+                "name": "Fernando Tordo",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Fernando+Tordo",
+                "image": "ft.jpg"
+            }
+        ],
         "2007": [],
-        "2008": [],
-        "2009": [],
-        "2010": [],
-        "2011": [],
-        "2012": [],
-        "2013": [],
-        "2014": [],
-        "2015": [],
-        "2016": [],
-        "2017": [],
-        "2018": [],
-        "2019": [],
-        "2020": []
+        "2008": [
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "Alda Macedo",
+                "wiki": "https://pt.wikipedia.org/wiki/Alda_Macedo",
+                "image": "am.jpg"
+            },
+            {
+                "name": "Helena Pinto",
+                "wiki": "https://pt.wikipedia.org/wiki/Helena_Pinto",
+                "image": "hp.png"
+            },
+            {
+                "name": "Rui Rio",
+                "wiki": "https://pt.wikipedia.org/wiki/Rui_Rio",
+                "image": "rr.jpg"
+            }
+        ],
+        "2009": [
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "José Manuel Pureza",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Pureza",
+                "image": "jmp.jpg"
+            },
+            {
+                "name": "Aminetu Haidar",
+                "wiki": "https://pt.wikipedia.org/wiki/Aminatou_Haidar",
+                "image": "ah.jpg"
+            },
+            {
+                "name": "Miguel Portas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Portas",
+                "image": "mp.jpg"
+            }
+        ],
+        "2010": [
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
+            },
+            {
+                "name": "Miguel Portas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Portas",
+                "image": "mp.jpg"
+            },
+            {
+                "name": "João Semedo",
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
+            }
+        ],
+        "2011": [
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
+            },
+            {
+                "name": "Miguel Portas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Portas",
+                "image": "mp.jpg"
+            },
+            {
+                "name": "João Semedo",
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
+            }
+        ],
+        "2012": [
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
+            },
+            {
+                "name": "Miguel Portas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Portas",
+                "image": "mp.jpg"
+            },
+            {
+                "name": "Luís Fazenda",
+                "wiki": "https://pt.wikipedia.org/wiki/Lu%C3%ADs_Fazenda",
+                "image": "lf.jpg"
+            }
+        ],
+        "2013": [
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "José Soeiro",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Soeiro",
+                "image": "jsoeiro.png"
+            },
+            {
+                "name": "João Semedo",
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
+            }
+        ],
+        "2014": [
+            {
+                "name": "João Semedo",
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
+            },
+            {
+                "name": "Marisa Matias",
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
+            },
+            {
+                "name": "José Manuel Pureza",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Pureza",
+                "image": "jmp.jpg"
+            },
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            }
+        ],
+        "2015": [
+            {
+                "name": "Catarina Martins",
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
+            },
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "João Semedo",
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
+            },
+            {
+                "name": "Marisa Matias",
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
+            }
+        ],
+        "2016": [
+            {
+                "name": "Marisa Matias",
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
+            },
+            {
+                "name": "Catarina Martins",
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
+            },
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "João Semedo",
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
+            }
+        ],
+        "2017": [
+            {
+                "name": "Catarina Martins",
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
+            },
+            {
+                "name": "Pedro Filipe Soares",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Filipe_Soares",
+                "image": "pfs.png"
+            },
+            {
+                "name": "Samuel Cardoso",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Samuel+Cardoso",
+                "image": "default.jpg"
+            },
+            {
+                "name": "José Soeiro",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Soeiro",
+                "image": "jsoeiro.png"
+            }
+        ],
+        "2018": [
+            {
+                "name": "Catarina Martins",
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
+            },
+            {
+                "name": "João Semedo",
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
+            },
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "Marisa Matias",
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
+            }
+        ],
+        "2019": [
+            {
+                "name": "Catarina Martins",
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
+            },
+            {
+                "name": "Marisa Matias",
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
+            },
+            {
+                "name": "Francisco Louçã",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lou%C3%A7%C3%A3",
+                "image": "fl.jpg"
+            },
+            {
+                "name": "Miguel Portas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Portas",
+                "image": "mp.jpg"
+            }
+        ],
+        "2020": [
+            {
+                "name": "Marisa Matias",
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
+            },
+            {
+                "name": "Catarina Martins",
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
+            },
+            {
+                "name": "José Mário Branco",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_M%C3%A1rio_Branco",
+                "image": "jmb.jpg"
+            },
+            {
+                "name": "Pedro Abreu",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Pedro+Abreu",
+                "image": "default.jpg"
+            }
+        ]
     },
     "Partido Socialista": {
         "1996": [],
         "1997": [],
         "1998": [],
-        "1999": [],
-        "2000": [],
-        "2001": [],
-        "2002": [],
-        "2003": [],
-        "2004": [],
-        "2005": [],
-        "2006": [],
-        "2007": [],
-        "2008": [],
-        "2009": [],
-        "2010": [],
-        "2011": [],
-        "2012": [],
-        "2013": [],
-        "2014": [],
-        "2015": [],
-        "2016": [],
-        "2017": [],
-        "2018": [],
-        "2019": [],
-        "2020": []
+        "1999": [
+            {
+                "name": "António Guterres",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2000": [
+            {
+                "name": "António Guterres",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Fernando Moniz",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ramos Horta",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2001": [
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Luís Marinho",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Helena Torres Marques",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Casaca",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2002": [
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Vicente Jorge Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2003": [
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Pedroso",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2004": [
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Pedroso",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2005": [
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Manuel Maria Carrilho",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2006": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Pedroso",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2007": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jorge Coelho",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Vital Moreira",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2008": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Afonso Candal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Manuel Pinho",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Alberto Martins",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2009": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Vital Moreira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Almeida Santos",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2010": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Silva Pereira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Assis",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2011": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Assis",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Silva Pereira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Fernando Medina",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2012": [
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Miguel Laranjeiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Serrano",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2013": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Guterres",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2014": [
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Galamba",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Eurico Dias",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Beleza",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2015": [
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2016": [
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "João Galamba",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Tiago Brandão Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2017": [
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos César",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Catarina Mendes",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2018": [
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Rui Pedro Nascimento",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos César",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2019": [
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos César",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Catarina Mendes",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2020": [
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos César",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Catarina Mendes",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Centeno",
+                "wiki": "",
+                "image": ""
+            }
+        ]
     },
     "Partido Social Democrata": {
         "1996": [],
@@ -102,5 +888,515 @@
         "2018": [],
         "2019": [],
         "2020": []
+    },
+    "Chega": {
+        "1996": [],
+        "1997": [],
+        "1998": [],
+        "1999": [],
+        "2000": [],
+        "2001": [],
+        "2002": [],
+        "2003": [],
+        "2004": [],
+        "2005": [],
+        "2006": [],
+        "2007": [],
+        "2008": [],
+        "2009": [],
+        "2010": [],
+        "2011": [],
+        "2012": [],
+        "2013": [],
+        "2014": [],
+        "2015": [],
+        "2016": [],
+        "2017": [],
+        "2018": [],
+        "2019": [
+            {
+                "name": "André Ventura",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Marcelo Rebelo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Magrinho",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2020": [
+            {
+                "name": "André Ventura",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Marcelo Rebelo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ramalho Eanes",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Joacine Katar Moreira",
+                "wiki": "",
+                "image": ""
+            }
+        ]
+    },
+    "Iniciativa Liberal": {
+        "1996": [],
+        "1997": [],
+        "1998": [],
+        "1999": [],
+        "2000": [],
+        "2001": [],
+        "2002": [],
+        "2003": [],
+        "2004": [],
+        "2005": [],
+        "2006": [],
+        "2007": [],
+        "2008": [],
+        "2009": [],
+        "2010": [],
+        "2011": [],
+        "2012": [],
+        "2013": [],
+        "2014": [],
+        "2015": [],
+        "2016": [],
+        "2017": [
+            {
+                "name": "Rodrigo Saraiva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Antonio Ledezma",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Albert Rivera",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Bruno Horta Soares",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2018": [
+            {
+                "name": "Pedro Antunes",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Alexandre Krauss",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ricardo Arroja",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Cláudio Fonseca",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2019": [
+            {
+                "name": "Ricardo Arroja",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Guimarães Pinto",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Filipa Osório",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Rodrigo Saraiva",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2020": [
+            {
+                "name": "Ricardo Arroja",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Rui Moreira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Guimarães Pinto",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Rodrigo Saraiva",
+                "wiki": "",
+                "image": ""
+            }
+        ]
+    },
+    "Livre": {
+        "1996": [],
+        "1997": [],
+        "1998": [],
+        "1999": [],
+        "2000": [],
+        "2001": [],
+        "2002": [],
+        "2003": [],
+        "2004": [],
+        "2005": [],
+        "2006": [],
+        "2007": [],
+        "2008": [],
+        "2009": [],
+        "2010": [],
+        "2011": [],
+        "2012": [],
+        "2013": [],
+        "2014": [],
+        "2015": [
+            {
+                "name": "Rui Tavares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Teixeira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Monteiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Matos Pires",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2016": [
+            {
+                "name": "Rui Tavares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Teixeira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "João Vasco Gama",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Matos Pires",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2017": [
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Rui Tavares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Centeno",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Donald Trump",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2018": [
+            {
+                "name": "Rui Tavares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "José Manuel Azevedo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Safaa Dib",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Filipa Castro",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2019": [
+            {
+                "name": "Rui Tavares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Joacine Katar Moreira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "José Manuel Azevedo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Teixeira",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2020": [
+            {
+                "name": "Rui Tavares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Teixeira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Rodrigues dos Santos",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Gomes",
+                "wiki": "",
+                "image": ""
+            }
+        ]
+    },
+    "Pessoas-Animais-Natureza": {
+        "1996": [],
+        "1997": [],
+        "1998": [],
+        "1999": [],
+        "2000": [],
+        "2001": [],
+        "2002": [],
+        "2003": [],
+        "2004": [],
+        "2005": [],
+        "2006": [],
+        "2007": [],
+        "2008": [],
+        "2009": [],
+        "2010": [],
+        "2011": [],
+        "2012": [],
+        "2013": [
+            {
+                "name": "Fernando Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Viriato",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Heitor Lourenço",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Marluce Revoredo da Silva",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2014": [],
+        "2015": [
+            {
+                "name": "Paulo Borges",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Miguel Santos",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Bebiana Cunha",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Fonseca",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2016": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Tereso",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Miguel Santos",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Lúcia Silva",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2017": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carreiras",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Guerreiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Sandra Marques",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2018": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carreiras",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Guerreiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Luís Filipe de Castro Mendes",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2019": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carreiras",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Inês de Sousa Real",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2020": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Inês de Sousa Real",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Cristina Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Bebiana Cunha",
+                "wiki": "",
+                "image": ""
+            }
+        ]
+    },
+    "Partido Comunista Português":{
+        
     }
 }
