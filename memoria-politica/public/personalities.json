@@ -1243,124 +1243,124 @@
         "2013": [
             {
                 "name": "Fernando Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "http://jornal-renovacao.pt/2021/09/palavra-d-candidat-fernando-silva-pan-vila-do-conde/",
+                "image": "fs.png"
             },
             {
                 "name": "Ana Viriato",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://en.wikipedia.org/wiki/Anne_Viriato",
+                "image": "avi.jpg"
             },
             {
                 "name": "Heitor Lourenço",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Heitor_Louren%C3%A7o",
+                "image": "hl.jpg"
             },
             {
                 "name": "Marluce Revoredo da Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Marluce+Revoredo+Silva",
+                "image": "default.jpg"
             }
         ],
         "2014": [],
         "2015": [
             {
                 "name": "Paulo Borges",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Paulo_Borges_(escritor)",
+                "image": "pb.jpg"
             },
             {
                 "name": "Miguel Santos",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pan.com.pt/candidatos/miguel-santos/",
+                "image": "msa.jpg"
             },
             {
                 "name": "Bebiana Cunha",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pan.com.pt/candidatos/bebiana-cunha-2/",
+                "image": "bc.jpg"
             },
             {
                 "name": "Pedro Fonseca",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Pedro+Fonseca",
+                "image": "default.jpg"
             }
         ],
         "2016": [
             {
                 "name": "André Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Andr%C3%A9_Silva_(pol%C3%ADtico)",
+                "image": "asi.jpg"
             },
             {
                 "name": "Pedro Tereso",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://www.agrosustentavel.com/dt_team/pedro-tereso/",
+                "image": "pt.jpeg"
             },
             {
                 "name": "Miguel Santos",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pan.com.pt/candidatos/miguel-santos/",
+                "image": "msa.jpg"
             },
             {
                 "name": "Ana Lúcia Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Ana+Lúcia+Silva",
+                "image": "default.jpg"
             }
         ],
         "2017": [
             {
                 "name": "André Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Andr%C3%A9_Silva_(pol%C3%ADtico)",
+                "image": "asi.jpg"
             },
             {
                 "name": "Carlos Carreiras",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Carlos_Carreiras",
+                "image": "cca.jpg"
             },
             {
                 "name": "Francisco Guerreiro",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Guerreiro",
+                "image": "fg.png"
             },
             {
                 "name": "Sandra Marques",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Sandra+Marques",
+                "image": "sm.jpg"
             }
         ],
         "2018": [
             {
                 "name": "André Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Andr%C3%A9_Silva_(pol%C3%ADtico)",
+                "image": "asi.jpg"
             },
             {
                 "name": "Carlos Carreiras",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Carlos_Carreiras",
+                "image": "cca.jpg"
             },
             {
                 "name": "Francisco Guerreiro",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Guerreiro",
+                "image": "fg.png"
             },
             {
                 "name": "Luís Filipe de Castro Mendes",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Lu%C3%ADs_Filipe_Castro_Mendes",
+                "image": "lfcm.jpg"
             }
         ],
         "2019": [
             {
                 "name": "André Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Andr%C3%A9_Silva_(pol%C3%ADtico)",
+                "image": "asi.jpg"
             },
             {
                 "name": "Carlos Carreiras",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Carlos_Carreiras",
+                "image": "cca.jpg"
             },
             {
                 "name": "António Costa",
@@ -1369,30 +1369,30 @@
             },
             {
                 "name": "Inês de Sousa Real",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/In%C3%AAs_Sousa_Real",
+                "image": "isr.jpg"
             }
         ],
         "2020": [
             {
                 "name": "André Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Andr%C3%A9_Silva_(pol%C3%ADtico)",
+                "image": "asi.jpg"
             },
             {
                 "name": "Inês de Sousa Real",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/In%C3%AAs_Sousa_Real",
+                "image": "isr.jpg"
             },
             {
                 "name": "Cristina Rodrigues",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Cristina_Rodrigues",
+                "image": "cr.jpg"
             },
             {
                 "name": "Bebiana Cunha",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pan.com.pt/candidatos/bebiana-cunha-2/",
+                "image": "bc.jpg"
             }
         ]
     },
