@@ -5,18 +5,18 @@ function getPersonalities(party, year){
     let personalities = personalitiesData[party][year];
 
     let personalitiesElements = []
-        personalities.forEach(personality => {
-            personalitiesElements.push(
-                <div key={personality["name"]} className={`w-1/${personalities.length} p-5`}>
-                    <a target="personalidades" href={personality["wiki"]?personality["wiki"]: ''}>
-                        <img className='w-52 h-52 hover:scale-125 ease-in duration-500 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
-                        <div className='flex justify-around mt-8'>
-                            <h1 className='text-center text-lg w-fit m-auto font-bold'>{personality["name"]}</h1>
-                        </div>
-                    </a>
-                </div>
-            )
-        });
+    personalities.forEach(personality => {
+        personalitiesElements.push(
+            <div key={`div-${personality["name"]}-${year}-${party}`} className={`w-1/${personalities.length} p-5`}>
+                <a target="personalidades" href={personality["wiki"]?personality["wiki"]: ''}>
+                    <img className='w-52 h-52 hover:scale-125 ease-in duration-500 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
+                    <div className='flex justify-around mt-8'>
+                        <h1 className='text-center text-lg w-fit m-auto font-bold'>{personality["name"]}</h1>
+                    </div>
+                </a>
+            </div>
+        )
+    });
 
     return personalitiesElements;
 }
@@ -38,9 +38,7 @@ const Personalities = ({ party }) => {
 
     const [year, setYear] = useState("2020")
     const [personalitiesDivs, setPersonalitiesDivs] = useState([])
-
-    console.log(party)
-
+    
     useEffect( () => {
         if(party) setPersonalitiesDivs(getPersonalities(party, year))
     },[party]);
@@ -49,7 +47,7 @@ const Personalities = ({ party }) => {
     const options = (() => {
         let options = []
         for (let y = startYear[party]; y < 2021; y++) {
-            options.push(<option value={y.toString()}>{y.toString()}</option>)
+            options.push(<option key={y} value={y.toString()}>{y.toString()}</option>)
         }
         return options
     })();
