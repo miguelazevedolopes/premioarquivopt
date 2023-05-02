@@ -10,11 +10,11 @@ function FAQsBox({ title, description }) {
     );
   }
 
-function FAQs({ results }) {
+function FAQs({ faqs }) {
     return (
       <div className='search-results'>
-        {results.map((result) => (
-          <SearchResultBox
+        {faqs.map((result) => (
+          <FAQsBox
             key={result.id}
             title={result.title}
             description={result.description}
