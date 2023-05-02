@@ -21,15 +21,12 @@ const Personalities = ({ party }) => {
 
         let personalities = personalitiesData[party][event.target.value];
 
-
-
-
         let personalitiesElements = []
         personalities.forEach(personality => {
             personalitiesElements.push(
-                <div key={personality["name"]} className='flex flex-col w-1/5 m-7'>
-                    <a target='_blank' href={personality["wiki"]} className='flex flex-col w-fit p-5'>
-                        <img className='w-64 h-64 object-cover	' src={"/images/personalities/" + personality["image"]} alt="" />
+                <div key={personality["name"]} className='w-1/4 p-5'>
+                    <a target='_blank' href={personality["wiki"]} className=''>
+                        <img className='w-52 h-52 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
                         <div className='flex justify-around mt-8'>
                             <h1 className='text-center text-lg w-fit m-auto font-bold'>{personality["name"]}</h1>
                         </div>
@@ -37,7 +34,7 @@ const Personalities = ({ party }) => {
                 </div>
             )
         });
-        console.log(personalitiesElements)
+
         setYear(event.target.value);
         setPersonalitiesDivs(personalitiesElements)
     };
@@ -55,9 +52,13 @@ const Personalities = ({ party }) => {
                     </select>
                 </div>
             </div>
-            <h2 className='leading-[10rem]'>{personalitiesDivs.length == 0 ? "Sem dados referentes ao ano selecionado." : ''}</h2>
-            {personalitiesDivs}
 
+            <div className='flex flex-col'>
+                <h2> {personalitiesDivs.length == 0 ? "Sem dados referentes ao ano selecionado." : ''}</h2>
+                <div className='flex justify-around'>
+                    {personalitiesDivs}
+                </div>
+            </div>
         </div>
 
     );
