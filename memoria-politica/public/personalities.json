@@ -916,8 +916,8 @@
         "2019": [
             {
                 "name": "André Ventura",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Andr%C3%A9_Ventura",
+                "image": "av.jpg"
             },
             {
                 "name": "António Costa",
@@ -926,35 +926,35 @@
             },
             {
                 "name": "Marcelo Rebelo de Sousa",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Marcelo_Rebelo_de_Sousa",
+                "image": "mrs.jpg"
             },
             {
                 "name": "Pedro Magrinho",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://cheganos.com/category/cheganos/cheganos-oficiais/pedro-magrinho/",
+                "image": "pm.jpg"
             }
         ],
         "2020": [
             {
                 "name": "André Ventura",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Andr%C3%A9_Ventura",
+                "image": "av.jpg"
             },
             {
                 "name": "Marcelo Rebelo de Sousa",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Marcelo_Rebelo_de_Sousa",
+                "image": "mrs.jpg"
             },
             {
                 "name": "Ramalho Eanes",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Ant%C3%B3nio_Ramalho_Eanes",
+                "image": "re.png"
             },
             {
                 "name": "Joacine Katar Moreira",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Joacine_Katar_Moreira",
+                "image": "jkm.png"
             }
         ]
     },
@@ -983,89 +983,89 @@
         "2017": [
             {
                 "name": "Rodrigo Saraiva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=6945",
+                "image": "rs.png"
             },
             {
                 "name": "Antonio Ledezma",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Antonio_Ledezma",
+                "image": "al.jpg"
             },
             {
                 "name": "Albert Rivera",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Albert_Rivera",
+                "image": "ar.jpg"
             },
             {
                 "name": "Bruno Horta Soares",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://www.sgeconomia.gov.pt/ciclo-de-wokshops/oradores/bruno-horta-soares.aspx",
+                "image": "bhs.jpg"
             }
         ],
         "2018": [
             {
                 "name": "Pedro Antunes",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://iniciativaliberal.pt/rostos-do-liberalismo-0034/",
+                "image": "pa.jpg"
             },
             {
                 "name": "Alexandre Krauss",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://observador.pt/perfil/alexandrekrauss/",
+                "image": "ak.jpg"
             },
             {
                 "name": "Ricardo Arroja",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://iniciativaliberal.pt/ricardo-arroja-portugal2040/",
+                "image": "ra.jpg"
             },
             {
                 "name": "Cláudio Fonseca",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Cláudio+Fonseca",
+                "image": "default.jpg"
             }
         ],
         "2019": [
             {
                 "name": "Ricardo Arroja",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://iniciativaliberal.pt/ricardo-arroja-portugal2040/",
+                "image": "ra.jpg"
             },
             {
                 "name": "Carlos Guimarães Pinto",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Carlos_Guimar%C3%A3es_Pinto",
+                "image": "cgp.png"
             },
             {
                 "name": "Filipa Osório",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://www.publico.pt/autor/filipa-osorio",
+                "image": "fo.jpeg"
             },
             {
                 "name": "Rodrigo Saraiva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=6945",
+                "image": "rs.png"
             }
         ],
         "2020": [
             {
                 "name": "Ricardo Arroja",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://iniciativaliberal.pt/ricardo-arroja-portugal2040/",
+                "image": "ra.jpg"
             },
             {
                 "name": "Rui Moreira",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Rui_Moreira",
+                "image": "rm.png"
             },
             {
                 "name": "Carlos Guimarães Pinto",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Carlos_Guimar%C3%A3es_Pinto",
+                "image": "cgp.png"
             },
             {
                 "name": "Rodrigo Saraiva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=6945",
+                "image": "rs.png"
             }
         ]
     },
