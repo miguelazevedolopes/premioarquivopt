@@ -32,8 +32,8 @@
         "2004": [
             {
                 "name": "Jorge Sampaio",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jorge_Sampaio",
+                "image": "jorge_sampaio.jpg"
             },
             {
                 "name": "Fernando Rosas",
@@ -47,8 +47,8 @@
             },
             {
                 "name": "António Abreu",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Ant%C3%B3nio_Abreu",
+                "image": "antonio_abreu.jpg"
             }
         ],
         "2005": [
@@ -59,18 +59,18 @@
             },
             {
                 "name": "Luís Nunes",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Luís+Nunes",
+                "image": "default.jpg"
             },
             {
                 "name": "João Eduardo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=João+Eduardo",
+                "image": "default.jpg"
             },
             {
                 "name": "Santana Lopes",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Santana_Lopes",
+                "image": "sl.jpg"
             }
         ],
         "2006": [
@@ -81,18 +81,18 @@
             },
             {
                 "name": "Cavaco Silva",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Cavaco+Silva",
+                "image": "cs.png"
             },
             {
                 "name": "Sérgio Godinho",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Sérgio+Godinho",
+                "image": "sg.jpg"
             },
             {
                 "name": "Fernando Tordo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Fernando+Tordo",
+                "image": "ft.jpg"
             }
         ],
         "2007": [],
@@ -104,18 +104,18 @@
             },
             {
                 "name": "Alda Macedo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Alda_Macedo",
+                "image": "am.jpg"
             },
             {
                 "name": "Helena Pinto",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Helena_Pinto",
+                "image": "hp.png"
             },
             {
                 "name": "Rui Rio",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Rui_Rio",
+                "image": "rr.jpg"
             }
         ],
         "2009": [
@@ -126,13 +126,13 @@
             },
             {
                 "name": "José Manuel Pureza",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Pureza",
+                "image": "jmp.jpg"
             },
             {
                 "name": "Aminetu Haidar",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Aminatou_Haidar",
+                "image": "ah.jpg"
             },
             {
                 "name": "Miguel Portas",
@@ -148,8 +148,8 @@
             },
             {
                 "name": "José Sócrates",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
             },
             {
                 "name": "Miguel Portas",
@@ -158,8 +158,8 @@
             },
             {
                 "name": "João Semedo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
             }
         ],
         "2011": [
@@ -170,8 +170,8 @@
             },
             {
                 "name": "José Sócrates",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
             },
             {
                 "name": "Miguel Portas",
@@ -180,8 +180,8 @@
             },
             {
                 "name": "João Semedo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
             }
         ],
         "2012": [
@@ -192,8 +192,8 @@
             },
             {
                 "name": "José Sócrates",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
             },
             {
                 "name": "Miguel Portas",
@@ -214,35 +214,35 @@
             },
             {
                 "name": "José Soeiro",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Soeiro",
+                "image": "jsoeiro.png"
             },
             {
                 "name": "João Semedo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
             },
             {
                 "name": "José Sócrates",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
             }
         ],
         "2014": [
             {
                 "name": "João Semedo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
             },
             {
                 "name": "Marisa Matias",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
             },
             {
                 "name": "José Manuel Pureza",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Pureza",
+                "image": "jmp.jpg"
             },
             {
                 "name": "Francisco Louçã",
@@ -253,8 +253,8 @@
         "2015": [
             {
                 "name": "Catarina Martins",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
             },
             {
                 "name": "Francisco Louçã",
@@ -263,25 +263,25 @@
             },
             {
                 "name": "João Semedo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
             },
             {
                 "name": "Marisa Matias",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
             }
         ],
         "2016": [
             {
                 "name": "Marisa Matias",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
             },
             {
                 "name": "Catarina Martins",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
             },
             {
                 "name": "Francisco Louçã",
@@ -290,42 +290,42 @@
             },
             {
                 "name": "João Semedo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
             }
         ],
         "2017": [
             {
                 "name": "Catarina Martins",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
             },
             {
                 "name": "Pedro Filipe Soares",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Filipe_Soares",
+                "image": "pfs.png"
             },
             {
                 "name": "Samuel Cardoso",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Samuel+Cardoso",
+                "image": "default.jpg"
             },
             {
                 "name": "José Soeiro",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Soeiro",
+                "image": "jsoeiro.png"
             }
         ],
         "2018": [
             {
                 "name": "Catarina Martins",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
             },
             {
                 "name": "João Semedo",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Semedo",
+                "image": "js.jpg"
             },
             {
                 "name": "Francisco Louçã",
@@ -334,20 +334,20 @@
             },
             {
                 "name": "Marisa Matias",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
             }
         ],
         "2019": [
             {
                 "name": "Catarina Martins",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
             },
             {
                 "name": "Marisa Matias",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
             },
             {
                 "name": "Francisco Louçã",
@@ -363,23 +363,23 @@
         "2020": [
             {
                 "name": "Marisa Matias",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Marisa_Matias",
+                "image": "mm.png"
             },
             {
                 "name": "Catarina Martins",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Catarina_Martins",
+                "image": "cm.png"
             },
             {
                 "name": "José Mário Branco",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_M%C3%A1rio_Branco",
+                "image": "jmb.jpg"
             },
             {
                 "name": "Pedro Abreu",
-                "wiki": "",
-                "image": ""
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Pedro+Abreu",
+                "image": "default.jpg"
             }
         ]
     },
