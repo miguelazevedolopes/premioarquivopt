@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Search from './components/search'
 import HemiCycle from './components/hemicycle'
 import Link from 'next/link'
+import commonWordsData from '../../public/common-words.json'
 
 import ps from '../../public/ps.png'
 import psd from '../../public/psd.png'
@@ -14,6 +15,23 @@ import pan from '../../public/pan.png'
 import livre from '../../public/livre.png'
 import be from '../../public/bloco.png'
 import pcp from '../../public/pcp.png'
+
+
+function parseData(party) {
+  const data = [];
+
+  const values = Object.values(party);
+  const totalValue = values.reduce((acc, cur) => parseInt(cur) + acc, 0);
+
+  for (const [key, value] of Object.entries(party)) {
+    const text = key.trim();
+    const mappedValue = Math.floor((parseInt(value) / totalValue) * 10000);
+    const clampedValue = Math.min(mappedValue, 10000);
+    data.push({ text, value: clampedValue * 3});
+  }
+
+  return data;
+}
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false)
@@ -59,7 +77,7 @@ export default function Home() {
 
           {/* WordCloud */}
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
-            {isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
+            {isClient && <WordCloud data={parseData(commonWordsData['full'])} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
               rotate={0} fill='white' />}
           </div>
 

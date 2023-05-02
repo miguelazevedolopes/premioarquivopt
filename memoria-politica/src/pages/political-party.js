@@ -48,14 +48,6 @@ export default function PoliticalParty() {
     setIsClient(true)
   }, []) 
 
-
-  const [selectedParty, setSelectedParty] = useState('PS');
-
-  const handlePartyChange = (event) => {
-    setSelectedParty(event.target.value);
-  };
-
-
   return (
     <>
       <Head>

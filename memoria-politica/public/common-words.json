@@ -356,5 +356,44 @@
         "defesa          " : " 143685 ",
         "parlamentares   " : " 140170 "
 
-    }]
+    }],
+
+    "full" : {
+        "ps" : "303958",
+        "federação" : "288260",
+        "nacional" : "235529",
+        "socialista " : "224398",
+        "psd                " :  "254861",
+        "agenda             " :  "158245",
+        "notícias           " :  "153845",
+        "povo               " :  "149756",
+        "chega          " : "78500", 
+        "estado         " : "47280", 
+        "2019           " : "38030", 
+        "distrital      " : "31590", 
+        "andré          " : "29510", 
+        "ventura        " : "28970", 
+        "iniciativa      " : " 53327 ",
+        "liberal         " : " 40025 ",
+        "portugal        " : " 18978 ",
+        "programa        " : " 14698 ",
+        "pan             " : " 102328 ",
+        "sobre           " : " 47090 ",
+        "2019            " : " 40821 ",
+        "animais         " : " 26024 ",
+        " livre       " : "176156",
+       " comunicados " : "54122",
+       " eleições    " : "46811",
+       " núcleos     " : "42246",
+       "bloco          " : "169220", 
+        "esquerda       " : "96111", 
+        "comissão       " : "42531", 
+        "pcp             " : " 679335 ",
+        "política        " : " 390391 ",
+        "partido         " : " 284353 ",
+        "governo         " : " 247652 ",
+        "trabalhadores   " : " 237817 ",
+        "central         " : " 226450 ",
+        "comunista       " : " 214685 "
+    }
 }
