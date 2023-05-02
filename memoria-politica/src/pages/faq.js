@@ -1,5 +1,6 @@
 import {useState, useEffect, useCallback } from 'react'
 import Search from './components/search'
+import Head from 'next/head'
 
 function FAQsBox({ title, description }) {
     return (
@@ -53,14 +54,22 @@ const faqs = [
   
 export default function SearchPage() {
 
-
+      
     return (
-        <div className='flex-col p-0 sm:m-auto'>
-        {/* Procure a Verdade */}
-        <div id="procure-verdade" className='flex flex-col'>
-            <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10 flex justify-center items-center'>FAQ</h2>
-            <FAQs faqs = {faqs}></FAQs>
-        </div>
-    </div>    
+      <>
+        <Head>
+          <title >FAQ</title>
+          <meta name="description" content="Um arquivo das páginas web dos partidos políticos Portugueses." />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+          <div className='flex-col p-0 sm:m-auto'>
+          {/* Procure a Verdade */}
+          <div id="procure-verdade" className='flex flex-col'>
+              <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10 flex justify-center items-center'>FAQ</h2>
+              <FAQs faqs = {faqs}></FAQs>
+          </div>
+      </div>   
+    </> 
       )
   }
