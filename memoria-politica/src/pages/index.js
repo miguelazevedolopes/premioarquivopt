@@ -81,7 +81,7 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10 items-strech'>
                 <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Partido Socialista',
                     }, // the data
@@ -93,7 +93,7 @@ export default function Home() {
 
              <div className='flex flex-col w-1/6 m-10'>
                 <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Partido Social Democrata',
                     }, // the data
@@ -105,7 +105,7 @@ export default function Home() {
 
              <div className='flex flex-col w-1/6 m-10'>
                 <Link href={{
-                      pathname: "/political_party",
+                      pathname: "/political-party",
                       query: {
                         name: 'Chega',
                       }, // the data
@@ -117,7 +117,7 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
                 <Link href={{
-                      pathname: "/political_party",
+                      pathname: "/political-party",
                       query: {
                         name: 'Iniciativa Liberal',
                       }, // the data
@@ -129,7 +129,7 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
                 <Link href={{
-                      pathname: "/political_party",
+                      pathname: "/political-party",
                       query: {
                         name: 'Partido Comunista Português',
                       }, // the data
@@ -141,7 +141,7 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
                 <Link href={{
-                      pathname: "/political_party",
+                      pathname: "/political-party",
                       query: {
                         name: 'Bloco de Esquerda',
                       }, // the data
@@ -153,7 +153,7 @@ export default function Home() {
 
             <div className='flex flex-col w-1/6 m-10'>
                 <Link href={{
-                      pathname: "/political_party",
+                      pathname: "/political-party",
                       query: {
                         name: 'Pessoas-Animais-Natureza',
                       }, // the data
@@ -166,7 +166,7 @@ export default function Home() {
             
             <div className='flex flex-col w-1/6 m-10'>
                 <Link href={{
-                      pathname: "/political_party",
+                      pathname: "/political-party",
                       query: {
                         name: 'Livre',
                       }, // the data
@@ -178,7 +178,7 @@ export default function Home() {
             {/* Representação da Assembleia da República */}
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'>A sua representatividade na Assembleia da República</h2>
             <div id="parlamento" className='flex justify-center items-center w-full h-full'>
-              <HemiCycle width={900} height={460} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]}/>
+              <HemiCycle width={900} height={540} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]}/>
             </div>
           </div>
 
@@ -186,15 +186,15 @@ export default function Home() {
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Procure a verdade</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
-            <Search />
+            <Search/>
             <div className='transition-all h-48 flex flex-wrap w-full justify-between mt-10 items-stretch flex-nowrap'>
-              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <a href="/search-results?q=Grupo Parlamentar PSD 2019" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-white text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o grupo parlamentar do PSD em 2019?</h5>
               </a>
-              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <a href="/search-results?q=aborto" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual a posição dos partidos sobre o aborto?</h5>
               </a>
-              <a href="#" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <a href="/search-results?q=Candidato+Bloco+de+Esquerda+Eleições+Presidenciais+2016" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?</h5>
               </a>
             </div>

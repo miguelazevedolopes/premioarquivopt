@@ -149,7 +149,6 @@
         "programa        " : " 14698 ",
         "política        " : " 14135 ",
         "partido         " : " 13805 ",
-        "@liberalpt      " : " 12572 ",
         "valores         " : " 12466 ",
         "manifesto       " : " 12081 ",
         "facebook        " : " 12013 ",
@@ -185,7 +184,6 @@
         "reforça         " : " 5660 ",
         "arroja          " : " 5655 ",
         "progresso       " : " 5605 ",
-        "pt              " : " 5472 ",
         "destaques       " : " 5353 "
     }],
 
@@ -332,6 +330,6 @@
     }], 
 
     "Partido Comunista Português" : [{
-        
+
     }]
 }

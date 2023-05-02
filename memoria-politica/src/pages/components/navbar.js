@@ -31,7 +31,7 @@ export default function Navbar() {
               <ul className="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                 <li>
                   <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Partido Socialista',
                     }, // the data
@@ -39,7 +39,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Partido Social Democrata',
                     }, // the data
@@ -47,7 +47,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Chega',
                     }, // the data
@@ -55,7 +55,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Iniciativa Liberal',
                     }, // the data
@@ -63,7 +63,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Partido Comunista Português',
                     }, // the data
@@ -71,7 +71,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Bloco de Esquerda',
                     }, // the data
@@ -79,7 +79,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Pessoas-Animais-Natureza',
                     }, // the data
@@ -87,7 +87,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href={{
-                    pathname: "/political_party",
+                    pathname: "/political-party",
                     query: {
                       name: 'Livre',
                     }, // the data

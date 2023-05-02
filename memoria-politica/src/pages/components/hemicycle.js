@@ -65,7 +65,7 @@ const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs }) => 
   return (
     <div className="flex flex-col items-center">
       <svg width={width} height={height}>
-        <g transform="translate(0, 220)">
+        <g transform="translate(0, 250)">
           {circles}
         </g>
       </svg>
