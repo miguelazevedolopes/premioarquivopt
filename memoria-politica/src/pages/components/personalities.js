@@ -5,31 +5,40 @@ function getPersonalities(party, year){
     let personalities = personalitiesData[party][year];
 
     let personalitiesElements = []
-        personalities.forEach(personality => {
-            personalitiesElements.push(
-                <div key={personality["name"]} className='w-1/4 p-5'>
-                    <a target='_blank' href={personality["wiki"]?personality["wiki"]: ''} className=''>
-                        <img className='w-52 h-52 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
-                        <div className='flex justify-around mt-8'>
-                            <h1 className='text-center text-lg w-fit m-auto font-bold'>{personality["name"]}</h1>
-                        </div>
-                    </a>
-                </div>
-            )
-        });
+    personalities.forEach(personality => {
+        personalitiesElements.push(
+            <div key={`div-${personality["name"]}-${year}-${party}`} className={`w-1/${personalities.length} p-5`}>
+                <a target="personalidades" href={personality["wiki"]?personality["wiki"]: ''}>
+                    <img className='w-52 h-52 hover:scale-125 ease-in duration-500 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
+                    <div className='flex justify-around mt-8'>
+                        <h1 className='text-center text-lg w-fit m-auto font-bold'>{personality["name"]}</h1>
+                    </div>
+                </a>
+            </div>
+        )
+    });
 
     return personalitiesElements;
 }
 
+
+const startYear = {
+    'Bloco de Esquerda' : 2001,
+    'Partido Socialista' : 1999,
+    'Partido Comunista Português' : 1999,
+    'Pessoas-Animais-Natureza' : 2013,
+    'Livre' : 2015,
+    'Partido Social Democrata' : 1999,
+    'Chega' : 2019,
+    'Iniciativa Liberal' : 2017
+}
 
 
 const Personalities = ({ party }) => {
 
     const [year, setYear] = useState("2020")
     const [personalitiesDivs, setPersonalitiesDivs] = useState([])
-
-    console.log(party)
-
+    
     useEffect( () => {
         if(party) setPersonalitiesDivs(getPersonalities(party, year))
     },[party]);
@@ -37,8 +46,8 @@ const Personalities = ({ party }) => {
 
     const options = (() => {
         let options = []
-        for (let y = 1996; y < 2021; y++) {
-            options.push(<option value={y.toString()}>{y.toString()}</option>)
+        for (let y = startYear[party]; y < 2021; y++) {
+            options.push(<option key={y} value={y.toString()}>{y.toString()}</option>)
         }
         return options
     })();
@@ -53,7 +62,7 @@ const Personalities = ({ party }) => {
 
 
     return (
-        <div className='flex flex-wrap w-full justify-around mt-10 p-10 bg-gray-200'>
+        <div id="personalidades" className='flex flex-wrap w-full justify-around mt-10 p-10 bg-gray-200'>
             <div className='flex w-full justify-start mt-10 '>
                 <h2 className='text-3xl lg:text-4xl font-extrabold select-none m-5 me-10 select-none w-fit'>Personalidades mais mencionadas em cada ano</h2>
                 <div className="temporal-dropdown">

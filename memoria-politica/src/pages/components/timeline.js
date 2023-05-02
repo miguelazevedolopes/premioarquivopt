@@ -32,19 +32,18 @@ const Timeline = ({ width, height }) => {
     }
 
     let styleDescription = {
-      transform: `translate(-50%,${yOffset == 0 ? '100%' : '-100%'})`
-
+      transform: `translate(-50%,${yOffset == 0 ? '50%' : '-100%'})`
     }
 
     eventDivs.push(
       <div key={event.id} style={style} className="block w-[2px] bg-black">
-        <div style={styleDescription} className={`my-2 h-full w-fit flex flex-col justify-start text-center`}>
-          <h2 className="text-lg font-bold w-fit whitespace-nowrap	" >{event.title}</h2>
+        <a href={''} style={styleDescription} className={`h-48 rounded-full hover:opacity-75 hover:text-white text-white bg-black w-48 flex flex-col justify-center text-center`}>
+          <h2 className="text-lg font-bold whitespace-nowrap" >{event.title}</h2>
           <h4 className="text-xs">{event.date}</h4>
           <p className="text-xs ">
             {event.description}
           </p>
-        </div>
+        </a>
       </div>
     )
   }
