@@ -1221,5 +1221,182 @@
                 "image": ""
             }
         ]
+    },
+    "Pessoas-Animais-Natureza": {
+        "1996": [],
+        "1997": [],
+        "1998": [],
+        "1999": [],
+        "2000": [],
+        "2001": [],
+        "2002": [],
+        "2003": [],
+        "2004": [],
+        "2005": [],
+        "2006": [],
+        "2007": [],
+        "2008": [],
+        "2009": [],
+        "2010": [],
+        "2011": [],
+        "2012": [],
+        "2013": [
+            {
+                "name": "Fernando Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Viriato",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Heitor Lourenço",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Marluce Revoredo da Silva",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2014": [],
+        "2015": [
+            {
+                "name": "Paulo Borges",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Miguel Santos",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Bebiana Cunha",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Fonseca",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2016": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Tereso",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Miguel Santos",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ana Lúcia Silva",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2017": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carreiras",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Guerreiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Sandra Marques",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2018": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carreiras",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Guerreiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Luís Filipe de Castro Mendes",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2019": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carreiras",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Inês de Sousa Real",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2020": [
+            {
+                "name": "André Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Inês de Sousa Real",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Cristina Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Bebiana Cunha",
+                "wiki": "",
+                "image": ""
+            }
+        ]
+    },
+    "Partido Comunista Português":{
+        
     }
 }
