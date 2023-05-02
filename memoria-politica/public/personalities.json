@@ -1396,7 +1396,493 @@
             }
         ]
     },
-    "Partido Comunista Português":{
-        
+    "Partido Comunista Português": {
+        "1996": [],
+        "1997": [],
+        "1998": [],
+        "1999": [
+            {
+                "name": "Octávio Teixeira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Vitor Dias",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "João Amaral",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Odete Santos",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2000": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carvalhas",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Octávio Teixeira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Gorbatchev",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2001": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Joaquim Miranda",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Octávio Teixeira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carvalhas",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2002": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carvalhas",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Joaquim Miranda",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Octávio Teixeira",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2003": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carvalhas",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Bernardino Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Joaquim Miranda",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2004": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carvalhas",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Bernardino Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Lino de Carvalho",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2005": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carvalhas",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Guterres",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2006": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Slobodan Milosevic",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Carlos Carvalhas",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2007": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Guerreiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Abreu",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2008": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Guerreiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Abreu",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2009": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Guerreiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Alberto Araújo",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2010": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "José Saramago",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2011": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Lopes",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "José Saramago",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2012": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Francisco Lopes",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2013": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Guerreiro",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2014": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "João Ferreira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Inês Zuber",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2015": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Guerreiro",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2016": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Inês Zuber",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2017": [
+            {
+                "name": "Ilda Figueiredo",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Pedro Guerreiro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2018": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Karl Marx",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Lénine",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2019": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "João Ferreira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Karl Marx",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2020": [
+            {
+                "name": "Jerónimo de Sousa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "João Ferreira",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Álvaro Cunhal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Lénine",
+                "wiki": "",
+                "image": ""
+            }
+        ]
     }
 }
