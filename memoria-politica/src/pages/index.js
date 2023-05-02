@@ -188,13 +188,13 @@ export default function Home() {
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
             <Search/>
             <div className='transition-all h-48 flex flex-wrap w-full justify-between mt-10 items-stretch flex-nowrap'>
-              <a href="/search-results?q=Grupo Parlamentar PSD 2019" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
-                <h5 className="text-white text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o grupo parlamentar do PSD em 2019?</h5>
+              <a href="/search-results?q=Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?&abv=programa^3 eleitoral legislativas^3&search=grupo parlamentar&date=[2019-01-01T00:00:00Z TO 2019-12-31T23:59:59Z]&party=IL" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+                <h5 className="text-white text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?</h5>
               </a>
-              <a href="/search-results?q=aborto" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <a href="/search-results?q=Qual a posição dos partidos sobre o aborto?&abv=aborto" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual a posição dos partidos sobre o aborto?</h5>
               </a>
-              <a href="/search-results?q=Candidato+Bloco+de+Esquerda+Eleições+Presidenciais+2016" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <a href="/search-results?q=Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?&abv=candidato presidencial&date=[2015-01-01T00:00:00Z TO 2016-02-01T23:59:59Z]&party=BLOCO" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?</h5>
               </a>
             </div>

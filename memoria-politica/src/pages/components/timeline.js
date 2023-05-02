@@ -1,14 +1,17 @@
 const events = [{
+  id: 1,
   date: "2020-01-01",
   title: "Event Title",
   description: "pretty description"
 },
 {
+  id: 2,
   date: "2020-01-01",
   title: "Event Title",
   description: "pretty description"
 },
 {
+  id: 3,
   date: "2020-01-01",
   title: "Event Title",
   description: "pretty description"
@@ -34,7 +37,7 @@ const Timeline = ({ width, height }) => {
     }
 
     eventDivs.push(
-      <div style={style} className="block w-[2px] bg-black">
+      <div key={event.id} style={style} className="block w-[2px] bg-black">
         <div style={styleDescription} className={`my-2 h-full w-fit flex flex-col justify-start text-center`}>
           <h2 className="text-lg font-bold w-fit whitespace-nowrap	" >{event.title}</h2>
           <h4 className="text-xs">{event.date}</h4>
@@ -48,7 +51,7 @@ const Timeline = ({ width, height }) => {
 
   return (
 
-    <div style={{ width: `${width}px`, height: `${height}px`, "padding-top": `${Math.round(height / 2)}px` }} className="my-40">
+    <div style={{ width: `${width}px`, height: `${height}px`, "paddingTop": `${Math.round(height / 2)}px` }} className="my-40">
       <div className="h-[2px] w-full bg-black"></div>
       <div className="flex">
         {eventDivs}

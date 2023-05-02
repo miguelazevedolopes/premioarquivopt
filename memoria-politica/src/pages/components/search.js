@@ -1,12 +1,11 @@
 import { useState } from 'react';
 
 
-const Search = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+const Search = ({value}) => {
+  const [searchTerm, setSearchTerm] = useState(value);
 
   const handleSearch = async (e) => {
     e.preventDefault();
-
     window.location.href = `/search-results?q=${searchTerm}`;
   }
 

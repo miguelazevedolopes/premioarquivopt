@@ -13,19 +13,22 @@ const textColor = {
   LIVRE: 'text-[#00CD8C]'
 }
 
-async function solrSearch(searchTerm){
-  const query = '&q=' + searchTerm;
+async function solrSearch(searchTerm, party, start, dateRange){
 
   const baseRequestUrl="http://localhost:8983/solr/parties/select?hl=on&hl.method=unified&defType=edismax&indent=true";
-
-  let requestUrl=baseRequestUrl+'&q.op=AND';
+  party= (party!=null && party!='') ? '&fq=party:' + party : ''
+  const query = '&q=' + searchTerm;
+  start = (start!=null && start!='') ? '&start=' + start : ''
+  dateRange = (dateRange!=null && dateRange!='') ? '&fq=date:' + dateRange : ''
+  
+  let requestUrl=  baseRequestUrl+'&q.op=AND';
   let response = await fetch(requestUrl,{
     headers:{
         'Content-Type': 'application/x-www-form-urlencoded'
     },
     method: 'POST', 
     mode: 'cors',
-    body:query+'&qf=title^5 text&rows=10&stopwords=true&synonyms=true'
+    body: query+'&qf=title^5 text'+party+dateRange+'&rows=10'+start+"&stopwords=true&synonyms=true"
   })
 
   const data = await response.json();
@@ -34,32 +37,36 @@ async function solrSearch(searchTerm){
 
 export default function SearchPage() {
   const [searchResults, setSearchResults] = useState([]);
-  const [searchTerm, setSearchTerm] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect( () => {(
     async () => {
       const urlParams = new URLSearchParams(window.location.search);
-
       const queryParam = urlParams.get('q');
       setSearchTerm(queryParam);
 
-      const results = await solrSearch(searchTerm);
-      setSearchResults(results.response.docs.sort((result) => result.date).reverse());
+      const abv = urlParams.get('abv')
+      const party = urlParams.get('party')
+      const dateRange = urlParams.get('date')
+      const start = urlParams.get('start')
+
+      const results = await solrSearch(abv? abv: searchTerm, party, start, dateRange);
+      setSearchResults(results.response.docs);
 
     })();
   }, [searchTerm]);
 
 
   return (
-    <div className='flex-col p-0 sm:m-auto'>
+    <div className='flex-col p-0 px-12 sm:m-auto'>
         {/* Procure a Verdade */}
         <div id="results" className='flex flex-col'>
             <h2 className='text-3xl lg:text-5xl font-extrabold inline-block select-none mt-5 flex justify-center items-center'>Procure a verdade</h2>
             <div id = "searchForm">
-             <Search/>
+             {searchTerm ? <Search value={searchTerm}/> : <></>}
             </div>            
             <div className='search-results'>
-              {searchResults.map((result) => (
+              { searchResults.length > 0? searchResults.map((result) => (
                 <a key={result.id} href={result.link}>
                   <div className="bg-white p-4 my-2 shadow-lg">
                     <div className='flex justify-between'>
@@ -72,7 +79,9 @@ export default function SearchPage() {
                     <p className="text-gray-700">{result.text.slice(0, 400)}...</p>
                   </div>
                 </a>
-              ))}
+              )) : 
+              <h2 className="text-xl text-center mb-2">Não foram encontrados resultados.</h2>
+              }
             </div>
         </div>
     </div>  
