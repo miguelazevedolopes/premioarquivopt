@@ -387,16 +387,216 @@
         "1996": [],
         "1997": [],
         "1998": [],
-        "1999": [],
-        "2000": [],
-        "2001": [],
-        "2002": [],
-        "2003": [],
-        "2004": [],
-        "2005": [],
-        "2006": [],
-        "2007": [],
-        "2008": [],
+        "1999": [
+            {
+                "name": "António Guterres",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2000": [
+            {
+                "name": "António Guterres",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Fernando Moniz",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ramos Horta",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2001": [
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Luís Marinho",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Helena Torres Marques",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Casaca",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2002": [
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Vicente Jorge Silva",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António José Seguro",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2003": [
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Pedroso",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2004": [
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Pedroso",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2005": [
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Ferro Rodrigues",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Manuel Maria Carrilho",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2006": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Mário Soares",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Paulo Pedroso",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2007": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "António Costa",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jorge Coelho",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Vital Moreira",
+                "wiki": "",
+                "image": ""
+            }
+        ],
+        "2008": [
+            {
+                "name": "José Sócrates",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Afonso Candal",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Jorge Coelho",
+                "wiki": "",
+                "image": ""
+            },
+            {
+                "name": "Vital Moreira",
+                "wiki": "",
+                "image": ""
+            }
+        ],
         "2009": [],
         "2010": [],
         "2011": [],
