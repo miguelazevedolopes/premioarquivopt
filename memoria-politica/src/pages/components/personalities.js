@@ -54,7 +54,7 @@ const Personalities = ({ party }) => {
             </div>
 
             <div className='flex flex-col'>
-                <h2> {personalitiesDivs.length == 0 ? "Sem dados referentes ao ano selecionado." : ''}</h2>
+                <h2 className='m-8'> {personalitiesDivs.length == 0 ? "Sem dados referentes ao ano selecionado." : ''}</h2>
                 <div className='flex justify-around'>
                     {personalitiesDivs}
                 </div>
