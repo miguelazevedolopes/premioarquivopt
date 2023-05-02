@@ -96,10 +96,10 @@ export default function Navbar() {
               </ul>
             </div>
           </li>
-          <li className="mr-3 items-center p-3 sm:mr-10 sm:p-7">
+          <li className="mr-3 items-center p-3 sm:p-7">
             <a className="font-bold sm:text-xl" href="/#procure-verdade">Procure a verdade</a>
           </li>
-          <li className="mr-3 items-center p-3 sm:mr-10 sm:p-7">
+          <li className="mr-3 items-center p-3 sm:p-7">
             <a className="font-bold sm:text-xl" href="/faq">FAQ</a>
           </li>
         </ul>
