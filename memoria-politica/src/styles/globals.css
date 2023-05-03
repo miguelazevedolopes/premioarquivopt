@@ -160,11 +160,37 @@ overflow-y:visible !important;
   height: 500px !important;
 }
 
-.search-results{
-  padding-top:50px;
-}
-
 #searchForm{
   padding-top: 50px;
 }
 
+.multiSelectContainer .searchWrapper{
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.multiSelectContainer .searchWrapper .searchBox{
+  padding-left: 10px;
+}
+
+.multiSelectContainer .searchWrapper .chip{
+  background-color: #000000;
+}
+
+.multiSelectContainer .optionListContainer .optionContainer {
+  margin-right: 30px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.multiSelectContainer .optionListContainer .optionContainer .highlightOption {
+  background-color: rgba(16, 135, 104, 1);
+}
+
+.multiSelectContainer .optionListContainer .optionContainer .option:hover {
+  background-color: rgba(107, 114, 128, 0.2);
+}
+
+.multiSelectContainer .optionListContainer .optionContainer .option .input .checkbox{
+  background-color: #108768;
+}

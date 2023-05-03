@@ -1,5 +1,6 @@
 import {useState, useEffect, useCallback } from 'react'
 import Search from './components/search'
+import MultiSelect from 'multiselect-react-dropdown';
 
 const textColor = {
   PS: 'text-[#ff66ff]',
@@ -30,8 +31,6 @@ async function solrSearch(searchTerm, party, start=0, dateRange){
     body: query+'&qf=title^5 text'+party+dateRange+'&rows=10'+start+"&stopwords=true&synonyms=true"
   })
 
-  console.log(response.body)
-
   const data = await response.json();
   return data;
 }
@@ -52,7 +51,7 @@ export default function SearchPage() {
       setSearchTerm(queryParam);
 
       setAbv(urlParams.get('abv'))
-      setParty(urlParams.get('party'))
+      party ? setParty(party) : setParty(urlParams.get('party'))
       setDateRange(urlParams.get('date'))
       setStart(urlParams.get('start'))
 
@@ -60,7 +59,7 @@ export default function SearchPage() {
       setSearchResults(results.response.docs);
 
     })();
-  }, [searchTerm]);
+  }, [searchTerm, party]);
 
   const handlePrevious = useCallback(() => {
     if (currentPage > 1) {
@@ -80,7 +79,7 @@ export default function SearchPage() {
       const newPage = currentPage + 1;
       setCurrentPage(newPage);
       const newStart = (newPage - 1) * 10;
-      console.log(abv)
+
       solrSearch(abv? abv: searchTerm, party, newStart, dateRange)
         .then((results) => {
           setSearchResults(results.response.docs);
@@ -90,6 +89,24 @@ export default function SearchPage() {
   }, [currentPage, searchTerm, party, dateRange, searchResults]);
 
 
+  const options = [{name: 'PS'}, {name: 'PSD'}, {name: 'CH'}, {name: 'IL'}, {name: 'PCP'}, {name: 'BLOCO'}, {name: 'PAN'}, {name: 'LIVRE'}];
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
+  const onChangeParties = (selectedList) => {
+
+    let partyFilter = "("
+    for (let option in selectedList){
+        partyFilter = partyFilter + selectedList[option].name + ' OR ';
+    }
+    partyFilter = partyFilter.slice(0, -4);
+    partyFilter = partyFilter + ')';
+
+    setParty(partyFilter);
+    setSelectedOptions(selectedList);
+    setCurrentPage(1);
+  }
+
+
   return (
     <div className='flex-col p-0 px-12 sm:m-auto'>
         {/* Procure a Verdade */}
@@ -97,8 +114,12 @@ export default function SearchPage() {
             <h2 className='text-3xl lg:text-5xl font-extrabold inline-block select-none mt-5 flex justify-center items-center'>Procure a verdade</h2>
             <div id = "searchForm">
              {searchTerm ? <Search value={searchTerm}/> : <></>}
-            </div>            
-            <div className='search-results'>
+            </div> 
+            <div id="partyFilter" className='mt-5'>
+              <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true} 
+                className='w-full accent-gray-900'/>
+              </div>           
+            <div className='pt-5'>
               { searchResults.length > 0? searchResults.map((result) => (
                 <a key={result.id} href={result.link}>
                   <div className="bg-white p-4 my-2 shadow-lg">
