@@ -2,8 +2,10 @@ import spacy
 import pandas as pd 
 from os import system
 import json
-import datetime
 
+clear = lambda: system('clear')
+
+nlp = spacy.load("pt_core_news_lg")
 
 def divide_text(text):
     t=text
@@ -19,11 +21,8 @@ def divide_text(text):
         
 
 
-clear = lambda: system('clear')
-nlp = spacy.load("pt_core_news_lg")
 
-# parties = ['chega','bloco','il','livre','pan','pcp','ps','psd']
-parties = ['pcp','ps','psd']
+parties = ['chega','bloco','il','livre','pan','pcp','ps','psd']
 
 for k in range(len(parties)):
     party=parties[k]
