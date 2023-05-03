@@ -14,7 +14,7 @@ const textColor = {
 }
 
 async function solrSearch(searchTerm, party, start=0, dateRange){
-
+  console.log(searchTerm, party, start, dateRange)
   const baseRequestUrl="http://localhost:8983/solr/parties/select?hl=on&hl.method=unified&defType=edismax&indent=true";
   party= (party!=null && party!='') ? '&fq=party:' + party : ''
   const query = '&q=' + searchTerm;
@@ -100,6 +100,9 @@ export default function SearchPage() {
     }
     partyFilter = partyFilter.slice(0, -4);
     partyFilter = partyFilter + ')';
+
+
+    if(selectedList.length === 0) partyFilter = "";
 
     setParty(partyFilter);
     setSelectedOptions(selectedList);
