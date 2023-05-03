@@ -5,7 +5,7 @@ const parties = {'PS': { 'name': 'Partido Socialista', 'deps' : 120, 'color' : '
                  'CH': {   'name' : 'Chega', 'deps' : 12, 'color' : '#333399'                       , 'sig': 'ch'}, 
                  'IL': {   'name' : 'Iniciativa Liberal',  'deps' : 8, 'color' : '#52c1ec'          , 'sig': 'il'}, 
                  'PCP' : { 'name' : 'Partido Comunista Português',  'deps' : 6, 'color' : '#EC1B24' , 'sig': 'pcp'}, 
-                 'BE' : {  'name' : 'Bloco de Esquerda',  'deps' : 5, 'color' : '#000000'           , 'sig': 'be'}, 
+                 'BE' : {  'name' : 'Bloco de Esquerda',  'deps' : 5, 'color' : '#8B0000'           , 'sig': 'be'}, 
                  'PAN':{   'name' : 'Pessoas-Animais-Natureza',  'deps' : 1, 'color' : '#036A84'    , 'sig': 'pan'}, 
                  'LIVRE':{ 'name' : 'Livre',  'deps' : 1, 'color' : '#00CD8C'                       , 'sig': 'livre'}}
 
@@ -20,7 +20,7 @@ const textColor = {
   ch: 'text-[#333399]',
   il: 'text-[#52c1ec]',
   pcp: 'text-[#EC1B24]',
-  be: 'text-[#000000]',
+  be: 'text-[#8B0000]',
   pan: 'text-[#036A84]',
   livre: 'text-[#00CD8C]'
 }

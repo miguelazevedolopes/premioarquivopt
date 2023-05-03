@@ -1,0 +1,298 @@
+{
+    "Partido Socialista" : {
+        "1" : {
+            "date": "13-10-1999",
+            "title": "Olá, Mundo",
+            "description": "Primeira página arquivada pelo Arquivo.PT",
+            "link": "https://arquivo.pt/wayback/19991013102216/http://ps.pt:80/"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2010-06-08",
+            "title": "Legalização do casamento homossexual",
+            "description": "Torna Portugal um dos primeiros países do mundo a fazê-lo por via legislativa.",
+            "link": "https://arquivo.pt/wayback/20100608162120/http://www.ps.pt/index.php?option=com_content&task=view&id=2834&Itemid=27"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Partido Social Democrata" : {
+        "1" : {
+            "date": "31-10-1996",
+            "title": "Olá, Mundo",
+            "description": "Primeira página arquivada pelo Arquivo.PT",
+            "link": "https://arquivo.pt/wayback/19961231033932/http://www.psd.pt:80/"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Chega" : {
+        "1" : {
+            "date": "27-03-2019",
+            "title": "Olá, Mundo",
+            "description": "Primeira página arquivada pelo Arquivo.PT",
+            "link": "https://arquivo.pt/wayback/20190327004300/https://partidochega.pt/"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Iniciativa Liberal" : {
+        "1" : {
+            "date": "20-12-2017",
+            "title": "Olá, Mundo",
+            "description": "Primeira página arquivada pelo Arquivo.PT",
+            "link": "https://arquivo.pt/wayback/20171220235059/https://iniciativaliberal.pt/"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Partido Comunista Português" : {
+        "1" : {
+            "date": "21-12-1996",
+            "title": "Olá, Mundo",
+            "description": "Primeira página arquivada pelo Arquivo.PT",
+            "link": "https://arquivo.pt/wayback/19961221131229/http://www.pcp.pt:80/"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Pessoas-Animais-Natureza" : {
+        "1" : {
+            "date": "29-11-1999",
+            "title": "Olá, Mundo",
+            "description": "Primeira página arquivada pelo Arquivo.PT",
+            "link": "https://arquivo.pt/wayback/20131108223043/http://www.pan.com.pt/index.php?option=com_content&view=article&id=17:palavras-de-apoio-directamente-de-los-angeles&catid=1:ppa&Itemid=11"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Bloco de Esquerda" : {
+        "1" : {
+            "date": "23-10-1999",
+            "title": "Olá, Mundo",
+            "description": "Primeira página arquivada pelo Arquivo.PT",
+            "link": "https://arquivo.pt/wayback/19991023101954/http://www.bloco-de-esquerda.pt:80/"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date ":   "2020-01-01",
+            "title ": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Livre" : {
+        "1" : {
+            "date": "02-02-2015",
+            "title": "Olá, Mundo",
+            "description": "Primeira página arquivada pelo Arquivo.PT",
+            "link": "https://arquivo.pt/wayback/20150202003614/http://www.livrept.net/"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date " :   "2020-01-01",
+            "title" : "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    }
+}

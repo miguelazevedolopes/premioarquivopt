@@ -13,7 +13,7 @@ const textColor = {
   'Chega': 'text-[#333399]',
   'Iniciativa Liberal': 'text-[#52c1ec]',
   'Partido Comunista Português': 'text-[#EC1B24]',
-  'Bloco de Esquerda': 'text-[#000000]',
+  'Bloco de Esquerda': 'text-[#8B0000]',
   'Pessoas-Animais-Natureza': 'text-[#036A84]',
   'Livre': 'text-[#00CD8C]'
 }
@@ -71,7 +71,7 @@ export default function PoliticalParty() {
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
             <div className='flex justify-around'>
-                <Timeline width={1000} height={300}></Timeline>
+                <Timeline width={1000} height={500} party={query.name}></Timeline>
             </div>
           </div>
 
