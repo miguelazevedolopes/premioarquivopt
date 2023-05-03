@@ -43,6 +43,7 @@ export default function SearchPage() {
   const [party, setParty] = useState(null);
   const [dateRange, setDateRange] = useState(null);
   const [start, setStart] = useState(null);
+  const [totalResults, setTotalResults] = useState(0);
 
   useEffect( () => {(
     async () => {
@@ -58,6 +59,7 @@ export default function SearchPage() {
       const results = await solrSearch(abv? abv: searchTerm, party, start, dateRange);
       setSearchResults(results.response.docs);
 
+      setTotalResults(results.response.numFound);
     })();
   }, [searchTerm, party]);
 
@@ -121,8 +123,9 @@ export default function SearchPage() {
             <div id="partyFilter" className='mt-5'>
               <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true} 
                 className='w-full accent-gray-900'/>
-              </div>           
-            <div className='pt-5'>
+            </div>        
+            <div className='pt-7'>
+              <h5 className='text-gray-400'> {totalResults} Resultados Encontrados</h5>  
               { searchResults.length > 0? searchResults.map((result) => (
                 <a key={result.id} href={result.link}>
                   <div className="bg-white p-4 my-2 shadow-lg">
