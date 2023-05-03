@@ -67,7 +67,7 @@ function DoughnutChart(props) {
   }, [inView]);
 
   useEffect(() => {
-    if (isChartInView  ) {
+    if (isChartInView) {
       const ctx = chartRef.current.getContext('2d');
       const chart = new Chart(ctx, {
         type: 'doughnut',

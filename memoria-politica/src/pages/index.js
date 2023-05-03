@@ -73,7 +73,7 @@ export default function Home() {
 
           {/* Titulo do Projecto */}
           <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>Memória Política</a>
-          <h3 className='sm:text-2xl mt-0 select-none'>Descriçãozinha mini do projeto, frase impactful.</h3>
+          <h3 className='sm:text-2xl mt-0 select-none'>Coleção de informação e documentos dos websites de todos os partidos políticos com representação parlamentar em Portugal atualmente</h3>
 
           {/* WordCloud */}
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
@@ -190,7 +190,7 @@ export default function Home() {
 
           {/* Procure a Verdade */}
           <div id="procure-verdade" className='flex flex-col'>
-            <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Procure a verdade</h2>
+            <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Explore o Arquivo</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
             <Search/>
             <div className='transition-all h-48 flex flex-wrap w-full justify-between mt-10 items-stretch flex-nowrap'>
