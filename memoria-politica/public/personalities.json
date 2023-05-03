@@ -307,8 +307,8 @@
             },
             {
                 "name": "Samuel Cardoso",
-                "wiki": "https://pt.wikipedia.org/w/index.php?search=Samuel+Cardoso",
-                "image": "default.jpg"
+                "wiki": "https://www.esquerda.net/autor/joao-mineiro-e-samuel-cardoso",
+                "image": "sc.png"
             },
             {
                 "name": "José Soeiro",
@@ -864,30 +864,519 @@
     },
     "Partido Social Democrata": {
         "1996": [],
-        "1997": [],
-        "1998": [],
-        "1999": [],
-        "2000": [],
-        "2001": [],
-        "2002": [],
-        "2003": [],
-        "2004": [],
-        "2005": [],
-        "2006": [],
-        "2007": [],
-        "2008": [],
-        "2009": [],
-        "2010": [],
-        "2011": [],
-        "2012": [],
-        "2013": [],
-        "2014": [],
-        "2015": [],
-        "2016": [],
-        "2017": [],
-        "2018": [],
-        "2019": [],
-        "2020": []
+        "1997": [
+            {
+                "name": "Cavaco Silva",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Cavaco+Silva",
+                "image": "cs.png"
+            },
+            {
+                "name": "Francisco Pinto Balsemão",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Pinto_Balsem%C3%A3o",
+                "image": "fpb.jpg"
+            },
+            {
+                "name": "Francisco Sá Carneiro",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_S%C3%A1_Carneiro",
+                "image": "fsc.jpg"
+            },
+            {
+                "name": "Maria Adelaide Paiva",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=3481",
+                "image": "default.jpg"
+            }
+        ],
+        "1998": [
+            {
+                "name": "Francisco Lucas Pires",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Lucas_Pires",
+                "image": "flp.jpg"
+            }
+        ],
+        "1999": [
+            {
+                "name": "Cavaco Silva",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Cavaco+Silva",
+                "image": "cs.png"
+            },
+            {
+                "name": "Francisco Sá Carneiro",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_S%C3%A1_Carneiro",
+                "image": "fsc.jpg"
+            },
+            {
+                "name": "Francisco Pinto Balsemão",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_Pinto_Balsem%C3%A3o",
+                "image": "fpb.jpg"
+            },
+            {
+                "name": "José Nobre Pinteus",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=3481",
+                "image": "default.jpg"
+            }
+        ],
+        "2000": [
+            {
+                "name": "Durão Barroso",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Dur%C3%A3o_Barroso",
+                "image": "db.jpg"
+            },
+            {
+                "name": "Francisco Sá Carneiro",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_S%C3%A1_Carneiro",
+                "image": "fsc.jpg"
+            },
+            {
+                "name": "Mário Patinha Antão",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=1607",
+                "image": "pant.jpg"
+            },
+            {
+                "name": "Arménio Santos",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=26",
+                "image": "asant.jpg"
+            }
+        ],
+        "2001": [
+            {
+                "name": "Jorge Sampaio",
+                "wiki": "https://pt.wikipedia.org/wiki/Jorge_Sampaio",
+                "image": "jorge_sampaio.jpg"
+            },
+            {
+                "name": "Cavaco Silva",
+                "wiki": "https://pt.wikipedia.org/w/index.php?search=Cavaco+Silva",
+                "image": "cs.png"
+            },
+            {
+                "name": "António Sande",
+                "wiki": "https://www.psd.pt/pt/ix-congresso-nacional",
+                "image": "default.jpg"
+            },
+            {
+                "name": "Artur Torres Pereira",
+                "wiki": "https://www.psd.pt/pt/artur-torres-pereira",
+                "image": "atp.jpg"
+            }
+        ],
+        "2002": [
+            {
+                "name": "Carlos César",
+                "wiki": "https://ps.pt/membro/carlos-cesar/",
+                "image": "cc.png"
+            },
+            {
+                "name": "Francisco Sá Carneiro",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_S%C3%A1_Carneiro",
+                "image": "fsc.jpg"
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Dur%C3%A3o_Barroso",
+                "image": "db.jpg"
+            },
+            {
+                "name": "Martins Ferreira do Amaral",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=287",
+                "image": "fda.jpg"
+            }
+        ],
+        "2003": [
+            {
+                "name": "Durão Barroso",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Dur%C3%A3o_Barroso",
+                "image": "db.jpg"
+            },
+            {
+                "name": "José Luís Arnaut",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Lu%C3%ADs_Arnaut",
+                "image": "jla.jpg"
+            },
+            {
+                "name": "Altiero Spinelli",
+                "wiki": "https://en.wikipedia.org/wiki/Altiero_Spinelli",
+                "image": "aspi.jpg"
+            },
+            {
+                "name": "Pedro Lynce",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Lynce",
+                "image": "pl.webp"
+            }
+        ],
+        "2004": [
+            {
+                "name": "Durão Barroso",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Dur%C3%A3o_Barroso",
+                "image": "db.jpg"
+            },
+            {
+                "name": "Pedro Santana Lopes",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Santana_Lopes",
+                "image": "psl.jpg"
+            },
+            {
+                "name": "Francisco Sá Carneiro",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_S%C3%A1_Carneiro",
+                "image": "fsc.jpg"
+            },
+            {
+                "name": "Miguel Relvas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Relvas",
+                "image": "mr.jpg"
+            }
+        ],
+        "2005": [
+            {
+                "name": "José Sócrates",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
+            },
+            {
+                "name": "Pedro Santana Lopes",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Santana_Lopes",
+                "image": "psl.jpg"
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Dur%C3%A3o_Barroso",
+                "image": "db.jpg"
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Dur%C3%A3o_Barroso",
+                "image": "db.jpg"
+            }
+        ],
+        "2006": [
+            {
+                "name": "Luís Marques Mendes",
+                "wiki": "https://pt.wikipedia.org/wiki/Lu%C3%ADs_Marques_Mendes",
+                "image": "lmm.png"
+            },
+            {
+                "name": "Miguel Relvas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Relvas",
+                "image": "mr.jpg"
+            },
+            {
+                "name": "Pedro Santana Lopes",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Santana_Lopes",
+                "image": "psl.jpg"
+            },
+            {
+                "name": "Francisco Sá Carneiro",
+                "wiki": "https://pt.wikipedia.org/wiki/Francisco_S%C3%A1_Carneiro",
+                "image": "fsc.jpg"
+            }
+        ],
+        "2007": [
+            {
+                "name": "José Luís Moreira da Silva",
+                "wiki": "https://pt.wikipedia.org/wiki/Lu%C3%ADs_Marques_Mendes",
+                "image": "jlms.webp"
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
+            },
+            {
+                "name": "António Costa",
+                "wiki": "https://pt.wikipedia.org/wiki/Ant%C3%B3nio_Costa",
+                "image": "ac.jpg"
+            },
+            {
+                "name": "Luís Marques Mendes",
+                "wiki": "https://pt.wikipedia.org/wiki/Lu%C3%ADs_Marques_Mendes",
+                "image": "lmm.png"
+            }
+        ],
+        "2008": [
+            {
+                "name": "Jorge Manuel Ferraz de Freitas Neto",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=1687",
+                "image": "jn.jpeg"
+            },
+            {
+                "name": "Alexandre Relvas",
+                "wiki": "https://pt.wikipedia.org/wiki/Alexandre_Relvas",
+                "image": "arel.jpg"
+            },
+            {
+                "name": "Luís Marques Mendes",
+                "wiki": "https://pt.wikipedia.org/wiki/Lu%C3%ADs_Marques_Mendes",
+                "image": "lmm.png"
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Dur%C3%A3o_Barroso",
+                "image": "db.jpg"
+            }
+        ],
+        "2009": [
+            {
+                "name": "Manuela Ferreira Leite",
+                "wiki": "https://pt.wikipedia.org/wiki/Manuela_Ferreira_Leite",
+                "image": "mfl.jpg"
+            },
+            {
+                "name": "Paulo Rangel",
+                "wiki": "https://pt.wikipedia.org/wiki/Paulo_Rangel",
+                "image": "pran.jpg"
+            },
+            {
+                "name": "Helena Matos",
+                "wiki": "",
+                "image": "default.jpg"
+            },
+            {
+                "name": "António Barreto",
+                "wiki": "https://pt.wikipedia.org/wiki/Ant%C3%B3nio_Barreto",
+                "image": "abar.JPG"
+            }
+        ],
+        "2010": [
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            },
+            {
+                "name": "Manuela Ferreira Leite",
+                "wiki": "https://pt.wikipedia.org/wiki/Manuela_Ferreira_Leite",
+                "image": "mfl.jpg"
+            },
+            {
+                "name": "Miguel Relvas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Relvas",
+                "image": "mr.jpg"
+            }
+        ],
+        "2011": [
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            },
+            {
+                "name": "Manuela Ferreira Leite",
+                "wiki": "https://pt.wikipedia.org/wiki/Manuela_Ferreira_Leite",
+                "image": "mfl.jpg"
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
+            }
+        ],
+        "2012": [
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            },
+            {
+                "name": "Miguel Relvas",
+                "wiki": "https://pt.wikipedia.org/wiki/Miguel_Relvas",
+                "image": "mr.jpg"
+            },
+            {
+                "name": "Miguel Macedo",
+                "wiki": "https://www.psd.pt/pt/miguel-macedo",
+                "image": "mm.jpg"
+            }
+        ],
+        "2013": [
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "Durão Barroso",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Manuel_Dur%C3%A3o_Barroso",
+                "image": "db.jpg"
+            },
+            {
+                "name": "José Sócrates",
+                "wiki": "https://pt.wikipedia.org/wiki/Jos%C3%A9_S%C3%B3crates",
+                "image": "js.png"
+            },
+            {
+                "name": "Manuela Ferreira Leite",
+                "wiki": "https://pt.wikipedia.org/wiki/Manuela_Ferreira_Leite",
+                "image": "mfl.jpg"
+            }
+        ],
+        "2014": [
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            },
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "José Matos Rosa",
+                "wiki": "https://www.psd.pt/pt/jose-matos-rosa",
+                "image": "jmr.jpg"
+            },
+            {
+                "name": "Paulo Rangel",
+                "wiki": "https://pt.wikipedia.org/wiki/Paulo_Rangel",
+                "image": "pran.jpg"
+            }
+        ],
+        "2015": [
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            },
+            {
+                "name": "Paulo Portas",
+                "wiki": "https://pt.wikipedia.org/wiki/Paulo_Portas",
+                "image": "ppor.png"
+            },
+            {
+                "name": "José Matos Rosa",
+                "wiki": "https://www.psd.pt/pt/jose-matos-rosa",
+                "image": "jmr.jpg"
+            }
+        ],
+        "2016": [
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "José Matos Rosa",
+                "wiki": "https://www.psd.pt/pt/jose-matos-rosa",
+                "image": "jmr.jpg"
+            },
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            },
+            {
+                "name": "Maria Luís Albuquerque",
+                "wiki": "https://pt.wikipedia.org/wiki/Maria_Lu%C3%ADs_Albuquerque",
+                "image": "mla.jpeg"
+            }
+        ],
+        "2017": [
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "José Matos Rosa",
+                "wiki": "https://www.psd.pt/pt/jose-matos-rosa",
+                "image": "jmr.jpg"
+            },
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            },
+            {
+                "name": "Maria Luís Albuquerque",
+                "wiki": "https://pt.wikipedia.org/wiki/Maria_Lu%C3%ADs_Albuquerque",
+                "image": "mla.jpeg"
+            }
+        ],
+        "2018": [
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "Rui Rio",
+                "wiki": "https://pt.wikipedia.org/wiki/Rui_Rio",
+                "image": "rr.jpg"
+            },
+            {
+                "name": "António Costa",
+                "wiki": "https://pt.wikipedia.org/wiki/Ant%C3%B3nio_Costa",
+                "image": "ac.jpg"
+            },
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            }
+        ],
+        "2019": [
+            {
+                "name": "Rui Rio",
+                "wiki": "https://pt.wikipedia.org/wiki/Rui_Rio",
+                "image": "rr.jpg"
+            },
+            {
+                "name": "Pedro Passos Coelho",
+                "wiki": "https://pt.wikipedia.org/wiki/Pedro_Passos_Coelho",
+                "image": "ppc.jpg"
+            },
+            {
+                "name": "Paulo Rangel",
+                "wiki": "https://pt.wikipedia.org/wiki/Paulo_Rangel",
+                "image": "pran.jpg"
+            },
+            {
+                "name": "Marco António Costa",
+                "wiki": "https://www.parlamento.pt/DeputadoGP/Paginas/Biografia.aspx?BID=646",
+                "image": "mac.png"
+            }
+        ],
+        "2020": [
+            {
+                "name": "Rui Rio",
+                "wiki": "https://pt.wikipedia.org/wiki/Rui_Rio",
+                "image": "rr.jpg"
+            },
+            {
+                "name": "Joaquim Sarmento",
+                "wiki": "https://www.psd.pt/pt/grupo-parlamentar/joaquim-miranda-sarmento",
+                "image": "js.jpeg"
+            },
+            {
+                "name": "Paulo Rangel",
+                "wiki": "https://pt.wikipedia.org/wiki/Paulo_Rangel",
+                "image": "pran.jpg"
+            },
+            {
+                "name": "Zeca Mendonça",
+                "wiki": "",
+                "image": "zm.jpg"
+            }
+        ]
     },
     "Chega": {
         "1996": [],

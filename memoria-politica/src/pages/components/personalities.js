@@ -28,7 +28,7 @@ const startYear = {
     'Partido Comunista Português' : 1999,
     'Pessoas-Animais-Natureza' : 2013,
     'Livre' : 2015,
-    'Partido Social Democrata' : 1999,
+    'Partido Social Democrata' : 1997,
     'Chega' : 2019,
     'Iniciativa Liberal' : 2017
 }
