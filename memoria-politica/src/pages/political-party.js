@@ -7,7 +7,7 @@ import commonWordsData from '../../public/common-words.json'
 import Timeline from './components/timeline';
 import Personalities from './components/personalities';
 import partyDescription from '../../public/parties-description.json'
-
+import Sentiment from './components/sentiment';
 
 const textColor = {
   'Partido Socialista': 'text-[#ff66ff]',
@@ -70,6 +70,8 @@ export default function PoliticalParty() {
 
           {/* Personalidades */}
           <Personalities party={query.name}/>
+
+          <Sentiment/>
           
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>

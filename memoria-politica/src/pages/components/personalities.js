@@ -9,7 +9,7 @@ function getPersonalities(party, year){
         personalitiesElements.push(
             <div key={`div-${personality["name"]}-${year}-${party}`} className={`w-1/${personalities.length} p-5`}>
                 <a target="personalidades" href={personality["wiki"]?personality["wiki"]: ''}>
-                    <img className='w-52 h-52 hover:scale-125 ease-in duration-500 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
+                    <img className='w-52 h-52 hover:scale-110 ease-in duration-500 rounded-full object-cover m-auto' src={"/images/personalities/" + personality["image"]} alt="" />
                     <div className='flex justify-around mt-8'>
                         <h1 className='text-center text-lg w-fit m-auto font-bold'>{personality["name"]}</h1>
                     </div>
@@ -63,10 +63,10 @@ const Personalities = ({ party }) => {
 
     return (
         <div id="personalidades" className='flex flex-wrap w-full justify-around mt-10 p-10 bg-gray-200'>
-            <div className='flex w-full justify-start mt-10 '>
-                <h2 className='text-3xl lg:text-4xl font-extrabold select-none m-5 me-10 select-none w-fit'>Personalidades mais mencionadas em cada ano</h2>
+            <div className='flex w-full flex-wrap mt-10 justify-center'>
+                <h2 className='text-3xl lg:text-4xl font-extrabold select-none text-center my-auto me-5 select-none w-fit h-fit'>Personalidades mais mencionadas em cada ano</h2>
                 <div className="temporal-dropdown">
-                    <select name="year" value={year} onChange={handleDropdownChange} className="temporal-dropdown__select temporal-dropdown__select--year">
+                    <select name="year" value={year} onChange={handleDropdownChange} className="bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 font-extrabold">
                         {options}
                     </select>
                 </div>

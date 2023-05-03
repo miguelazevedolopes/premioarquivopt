@@ -7,14 +7,14 @@ import HemiCycle from './components/hemicycle'
 import Link from 'next/link'
 import commonWordsData from '../../public/common-words.json'
 
-import ps from '../../public/ps.png'
-import psd from '../../public/psd.png'
-import ch from '../../public/chega.png'
-import il from '../../public/il.png'
-import pan from '../../public/pan.png'
-import livre from '../../public/livre.png'
-import be from '../../public/bloco.png'
-import pcp from '../../public/pcp.png'
+import ps from '../../public/images/ps.png'
+import psd from '../../public/images/psd.png'
+import ch from '../../public/images/chega.png'
+import il from '../../public/images/il.png'
+import pan from '../../public/images/pan.png'
+import livre from '../../public/images/livre.png'
+import be from '../../public/images/bloco.png'
+import pcp from '../../public/images/pcp.png'
 
 
 function parseData(party) {

@@ -1,0 +1,30 @@
+{
+    "VIII Legislatura": {
+        "subjectivity": 0.35300609327377186,
+        "polarity": 0.06376012910564852
+    },
+    "IX Legislatura": {
+        "subjectivity": 0.28044101401380467,
+        "polarity": 0.06917712582047897
+    },
+    "X Legislatura": {
+        "subjectivity": 0.36020422717314005,
+        "polarity": 0.12315332478847028
+    },
+    "XI Legislatura": {
+        "subjectivity": 0.38694345796300544,
+        "polarity": 0.14275391044963037
+    },
+    "XII Legislatura": {
+        "subjectivity": 0.4515768042694251,
+        "polarity": 0.18432294708458755
+    },
+    "XIII Legislatura": {
+        "subjectivity": 0.2481906570099732,
+        "polarity": 0.03825167893471699
+    },
+    "XIV Legislatura": {
+        "subjectivity": 0.20981260683973443,
+        "polarity": 0.013342804096027438
+    }
+}
