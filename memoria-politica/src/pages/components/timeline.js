@@ -35,7 +35,7 @@ const Timeline = ({ width, height, party }) => {
     eventDivs.push(
       event ? 
       <div key={key} style={style} className="block w-[2px] bg-black">
-        <a href={event.link} style={styleDescription} className={`h-64 rounded-full hover:opacity-75 hover:text-white ${color} text-white w-64 px-2 flex flex-col justify-center text-center`}>
+        <a href={event.link} style={styleDescription} className={`h-64 rounded-full hover:opacity-75 hover:text-white ${color} text-white w-64 px-4 flex flex-col justify-center text-center`}>
           <h4>{event.date}</h4>
           <h2 className="text-xl font-bold" >{event.title}</h2>
           <p className="text-xs px-3 ">
