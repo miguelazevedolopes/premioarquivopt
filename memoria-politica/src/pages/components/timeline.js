@@ -1,20 +1,20 @@
 import eventsData from '../../../public/events-timeline.json'
 
-const bgColor = {
-  'Partido Socialista': 'bg-[#ff66ff]',
-  'Partido Social Democrata': 'bg-[#f68a21]',
-  'Chega': 'bg-[#333399]',
-  'Iniciativa Liberal': 'bg-[#52c1ec]',
-  'Partido Comunista Português': 'bg-[#EC1B24]',
-  'Bloco de Esquerda': 'bg-[#8B0000]',
-  'Pessoas-Animais-Natureza': 'bg-[#036A84]',
-  'Livre': 'bg-[#00CD8C]'
-}
+// const bgColor = {
+//   'Partido Socialista': 'bg-[#ff66ff]',
+//   'Partido Social Democrata': 'bg-[#f68a21]',
+//   'Chega': 'bg-[#333399]',
+//   'Iniciativa Liberal': 'bg-[#52c1ec]',
+//   'Partido Comunista Português': 'bg-[#EC1B24]',
+//   'Bloco de Esquerda': 'bg-[#8B0000]',
+//   'Pessoas-Animais-Natureza': 'bg-[#036A84]',
+//   'Livre': 'bg-[#00CD8C]'
+// }
 
 
 const Timeline = ({ width, height, party }) => {
 
-  const color = party?  bgColor[party]: "bg-black";
+  const color = /*party?  bgColor[party]: */"bg-black";
 
   const data = party ? eventsData[party] : "";
 

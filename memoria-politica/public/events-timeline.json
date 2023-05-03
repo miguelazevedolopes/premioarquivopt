@@ -237,8 +237,8 @@
         },
 
         "3" : {
-            "date ":   "2020-01-01",
-            "title ": "Event Title",
+            "date":   "2020-01-01",
+            "title": "Event Title",
             "description": "pretty description",
             "link": "pretty description"
         },
@@ -274,7 +274,7 @@
         },
 
         "3" : {
-            "date " :   "2020-01-01",
+            "date" :   "2020-01-01",
             "title" : "Event Title",
             "description": "pretty description",
             "link": "pretty description"
