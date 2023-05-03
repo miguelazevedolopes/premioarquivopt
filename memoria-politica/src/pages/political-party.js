@@ -13,7 +13,7 @@ const textColor = {
   'Chega': 'text-[#333399]',
   'Iniciativa Liberal': 'text-[#52c1ec]',
   'Partido Comunista Português': 'text-[#EC1B24]',
-  'Bloco de Esquerda': 'text-[#000000]',
+  'Bloco de Esquerda': 'text-[#8B0000]',
   'Pessoas-Animais-Natureza': 'text-[#036A84]',
   'Livre': 'text-[#00CD8C]'
 }

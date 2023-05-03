@@ -8,7 +8,7 @@ const textColor = {
   CHEGA: 'text-[#333399]',
   IL: 'text-[#52c1ec]',
   PCP: 'text-[#EC1B24]',
-  BE: 'text-[#000000]',
+  BE: 'text-[#d21f1b]',
   PAN: 'text-[#036A84]',
   LIVRE: 'text-[#00CD8C]'
 }
