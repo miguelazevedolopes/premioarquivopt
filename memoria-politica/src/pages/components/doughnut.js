@@ -39,9 +39,9 @@ function DoughnutChart(props) {
       setBackgroundColors(['#f68a21','#ff66ff','#00CD8C','#000000', '#333399','#EC1B24','#036A84'])
     }
     else if(politicalParty == 'Partido Comunista Português'){
-      setLabels(['PSD', 'IL', 'CHEGA']);  
-      setData([20016, 173, 1556,93,93,2616,673]);
-      setBackgroundColors(['#f68a21', '#52c1ec', '#333399'])
+      setLabels(['PSD', 'PS', 'Livre', 'Bloco', 'Chega', 'IL', 'PAN']);  
+      setData([54708, 83672, 1441,1203,205,108,1926]);
+      setBackgroundColors(['#f68a21','#ff66ff','#00CD8C','#000000', '#333399','#52c1ec','#036A84'])
     }
     else if(politicalParty == 'Bloco de Esquerda'){
       setLabels(['PSD', 'PS', 'Livre', 'IL', 'Chega', 'PCP', 'PAN']);
