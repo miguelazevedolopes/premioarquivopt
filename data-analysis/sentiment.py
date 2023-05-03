@@ -80,8 +80,8 @@ def get_legislatura(date):
             return l
 
 
-parties = ['ps']
-# parties = ['chega']
+# parties = ['bloco', 'il', 'livre', 'pan', 'pcp', 'ps', 'psd']
+parties = ['psd']
 
 for k in range(len(parties)):
     party = parties[k]

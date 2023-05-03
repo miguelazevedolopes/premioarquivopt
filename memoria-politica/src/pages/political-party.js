@@ -82,8 +82,8 @@ export default function PoliticalParty() {
           </div>
 
           <div id="mentions" className='flex flex-col'>
-            <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Outros Partidos</h2>
-            <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
+            <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Menções de Outros Partidos</h2>
+            <h3 className='text-2xl mt-2 mb-10 select-none'>Número de vezes que cada partido político é mencionado nas páginas.</h3>
             {query.name ? <DoughnutChart politicalParty = {query.name}></DoughnutChart> : <></>}
           </div>
             

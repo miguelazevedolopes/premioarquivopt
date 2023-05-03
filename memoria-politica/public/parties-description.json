@@ -1,33 +1,33 @@
 {
     "Partido Socialista" : {
-        "description" : "O Partido Socialista (PS) é um partido político português de centro-esquerda, fundado a 19 de abril de 1973 por militantes da Acção Socialista Portuguesa (ASP)"
+        "description" : "O Partido Socialista (PS) é um partido político fundado a 19 de Abril de 1973 por militantes da Acção Socialista Portuguesa (ASP) sendo o seu espetro político de centro-esquerda."
     },
     "Partido Social Democrata" : {
-        "description" : "O Partido Social Democrata (PPD/PSD) é um partido político português fundado em 6 de maio de 1974 por Francisco Sá Carneiro, Francisco Pinto Balsemão e Joaquim Magalhães Mota sob o nome Partido Popular Democrático (PPD)."
+        "description" : "O Partido Social Democrata (PPD/PSD) é um partido político fundado em 6 de Maio de 1974 por Francisco Sá Carneiro, Francisco Pinto Balsemão e Joaquim Magalhães Mota sob o nome Partido Popular Democrático (PPD) sendo o seu espetro político de centro-direita."
 
     },
     "Chega" : {
-        "description" : "O Chega é um partido político português, de ideologia populista, de direita radical, nacionalista, conservador e economicamente liberal, sendo o seu espectro político definido como sendo de direita a extrema-direita"
+        "description" : "O Chega (CH) é um partido político fundado a 9 de Abril de 2019 a partir de pequenos grupos dentro do Partido Social Democrata e por André Ventura sendo o seu espectro político definido como sendo de direita a extrema-direita."
 
     },
     "Iniciativa Liberal" : {
-        "description" : "A Iniciativa Liberal (IL) é um partido político português de índole liberal, que defende a liberalização económica, política e cultural. Fundado em 2017, concorreu às suas primeiras eleições nas europeias de 2019. O espectro da IL é definido como sendo de centro-direita a direita."
+        "description" : "A Iniciativa Liberal (IL) é um partido político fundado em 20 de Setembro de 2016 por Alexandre Krauss, Bruno Horta Soares e Rodrigo Saraiva sendo o seu espectro político definido como sendo de centro-direita a direita."
 
     },
     "Partido Comunista Português" : {
-        "description" : "O Partido Comunista Português (PCP) é um partido político de caráter comunista e marxista-leninista. É um dos partidos comunistas mais fortes da Europa Ocidental e o mais antigo partido político português com existência ininterrupta. O espectro político do PCP é definido como sendo de esquerda a extrema-esquerda. "
+        "description" : "O Partido Comunista Português (PCP) é um partido político fundado a 6 de Março de 1921 por uma Comissão Organizadora dos Trabalhos sendo o seu espetro de esquerda a extrema-esquerda."
 
     },
     "Pessoas-Animais-Natureza" : {
-        "description" : "O Pessoas–Animais–Natureza (PAN) é um partido político de Portugal. Intitula-se um partido de causas, defensor dos direitos humanos, dos animais e da natureza"
+        "description" : "O Pessoas–Animais–Natureza (PAN) é um partido político fundado em 22 de Maio de 2009 por António Rui Santos, Pedro Oliveira, Fernando Leite e Paulo Borges sendo que se entitula como um partido de causas, defensor dos direitos humanos, dos animais e da natureza."
 
     },
     "Bloco de Esquerda" : {
-        "description" : "O Bloco de Esquerda (BE) é um partido político socialista e populista, de esquerda a extrema-esquerda, em Portugal. "
+        "description" : "O Bloco de Esquerda (BE) é um partido político fundado em 24 de Março de 1999 através da aproximação de 3 forças políticas que são a União Democrática Popular, o Partido Socialista Revolucionário e a Política XXI sendo o seu espetro político de  esquerda a extrema-esquerda. "
 
     },
     "Livre" : {
-        "description" : "O Livre é um partido político português. Os seus princípios fundadores são liberdade, igualdade, solidariedade, socialismo, ecologia e europeísmo. O seu símbolo é a papoila. Foi legalizado pelo Tribunal Constitucional a 19 de março de 2014."
+        "description" : "O Livre é um partido político fundado a 31 de Janeiro de 2014 por Rui Tavares e Miguel Dias sendo o seu espetro político de centro-esquerda a esquerda."
 
     }
 }
