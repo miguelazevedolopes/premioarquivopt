@@ -1,0 +1,33 @@
+{
+    "Partido Socialista" : {
+        "description" : "O Partido Socialista (PS) é um partido político português de centro-esquerda, fundado a 19 de abril de 1973 por militantes da Acção Socialista Portuguesa (ASP)"
+    },
+    "Partido Social Democrata" : {
+        "description" : "O Partido Social Democrata (PPD/PSD) é um partido político português fundado em 6 de maio de 1974 por Francisco Sá Carneiro, Francisco Pinto Balsemão e Joaquim Magalhães Mota sob o nome Partido Popular Democrático (PPD)."
+
+    },
+    "Chega" : {
+        "description" : "O Chega é um partido político português, de ideologia populista, de direita radical, nacionalista, conservador e economicamente liberal, sendo o seu espectro político definido como sendo de direita a extrema-direita"
+
+    },
+    "Iniciativa Liberal" : {
+        "description" : "A Iniciativa Liberal (IL) é um partido político português de índole liberal, que defende a liberalização económica, política e cultural. Fundado em 2017, concorreu às suas primeiras eleições nas europeias de 2019. O espectro da IL é definido como sendo de centro-direita a direita."
+
+    },
+    "Partido Comunista Português" : {
+        "description" : "O Partido Comunista Português (PCP) é um partido político de caráter comunista e marxista-leninista. É um dos partidos comunistas mais fortes da Europa Ocidental e o mais antigo partido político português com existência ininterrupta. O espectro político do PCP é definido como sendo de esquerda a extrema-esquerda. "
+
+    },
+    "Pessoas-Animais-Natureza" : {
+        "description" : "O Pessoas–Animais–Natureza (PAN) é um partido político de Portugal. Intitula-se um partido de causas, defensor dos direitos humanos, dos animais e da natureza"
+
+    },
+    "Bloco de Esquerda" : {
+        "description" : "O Bloco de Esquerda (BE) é um partido político socialista e populista, de esquerda a extrema-esquerda, em Portugal. "
+
+    },
+    "Livre" : {
+        "description" : "O Livre é um partido político português. Os seus princípios fundadores são liberdade, igualdade, solidariedade, socialismo, ecologia e europeísmo. O seu símbolo é a papoila. Foi legalizado pelo Tribunal Constitucional a 19 de março de 2014."
+
+    }
+}

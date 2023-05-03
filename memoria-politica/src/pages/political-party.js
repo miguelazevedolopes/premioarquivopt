@@ -6,6 +6,8 @@ import DoughnutChart from './components/doughnut';
 import commonWordsData from '../../public/common-words.json'
 import Timeline from './components/timeline';
 import Personalities from './components/personalities';
+import partyDescription from '../../public/parties-description.json'
+
 
 const textColor = {
   'Partido Socialista': 'text-[#ff66ff]',
@@ -43,6 +45,8 @@ export default function PoliticalParty() {
   const query = router.query;
   let data = query.name ? parseData(commonWordsData[query.name][0]) : [];
   
+  const description = query.name ? partyDescription[query.name].description : "";
+
   useEffect(() => {
     setIsClient(true)
   }, []) 
@@ -58,7 +62,7 @@ export default function PoliticalParty() {
       <main className='mt-5'>
         <div className='flex-col m-auto'>
           <h1 href='' className={`text-5xl lg:text-8xl ${textColor[query.name]} font-extrabold inline-block select-none`}>{query.name}</h1>
-          <h3 className='text-2xl mt-0 select-none'>'.'</h3>
+          <h3 id = "party-desc" className='text-2xl mt-0 select-none'>{description}</h3>
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
             { isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
                             rotate={0} fill='white'  /> }

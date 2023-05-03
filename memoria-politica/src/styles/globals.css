@@ -160,6 +160,10 @@ overflow-y:visible !important;
   height: 500px !important;
 }
 
+#party-desc{
+  padding-top: 25px;
+}
+
 #searchForm{
   padding-top: 50px;
 }
