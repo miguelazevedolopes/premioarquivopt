@@ -30,8 +30,8 @@
 
 
         "5" : {
-            "date" :  "2019",
-            "title" : "Governo Atual",
+            "date" :  "2018",
+            "title" : "Mudança de Liderança",
             "description" : "Ganham as Eleições com maioria absoluta, liderados por António Costa.",
             "link": "https://arquivo.pt/wayback/20191014180018/https://ps.pt/index.php/2019/10/08/antonio-costa-proximo-governo-sera-seguramente-muito-proximo-do-atual-governo/"
         }
@@ -45,68 +45,61 @@
         },
 
         "2" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
+            "date" :   "2000",
+            "title" : "Reforma Fiscal",
+            "description" : "Redução de impostos sobre rendimentos, numa Reforma Fiscal aplicada pelo XIV Governo Constitucional, liderado pelo PSD por António Guterres.",
             "link": "pretty description"
         },
 
         "3" : {
-            "date":   "2020-01-01",
-            "title": "Event Title",
-            "description": "pretty description",
-            "link": "pretty description"
+            "date" :   "2011",
+            "title" : "Crise Económica",
+            "description" : "Após a convocação de eleições antecipadas, o PSD ganha as eleições, liderado por Pedro Passos Coelho, iniciando um período de austeridade no país.",
+            "link": "https://arquivo.pt/wayback/20110703001953/http://www.ps.pt/noticias/estou-profundamente-grato-aos-portugueses-por-me-terem-dado-a-oportunidade-e-a-honra-de-servir-o-meu-pais-e-os-meus-compatriotas/itemid-27"
         },
 
         "4" : {
-            "date" :   "2011",
-            "title" : "Crise Económica",
-            "description" : "José Sócrates apresenta a demissão e são convocadas novas Eleições Legislativas, ganhas pelo PSD.",
+            "date" :   "2015",
+            "title" : "XX Governo Constitucional",
+            "description" : "Formaram o mais curto executivo, em 40 anos, da democracia constitucional em Portugal, com 27 dias, apesar de terem ganho com maioria relativa.",
             "link": "https://arquivo.pt/wayback/20110703001953/http://www.ps.pt/noticias/estou-profundamente-grato-aos-portugueses-por-me-terem-dado-a-oportunidade-e-a-honra-de-servir-o-meu-pais-e-os-meus-compatriotas/itemid-27"
         },
 
 
         "5" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
+            "date" :   "2018",
+            "title" : "Mudança de liderança",
+            "description" : "Rui Rio sucede a Pedro Passos Coelho na liderança do partido, levando a uma reformulação da sua estratégia política e da relação com os partidos da oposição.",
             "link": "pretty description"
         }
     },
     "Chega" : {
         "1" : {
-            "date": "27-03-2019",
+            "date": "2019",
             "title": "Olá, Mundo",
             "description": "Primeira página arquivada pelo Arquivo.PT",
             "link": "https://arquivo.pt/wayback/20190327004300/https://partidochega.pt/"
         },
 
         "2" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
+            "date":   "2019",
+            "title": "Primeiro Deputado",
+            "description": "Elege o primeiro deputado, André Ventura, nas legislativas de 2019.",
             "link": "pretty description"
         },
 
         "3" : {
-            "date":   "2020-01-01",
-            "title": "Event Title",
-            "description": "pretty description",
+            "date" :   "2021",
+            "title" : "Moção de Censura",
+            "description" : "Apresentou uma moção de censura ao governo liderado pelo Partido Socialista, alegando a má gestão da pandemia de COVID-19, que foi rejeitada pela assembleia.",
             "link": "pretty description"
         },
+
 
         "4" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
-        },
-
-
-        "5" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
+            "date" :   "2021",
+            "title" : "Eleições Presidenciais",
+            "description" : "Apoiou a candidatura do líder do partido, André Ventura, que ficou em terceiro lugar.",
             "link": "pretty description"
         }
     },
