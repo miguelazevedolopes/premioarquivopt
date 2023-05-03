@@ -82,8 +82,8 @@ overflow-y:visible !important;
 
 
 .temporal-dropdown__select {
+  text-align: center;
   padding: 10px 14px;
-  border-radius: 8px;
   border: 2px solid #ccc;
   font-size: 18px;
   color: #333;

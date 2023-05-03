@@ -32,13 +32,13 @@
         "5" : {
             "date" :  "2019",
             "title" : "Governo Atual",
-            "description" : "António Costa vence as Eleições com maioria absoluta.",
+            "description" : "Ganham as Eleições com maioria absoluta, liderados por António Costa.",
             "link": "https://arquivo.pt/wayback/20191014180018/https://ps.pt/index.php/2019/10/08/antonio-costa-proximo-governo-sera-seguramente-muito-proximo-do-atual-governo/"
         }
     },
     "Partido Social Democrata" : {
         "1" : {
-            "date": "31-10-1996",
+            "date": "1996",
             "title": "Olá, Mundo",
             "description": "Primeira página arquivada pelo Arquivo.PT",
             "link": "https://arquivo.pt/wayback/19961231033932/http://www.psd.pt:80/"
@@ -59,10 +59,10 @@
         },
 
         "4" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "2011",
+            "title" : "Crise Económica",
+            "description" : "José Sócrates apresenta a demissão e são convocadas novas Eleições Legislativas, ganhas pelo PSD.",
+            "link": "https://arquivo.pt/wayback/20110703001953/http://www.ps.pt/noticias/estou-profundamente-grato-aos-portugueses-por-me-terem-dado-a-oportunidade-e-a-honra-de-servir-o-meu-pais-e-os-meus-compatriotas/itemid-27"
         },
 
 
