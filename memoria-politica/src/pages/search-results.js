@@ -121,6 +121,7 @@ export default function SearchPage() {
              {searchTerm ? <Search value={searchTerm}/> : <></>}
             </div> 
             <div id="partyFilter" className='mt-5'>
+            <h1 className='text-gray-900 text-lg font-bold pb-2'> Filtrar por Partido</h1>  
               <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true} 
                 className='w-full accent-gray-900'/>
             </div>        
