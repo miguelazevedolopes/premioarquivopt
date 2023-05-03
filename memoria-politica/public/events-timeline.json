@@ -1,0 +1,298 @@
+{
+    "Partido Socialista" : {
+        "1" : {
+            "date": "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Partido Social Democrata" : {
+        "1" : {
+            "date": "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Chega" : {
+        "1" : {
+            "date": "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Iniciativa Liberal" : {
+        "1" : {
+            "date" : "2020-01-01",
+            "title" : "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Partido Comunista Português" : {
+        "1" : {
+            "date": "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Pessoas-Animais-Natureza" : {
+        "1" : {
+            "date": "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date":   "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Bloco de Esquerda" : {
+        "1" : {
+            "date": "2020-01-01",
+            "title": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date ":   "2020-01-01",
+            "title ": "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    },
+    "Livre" : {
+        "1" : {
+            "date" : "2020-01-01",
+            "title" : "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "2" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+        "3" : {
+            "date " :   "2020-01-01",
+            "title" : "Event Title",
+            "description": "pretty description",
+            "link": "pretty description"
+        },
+
+        "4" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        },
+
+
+        "5" : {
+            "date" :   "2020-01-01",
+            "title" : "Event Title",
+            "description" : "pretty description",
+            "link": "pretty description"
+        }
+    }
+}

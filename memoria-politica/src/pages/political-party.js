@@ -72,7 +72,7 @@ export default function PoliticalParty() {
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
             <div className='flex justify-around'>
-                <Timeline width={1000} height={300}></Timeline>
+                <Timeline width={1000} height={300} party={query.name}></Timeline>
             </div>
           </div>
 
