@@ -75,7 +75,7 @@ function DoughnutChart(props) {
           labels: labels,
           datasets: [
             {
-              label: 'Mentions of other Political Parties',
+              label: 'Menções',
               data: data,
               backgroundColor: backgroundColors,
               hoverOffset: 4,
