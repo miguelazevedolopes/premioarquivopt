@@ -101,7 +101,7 @@ const Sentiment = ({ party }) => {
                 <div className='flex flex-col w-[45%] justify-around'>
                     <div className='flex flex-col items-center self-center w-full'>
                         <h2 className='text-center text-xl font-bold justify-around mb-1'>Polaridade</h2>
-                        <p className='mx-[5%] text-justify text-sm'>Texto a explicar polaridade.</p>
+                        <p className='mx-[5%] text-justify text-sm'>Com base na linguagem determinada nos textos presentes nas páginas web dos partidos, é possível classificar o seu conteúdo como positivo ou negativo.</p>
 
                         <div className='flex w-11/12 justify-center items-center mt-5'>
                             <h2 className='w-[20%] h-fit text-end'>Negativo</h2>
@@ -112,7 +112,7 @@ const Sentiment = ({ party }) => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col items-center self-center w-full'>
+                    <div className='flex flex-col items-center self-center w-full mt-5'>
                         <h2 className='text-center text-xl font-bold justify-around mb-1'>Subjectividade</h2>
                         <p className='mx-[5%] text-justify text-sm'>A subjectividade mede a quantidade de texto nas páginas web que corresponde a opiniões versus informação factual. Um valor mais alto de subjectividade, significa que durante a legislatura em questão, as páginas do partido tinham mais textos de opinião do que textos factuais.</p>
 
