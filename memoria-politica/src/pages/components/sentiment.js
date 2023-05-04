@@ -107,7 +107,7 @@ const Sentiment = ({ party }) => {
                         <div className='flex w-11/12 justify-center items-center mt-5'>
                             <h2 className='w-[20%] h-fit text-end'>Negativo</h2>
                             <div className='w-[60%] flex h-12 border-solid border-black bg-gradient-to-r from-red-400 via-yellow-400 to-green-400 border-[3px] mx-5'>
-                                <div style={{ "transform": `translate(${polarity}000%)` }} className="w-[0.1%] h-full bg-black"></div>
+                                <div style={{ "transform": `translate(${polarity}000%)` }} className="w-[0.1%] z-50 h-full bg-black"></div>
                             </div>
                             <h2 className='w-[20%] h-fit text-start'>Positivo</h2>
                         </div>
@@ -121,7 +121,7 @@ const Sentiment = ({ party }) => {
                         <div className='flex w-11/12 justify-center items-center mt-5'>
                             <h2 className='w-[20%] h-fit text-end'>Objectivo</h2>
                             <div className='w-[60%] flex h-12 border-solid border-black bg-gradient-to-r from-emerald-400  via-sky-400 to-indigo-400 border-[3px]  mx-5'>
-                                <div style={{ "transform": `translate(${subjectivity}000%)` }} className="w-[0.1%] h-full bg-black"></div>
+                                <div style={{ "transform": `translate(${subjectivity}000%)` }} className="w-[0.1%] z-50 h-full bg-black"></div>
                             </div>
                             <h2 className='w-[20%] h-fit text-start'>Subjectivo</h2>
                         </div>
