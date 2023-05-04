@@ -71,7 +71,7 @@ export default function PoliticalParty() {
           {/* Personalidades */}
           <Personalities party={query.name}/>
 
-          <Sentiment party={query.name}/>
+          <Sentiment/>
           
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>
@@ -83,7 +83,7 @@ export default function PoliticalParty() {
 
           <div id="mentions" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Menções de Outros Partidos</h2>
-            <h3 className='text-2xl mt-2 mb-10 select-none'>Número de vezes que cada partido político é mencionado nas páginas.</h3>
+            <h3 className='text-2xl mt-2 mb-10 select-none'>De modo a melhor perceber a relação e interação entre os diversos partidos políticos, calculamos a quantidade de vezes que todos os partidos são mencionados nas páginas de cada partido. </h3>
             {query.name ? <DoughnutChart politicalParty = {query.name}></DoughnutChart> : <></>}
           </div>
             
