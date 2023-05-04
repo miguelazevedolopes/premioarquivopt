@@ -36,6 +36,7 @@ async function solrSearch(searchTerm, party, start=0, dateRange){
 }
 
 export default function SearchPage() {
+  const [year, setYear] = useState("")
   const [searchResults, setSearchResults] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
@@ -53,7 +54,7 @@ export default function SearchPage() {
 
       setAbv(urlParams.get('abv'))
       party ? setParty(party) : setParty(urlParams.get('party'))
-      setDateRange(urlParams.get('date'))
+      dateRange ? setDateRange(dateRange) : setDateRange(urlParams.get('date'))
       setStart(urlParams.get('start'))
 
       const results = await solrSearch(abv? abv: searchTerm, party, start, dateRange);
@@ -61,7 +62,7 @@ export default function SearchPage() {
 
       setTotalResults(results.response.numFound);
     })();
-  }, [searchTerm, party]);
+  }, [searchTerm, party, dateRange]);
 
   const handlePrevious = useCallback(() => {
     if (currentPage > 1) {
@@ -111,6 +112,22 @@ export default function SearchPage() {
     setCurrentPage(1);
   }
 
+  const optionsYear = (() => {
+    let options = [<option key={"empty-year"} value="" ></option>]
+    for (let y = 1996 ; y < 2021; y++) {
+        options.push(<option key={y} value={y.toString()}>{y.toString()}</option>)
+    }
+    return options
+  })();
+
+  const handleDropdownChange = (event) => {
+    const year = event.target.value;
+    const date = year === "" ? year : `[${year}-01-01T00:00:00Z TO ${year}-12-31T23:59:59Z]`;
+    setYear(year);
+    setDateRange(date);
+    setCurrentPage(1);
+}
+
 
   return (
     <div className='flex-col p-0 px-12 sm:m-auto'>
@@ -120,10 +137,18 @@ export default function SearchPage() {
             <div id = "searchForm">
              {searchTerm ? <Search value={searchTerm}/> : <></>}
             </div> 
-            <div id="partyFilter" className='mt-5'>
-            <h1 className='text-gray-900 text-lg font-bold pb-2'> Filtrar por Partido</h1>  
-              <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true} 
-                className='w-full accent-gray-900'/>
+            <div id="partyFilter" className='flex justify-between'>
+              <div className='w-4/5 mr-10'>
+                <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Partido</h1> 
+                <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true} 
+                  className='accent-gray-900'/>
+              </div>
+              <div className='w-1/5'>
+              <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Ano</h1> 
+                <select name="year" value={year} onChange={handleDropdownChange} className="bg-gray-50 border border-gray-300 rounded-lg w-full h-12 focus:ring-blue-500 focus:border-blue-500 block p-2.5 font-extrabold">
+                  {optionsYear}
+                </select>
+              </div>
             </div>        
             <div className='pt-7'>
               <h5 className='text-gray-400'> {totalResults} Resultados Encontrados</h5>  

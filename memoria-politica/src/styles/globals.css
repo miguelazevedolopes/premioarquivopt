@@ -92,6 +92,7 @@ overflow-y:visible !important;
 .multiSelectContainer .searchWrapper{
   padding: 10px;
   padding-left: 20px;
+  width: 100%;
 }
 
 .multiSelectContainer .searchWrapper .searchBox{
