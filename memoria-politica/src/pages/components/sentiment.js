@@ -1,11 +1,74 @@
 import React, { useEffect, useState } from 'react';
+import sentiment from '../../../public/sentiment.json'
+import legislatures from '../../../public/legislatures.json'
+
+function getSentiment(party, legislature) {
+    let polarity = sentiment[party][legislature]["polarity"]
+    polarity = Math.round(50 + polarity * 100 / 2)
+    let subjectivity = Math.round(sentiment[party][legislature]["subjectivity"] * 100)
+    return [subjectivity.toString(), polarity.toString()]
+}
+
+function getLegislatures(legislature) {
+    return legislatures[legislature]
+}
+
+function getGoverningPartiesImages(legislatureInfo) {
+    let images = []
+    legislatureInfo['governo'].forEach(party => {
+        images.push(<img key={party} className='w-28 h-28 rounded-full object-cover m-auto' src={`/images/${party.toLowerCase()}.png`} alt="" />)
+    });
+    return images;
+}
+
+
+const Sentiment = ({ party }) => {
+    const [legislature, setLegislature] = useState("XIV Legislatura")
+    const [legislatureInfo, setLegislatureInfo] = useState({
+        "start": "",
+        "end": "",
+        "governo": [],
+        "maioria_absoluta": false
+    })
+    const [polarity, setPolarity] = useState('5')
+    const [subjectivity, setSubjectivity] = useState('5')
+    const [governingImages, setGoverningImages] = useState([])
+
+
+    useEffect(() => {
+        if (party) {
+            const [sub, pol] = getSentiment(party, legislature)
+            setPolarity(pol)
+            setSubjectivity(sub)
+            const info = getLegislatures(legislature)
+            setLegislatureInfo(info)
+            setGoverningImages(getGoverningPartiesImages(info))
+        }
+    }, [party]);
+
+    const legislaturesOptions = ((party) => {
+
+        let options = []
+        if (party) {
+            Object.keys(sentiment[party]).forEach(legislature => {
+                options.push(<option key={legislature} value={legislature}>{legislature}</option>)
+            });
+        }
+        return options
+    })(party);
 
 
 
-const Sentiment = () => {
-    const chartStyle = {
-        height: 250,
-    }
+    const handleDropdownChange = (event) => {
+        const [sub, pol] = getSentiment(party, event.target.value)
+        setLegislature(event.target.value)
+        const info = getLegislatures(event.target.value)
+        setLegislatureInfo(info)
+        setPolarity(pol)
+        setSubjectivity(sub)
+        setGoverningImages(getGoverningPartiesImages(info))
+    };
+
     return (
         <div id="personalidades" className='flex flex-wrap w-full justify-around mt-10'>
             <div className='flex w-full justify-start mt-10 '>
@@ -17,20 +80,21 @@ const Sentiment = () => {
                 <div className='flex flex-col w-[45%]'>
                     <h2 className='mb-1 ms-1'>Selecione a legislatura:</h2>
                     <div className="flex justify-around">
-                        <select name="year" value="VIII Legislatura" className="bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 font-extrabold">
-                            <option value="VIII Legislatura">VIII Legislatura</option>
+                        <select name="year" value={legislature} onChange={handleDropdownChange} className="bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 font-extrabold">
+                            {legislaturesOptions}
                         </select>
                     </div>
 
                     <div>
                         <div className='flex justify-around my-10'>
-                            <img className='w-28 h-28 rounded-full object-cover m-auto' src="/images/ps.png" alt="" />
+
+                            {governingImages}
 
                         </div>
-                        <h2><b>Partido(s) do Governo:</b> Partido Socialista</h2>
-                        <h2><b>Maioria Absoluta:</b> Sim</h2>
-                        <h2><b>Data de Inicio:</b> 2020-01-01</h2>
-                        <h2><b>Data de Fim:</b> 2020-01-01</h2>
+                        <h2><b>Partido(s) do Governo:&nbsp; </b>{legislatureInfo["governo"].toString()}</h2>
+                        <h2><b>Maioria Absoluta:&nbsp; </b>{legislatureInfo["maioria_absoluta"] ? "Sim" : "Não"}</h2>
+                        <h2><b>Data de Inicio:&nbsp; </b> {legislatureInfo["start"]}</h2>
+                        <h2><b>Data de Fim:&nbsp; </b> {legislatureInfo["end"]}</h2>
                     </div>
                 </div>
                 <div className='w-0.5 bg-gray-300'></div>
@@ -42,7 +106,7 @@ const Sentiment = () => {
                         <div className='flex w-11/12 justify-center items-center mt-5'>
                             <h2 className='w-[20%] h-fit text-end'>Negativo</h2>
                             <div className='w-[60%] flex h-12 border-solid border-black bg-gradient-to-r from-red-400 via-yellow-400 to-green-400 border-[3px] mx-5'>
-                                <div className='w-[0.1%] translate-x-[5000%] h-full bg-black'></div>
+                                <div style={{ "transform": `translate(${polarity}000%)` }} className="w-[0.1%] h-full bg-black"></div>
                             </div>
                             <h2 className='w-[20%] h-fit text-start'>Positivo</h2>
                         </div>
@@ -56,7 +120,7 @@ const Sentiment = () => {
                         <div className='flex w-11/12 justify-center items-center mt-5'>
                             <h2 className='w-[20%] h-fit text-end'>Objectivo</h2>
                             <div className='w-[60%] flex h-12 border-solid border-black bg-gradient-to-r from-emerald-400  via-sky-400 to-indigo-400 border-[3px]  mx-5'>
-                                <div className='w-[0.1%] translate-x-[5000%] h-full bg-black'></div>
+                                <div style={{ "transform": `translate(${subjectivity}000%)` }} className="w-[0.1%] h-full bg-black"></div>
                             </div>
                             <h2 className='w-[20%] h-fit text-start'>Subjectivo</h2>
                         </div>
