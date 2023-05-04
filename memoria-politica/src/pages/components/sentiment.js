@@ -37,14 +37,15 @@ const Sentiment = ({ party }) => {
 
     useEffect(() => {
         if (party) {
-            const [sub, pol] = getSentiment(party, legislature)
+            setLegislature("XIV Legislatura");
+            const [sub, pol] = getSentiment(party, "XIV Legislatura")
             setPolarity(pol)
             setSubjectivity(sub)
-            const info = getLegislatures(legislature)
+            const info = getLegislatures("XIV Legislatura")
             setLegislatureInfo(info)
             setGoverningImages(getGoverningPartiesImages(info))
         }
-    }, [party]);
+    }, [party,setLegislature]);
 
     const legislaturesOptions = ((party) => {
 
