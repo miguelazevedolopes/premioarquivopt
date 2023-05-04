@@ -14,7 +14,7 @@ module.exports = {
         'LIVRE' : '#00CD8C',
         'IL': '#52c1ec',
         'CHEGA': '#333399',
-        'BE': '#000000' 
+        'BE': '#8B0000' 
       }
     },
   },

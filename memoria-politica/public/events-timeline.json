@@ -166,12 +166,12 @@
             "date" :   "2019",
             "title" : "Pandemia COVID-19",
             "description" : "Face à pandemia de COVID-19, o partido defendeu necessidade de medidas de proteção aos trabalhadores e aos setores mais afetados.",
-            "link": "phttps://arquivo.pt/wayback/20200922013019/http://pcp.pt/medidas-adicionais-urgentes-para-combater-pandemia-de-covid-19"
+            "link": "https://arquivo.pt/wayback/20200922013019/http://pcp.pt/medidas-adicionais-urgentes-para-combater-pandemia-de-covid-19"
         }
     },
     "Pessoas-Animais-Natureza" : {
         "1" : {
-            "date": "29-11-1999",
+            "date": "1999",
             "title": "Olá, Mundo",
             "description": "Primeira página arquivada pelo Arquivo.PT",
             "link": "https://arquivo.pt/wayback/20131108223043/http://www.pan.com.pt/index.php?option=com_content&view=article&id=17:palavras-de-apoio-directamente-de-los-angeles&catid=1:ppa&Itemid=11"
@@ -215,33 +215,33 @@
         },
 
         "2" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "1999",
+            "title" : "Elege 2 Deputados nas Primeiras Legislativas",
+            "description" : "Apesar de não ter elegido nenhum deputado nas Europeias desse ano, estreou-se elegendo dois deputados nas Eleições Legislativas de 1999.",
+            "link": "https://arquivo.pt/wayback/20010716080259/http://www.bloco-de-esquerda.pt/Publico_25_8_99.html"
         },
 
         "3" : {
-            "date":   "2020-01-01",
-            "title": "Event Title",
-            "description": "pretty description",
-            "link": "pretty description"
+            "date" :   "2007",
+            "title" : "Referendo sobre o Aborto",
+            "description" : "Participou ativamente na campanha pelo 'Sim' no referendo sobre a matéria em 2007, apoiando a legalização do aborto em Portugal.",
+            "link": "https://arquivo.pt/wayback/20090504185628/http://www.bloco.org/index.php?option=com_content&task=view&id=107&Itemid=46"
         },
 
         "4" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "2015",
+            "title" : "XXI Governo Constitucional",
+            "description" : "Firmou bilateralmente um acordo parlamentar com o PS, apoiando o novo governo e uma moção de rejeição do programa do XX Governo Constitucional, que não chegou a exercer funções.",
+            "link": "https://arquivo.pt/wayback/20160204135142/http://www.bloco.org/content/view/3076/82/"
         },
 
-
         "5" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "2019",
+            "title" : "Balanço da 'Geringonça'",
+            "description" : "Nas legislativas de 2019, desceu relativamente a 2015 e o PS conseguiu obter a maioria, terminando a 'Geringonça'",
+            "link": "https://arquivo.pt/wayback/20191116192738/https://www.bloco.org/not%C3%ADcias/debate/item/3455-a-geringon%C3%A7a-e-o-resultado-das-legislativas.html"
         }
+
     },
     "Livre" : {
         "1" : {
