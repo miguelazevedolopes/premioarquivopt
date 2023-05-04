@@ -45,24 +45,24 @@
         },
 
         "2" : {
-            "date" :   "2000",
-            "title" : "Reforma Fiscal",
-            "description" : "Redução de impostos sobre rendimentos, numa Reforma Fiscal aplicada pelo XIV Governo Constitucional, liderado pelo PSD por António Guterres.",
-            "link": "pretty description"
+            "date" :   "2004",
+            "title" : "Presidência da Comissão Europeia",
+            "description" : "Durão Barroso demite-se do cargo de primeiro ministro para assumir a Presidência da Comissão Europeia. Pedro Santana Lopes assume a direção do Partido.",
+            "link": "https://arquivo.pt/wayback/20040702214913/http://www.psd.pt/default.asp"
         },
 
         "3" : {
             "date" :   "2011",
-            "title" : "Crise Económica",
+            "title" : "Crise Económica e Troika",
             "description" : "Após a convocação de eleições antecipadas, o PSD ganha as eleições, liderado por Pedro Passos Coelho, iniciando um período de austeridade no país.",
-            "link": "https://arquivo.pt/wayback/20110703001953/http://www.ps.pt/noticias/estou-profundamente-grato-aos-portugueses-por-me-terem-dado-a-oportunidade-e-a-honra-de-servir-o-meu-pais-e-os-meus-compatriotas/itemid-27"
+            "link": "https://arquivo.pt/wayback/20110705100429/http://www.psd.pt/archive/doc/Discurso_Programa_do_Governo.pdf"
         },
 
         "4" : {
             "date" :   "2015",
             "title" : "XX Governo Constitucional",
             "description" : "Formaram o mais curto executivo, em 40 anos, da democracia constitucional em Portugal, com 27 dias, apesar de terem ganho com maioria relativa.",
-            "link": "https://arquivo.pt/wayback/20110703001953/http://www.ps.pt/noticias/estou-profundamente-grato-aos-portugueses-por-me-terem-dado-a-oportunidade-e-a-honra-de-servir-o-meu-pais-e-os-meus-compatriotas/itemid-27"
+            "link": "https://arquivo.pt/wayback/20151201225648/http://www.psd.pt/album.php?a=72157658224998324"
         },
 
 
@@ -70,7 +70,7 @@
             "date" :   "2018",
             "title" : "Mudança de liderança",
             "description" : "Rui Rio sucede a Pedro Passos Coelho na liderança do partido, levando a uma reformulação da sua estratégia política e da relação com os partidos da oposição.",
-            "link": "pretty description"
+            "link": "https://arquivo.pt/wayback/20190522162635/https://www.psd.pt/rui-rio/"
         }
     },
     "Chega" : {
@@ -112,33 +112,19 @@
         },
 
         "2" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
+            "date":   "2019",
+            "title": "Primeiro Deputado",
+            "description": "Elege o primeiro deputado, João Cotrim de Figueiredo, nas legislativas de 2019.",
             "link": "pretty description"
         },
 
         "3" : {
-            "date":   "2020-01-01",
-            "title": "Event Title",
-            "description": "pretty description",
-            "link": "pretty description"
-        },
-
-        "4" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
-        },
-
-
-        "5" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
+            "date":   "2021",
+            "title": "Primeiro Deputado em Lisboa",
+            "description": "Elege o primeiro deputado em Lisboa, Miguel Quintas, nas autárquicas de 2021.",
             "link": "pretty description"
         }
+
     },
     "Partido Comunista Português" : {
         "1" : {
