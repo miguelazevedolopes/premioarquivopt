@@ -171,39 +171,38 @@
     },
     "Pessoas-Animais-Natureza" : {
         "1" : {
-            "date": "1999",
+            "date": "2013",
             "title": "Olá, Mundo",
             "description": "Primeira página arquivada pelo Arquivo.PT",
             "link": "https://arquivo.pt/wayback/20131108223043/http://www.pan.com.pt/index.php?option=com_content&view=article&id=17:palavras-de-apoio-directamente-de-los-angeles&catid=1:ppa&Itemid=11"
         },
 
         "2" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "2015",
+            "title" : "Primeiro Deputado",
+            "description" : "Elege o primeiro deputado, André Lourenço e Silva, nas legislativas de 2015.",
+            "link": "https://arquivo.pt/wayback/20151201111818/http://www.pan.com.pt/eleicoes/os-nossos-eleitos.html?tmpl=component&print=1"
         },
 
         "3" : {
-            "date":   "2020-01-01",
-            "title": "Event Title",
-            "description": "pretty description",
-            "link": "pretty description"
+            "date" :   "2015",
+            "title" : "Criminalização dos maus tratos contra os animais",
+            "description" : "A Assembleia da República aprova o projeto de lei apresentado para a criminalização de maus tratos contra animais.",
+            "link": "https://arquivo.pt/wayback/20181027102316/http://www.pan.com.pt/comunicacao/noticias/item/361-aprovada-criminalizacao-dos-maus-tratos-contra-animais.html"
         },
 
         "4" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date":   "2017",
+            "title": "Morte Medicamente Assistida",
+            "description": "Defende a legalização da eutanásia em Portugal, tendo participado em vários debates públicos e apresentado projetos de lei para legalizar a prática.",
+            "link": "https://arquivo.pt/wayback/20190711004432/https://www.pan.com.pt/pan-organiza-debate-sobre-a-morte-medicamente-assistida/"
         },
 
-
         "5" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "2019",
+            "title" : "Eleições Legislativas",
+            "description" : "Elege 4 deputados para o parlamento, obtendo um resultado histórico para o partido.",
+            "link": "https://arquivo.pt/wayback/20200728201839/https://www.pan.com.pt/eleicoes/eleicoes-legislativas-2019/"
         }
     },
     "Bloco de Esquerda" : {
