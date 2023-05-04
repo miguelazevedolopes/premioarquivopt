@@ -4,8 +4,8 @@ import legislatures from '../../../public/legislatures.json'
 
 function getSentiment(party, legislature) {
     let polarity = sentiment[party][legislature]["polarity"]
-    polarity = Math.round(50 + polarity * 100 / 2)
-    let subjectivity = Math.round(sentiment[party][legislature]["subjectivity"] * 100)
+    polarity = Math.round(50 + polarity * 100 / 2) * 2
+    let subjectivity = Math.round(sentiment[party][legislature]["subjectivity"] * 100 * 2)
     return [subjectivity.toString(), polarity.toString()]
 }
 
@@ -45,7 +45,7 @@ const Sentiment = ({ party }) => {
             setLegislatureInfo(info)
             setGoverningImages(getGoverningPartiesImages(info))
         }
-    }, [party,setLegislature]);
+    }, [party, setLegislature]);
 
     const legislaturesOptions = ((party) => {
 
@@ -107,7 +107,7 @@ const Sentiment = ({ party }) => {
                         <div className='flex w-11/12 justify-center items-center mt-5'>
                             <h2 className='w-[20%] h-fit text-end'>Negativo</h2>
                             <div className='w-[60%] flex h-12 border-solid border-black bg-gradient-to-r from-red-400 via-yellow-400 to-green-400 border-[3px] mx-5'>
-                                <div style={{ "transform": `translate(${polarity}000%)` }} className="w-[0.1%] z-50 h-full -moz-bg-black"></div>
+                                <div style={{ "transform": `translate(${polarity}00%)` }} className="w-[0.5%] h-full bg-black"></div>
                             </div>
                             <h2 className='w-[20%] h-fit text-start'>Positivo</h2>
                         </div>
@@ -121,7 +121,7 @@ const Sentiment = ({ party }) => {
                         <div className='flex w-11/12 justify-center items-center mt-5'>
                             <h2 className='w-[20%] h-fit text-end'>Objectivo</h2>
                             <div className='w-[60%] flex h-12 border-solid border-black bg-gradient-to-r from-emerald-400  via-sky-400 to-indigo-400 border-[3px]  mx-5'>
-                                <div style={{ "transform": `translate(${subjectivity}000%)` }} className="w-[0.1%] z-50 h-full bg-black"></div>
+                                <div style={{ "transform": `translate(${subjectivity}00%)` }} className="w-[0.5%] h-full bg-black"></div>
                             </div>
                             <h2 className='w-[20%] h-fit text-start'>Subjectivo</h2>
                         </div>
