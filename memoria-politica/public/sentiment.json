@@ -1,0 +1,170 @@
+{
+    "Bloco de Esquerda": {
+        "VIII Legislatura": {
+            "subjectivity": 0.35300609327377186,
+            "polarity": 0.06376012910564852
+        },
+        "IX Legislatura": {
+            "subjectivity": 0.28044101401380467,
+            "polarity": 0.06917712582047897
+        },
+        "X Legislatura": {
+            "subjectivity": 0.36020422717314005,
+            "polarity": 0.12315332478847028
+        },
+        "XI Legislatura": {
+            "subjectivity": 0.38694345796300544,
+            "polarity": 0.14275391044963037
+        },
+        "XII Legislatura": {
+            "subjectivity": 0.4515768042694251,
+            "polarity": 0.18432294708458755
+        },
+        "XIII Legislatura": {
+            "subjectivity": 0.2481906570099732,
+            "polarity": 0.03825167893471699
+        },
+        "XIV Legislatura": {
+            "subjectivity": 0.20981260683973443,
+            "polarity": 0.013342804096027438
+        }
+    },
+    "Partido Socialista": {
+        "VIII Legislatura": {
+            "subjectivity": 0.2863644718137809,
+            "polarity": 0.029301074752595992
+        },
+        "IX Legislatura": {
+            "subjectivity": 0.2255781501095553,
+            "polarity": 0.06488040724709238
+        },
+        "X Legislatura": {
+            "subjectivity": 0.22712878904424535,
+            "polarity": 0.031415007706646805
+        },
+        "XI Legislatura": {
+            "subjectivity": 0.23630704087271698,
+            "polarity": 0.09786198521687788
+        },
+        "XII Legislatura": {
+            "subjectivity": 0.24065803302343275,
+            "polarity": 0.015108383928386968
+        },
+        "XIII Legislatura": {
+            "subjectivity": 0.37467995537363136,
+            "polarity": 0.10707911240364772
+        },
+        "XIV Legislatura": {
+            "subjectivity": 0.37625836750792097,
+            "polarity": 0.13845291269202536
+        }
+    },
+    "Partido Social Democrata": {
+        "VIII Legislatura": {
+            "subjectivity": 0.22961267138163066,
+            "polarity": 0.05211134765611793
+        },
+        "IX Legislatura": {
+            "subjectivity": 0.09019441335725636,
+            "polarity": 0.026581866084469316
+        },
+        "X Legislatura": {
+            "subjectivity": 0.1579639162505432,
+            "polarity": 0.024089904905060626
+        },
+        "XI Legislatura": {
+            "subjectivity": 0.10093854885343656,
+            "polarity": 0.02180683367860137
+        },
+        "XII Legislatura": {
+            "subjectivity": 0.1462198645447734,
+            "polarity": 0.0591596990252381
+        },
+        "XIII Legislatura": {
+            "subjectivity": 0.23194648475723884,
+            "polarity": 0.11273723757747915
+        },
+        "XIV Legislatura": {
+            "subjectivity": 0.2876284357979669,
+            "polarity": 0.1298648112747858
+        }
+    },
+    "Chega": {
+        "XIII Legislatura": {
+            "subjectivity": 0.5641012011503242,
+            "polarity": 0.08261720227986881
+        },
+        "XIV Legislatura": {
+            "subjectivity": 0.5681802108637136,
+            "polarity": -0.004034727110203442
+        }
+    },
+    "Partido Comunista Português": {
+        "VIII Legislatura": {
+            "subjectivity": 0.27721557190687973,
+            "polarity": 0.0370513365377648
+        },
+        "IX Legislatura": {
+            "subjectivity": 0.3070288761259018,
+            "polarity": 0.030137456346062293
+        },
+        "X Legislatura": {
+            "subjectivity": 0.2595242554166204,
+            "polarity": 0.013683560316884849
+        },
+        "XI Legislatura": {
+            "subjectivity": 0.16867082136678185,
+            "polarity": 0.003256650866121075
+        },
+        "XII Legislatura": {
+            "subjectivity": 0.20367313013787525,
+            "polarity": 0.011607916270208891
+        },
+        "XIII Legislatura": {
+            "subjectivity": 0.2046563510412599,
+            "polarity": 0.030851401479475776
+        },
+        "XIV Legislatura": {
+            "subjectivity": 0.20503815499380923,
+            "polarity": 0.033346982571546335
+        }
+    },
+    "Livre": {
+        "XII Legislatura": {
+            "subjectivity": 0.1086057207783145,
+            "polarity": 0.010313587863967844
+        },
+        "XIII Legislatura": {
+            "subjectivity": 0.3404903870394849,
+            "polarity": 0.07589130823165315
+        },
+        "XIV Legislatura": {
+            "subjectivity": 0.3726370375224157,
+            "polarity": 0.12635095670376875
+        }
+    },
+    "Pessoas-Animais-Natureza": {
+        "XII Legislatura": {
+            "subjectivity": 0.2814902296846835,
+            "polarity": 0.009645977360728244
+        },
+        "XIII Legislatura": {
+            "subjectivity": 0.28744201829422633,
+            "polarity": 0.021685911516656477
+        },
+        "XIV Legislatura": {
+            "subjectivity": 0.277345236457116,
+            "polarity": -0.001141329402936132
+        }
+    },
+    "Iniciativa Liberal": {
+        "XIII Legislatura": {
+            "subjectivity": 0.18104262276625616,
+            "polarity": 0.03176736481256577
+        },
+        "XIV Legislatura": {
+            "subjectivity": 0.10082615720033028,
+            "polarity": 0.010755495186774185
+        }
+    }
+}

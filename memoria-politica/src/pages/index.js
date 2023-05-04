@@ -191,7 +191,7 @@ export default function Home() {
           {/* Procure a Verdade */}
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Explore o Arquivo</h2>
-            <h3 className='text-2xl mt-2 mb-10 select-none'></h3>
+            <h3 className='text-2xl mt-2 mb-10 select-none'>O Arquivo.PT contém páginas de web arquivadas desde 1996. Aqui poderá pesquisar sobre as páginas web dos partidos políticos representados na Assembleia da República desde 1996 ou, em muitos casos, desde a primeira página web que o partido teve.</h3>
             <Search/>
             <div className='transition-all h-48 flex flex-wrap w-full justify-between mt-10 items-stretch flex-nowrap'>
               <a href="/search-results?q=Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?&abv=programa^3 eleitoral legislativas^3&date=[2019-01-01T00:00:00Z TO 2019-12-31T23:59:59Z]&party=IL&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
