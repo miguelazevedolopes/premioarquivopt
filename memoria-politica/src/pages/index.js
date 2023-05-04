@@ -183,7 +183,7 @@ export default function Home() {
                 </div>
             </div> 
             {/* Representação da Assembleia da República */}
-            <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'> Representação atual na Assembleia da República</h2>
+            <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'> Representação Atual na Assembleia da República</h2>
             <div id="parlamento" className='flex justify-center items-center w-full h-full'>
               <HemiCycle width={900} height={540} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]}/>
             </div>
