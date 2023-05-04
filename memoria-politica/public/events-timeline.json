@@ -85,14 +85,14 @@
             "date":   "2019",
             "title": "Primeiro Deputado",
             "description": "Elege o primeiro deputado, André Ventura, nas legislativas de 2019.",
-            "link": "pretty description"
+            "link": "https://arquivo.pt/wayback/20190710154915/https://partidochega.pt/conheca-o-andre-ventura/"
         },
 
         "3" : {
-            "date" :   "2021",
-            "title" : "Moção de Censura",
-            "description" : "Apresentou uma moção de censura ao governo liderado pelo Partido Socialista, alegando a má gestão da pandemia de COVID-19, que foi rejeitada pela assembleia.",
-            "link": "pretty description"
+            "date" :   "2019",
+            "title" : "Coligação Basta!",
+            "description" : "Junto com o Partido Popular Monárquico, Partido Cidadania e Democracia Cristã e o movimento Democracia 21, o Partido Chega concorre às Europeias de 2019 com a coligação Basta!.",
+            "link": "https://arquivo.pt/wayback/20191014191359/https://partidochega.pt/andre-ventura-tem-ok-do-constitucional-coligacao-basta-foi-aprovada/"
         },
 
 
@@ -100,12 +100,12 @@
             "date" :   "2021",
             "title" : "Eleições Presidenciais",
             "description" : "Apoiou a candidatura do líder do partido, André Ventura, que ficou em terceiro lugar.",
-            "link": "pretty description"
+            "link": "https://arquivo.pt/wayback/20200309034655/https://partidochega.pt/chega-prepara-candidatura-a-belem/"
         }
     },
     "Iniciativa Liberal" : {
         "1" : {
-            "date": "20-12-2017",
+            "date": "2017",
             "title": "Olá, Mundo",
             "description": "Primeira página arquivada pelo Arquivo.PT",
             "link": "https://arquivo.pt/wayback/20171220235059/https://iniciativaliberal.pt/"
@@ -113,54 +113,60 @@
 
         "2" : {
             "date":   "2019",
-            "title": "Primeiro Deputado",
-            "description": "Elege o primeiro deputado, João Cotrim de Figueiredo, nas legislativas de 2019.",
-            "link": "pretty description"
+            "title": "Eleições Europeias",
+            "description": "Candidatam-se às Eleições Europeias de 2019, mas não conseguem eleger nenhum deputado.",
+            "link": "https://arquivo.pt/wayback/20191225085236/https://iniciativaliberal.pt/eleicoes-europeias-iniciativa-liberal-aposta-em-lista-com-jovens-independentes-e-total-paridade-de-genero/n"
         },
 
         "3" : {
-            "date":   "2021",
-            "title": "Primeiro Deputado em Lisboa",
-            "description": "Elege o primeiro deputado em Lisboa, Miguel Quintas, nas autárquicas de 2021.",
-            "link": "pretty description"
-        }
+            "date":   "2019",
+            "title": "Primeiro Deputado",
+            "description": "Elege o primeiro deputado, João Cotrim de Figueiredo, nas legislativas de 2019.",
+            "link": "https://arquivo.pt/wayback/20190905065233/https://iniciativaliberal.pt/joao-cotrim-de-figueiredo-cabeca-de-lista-pela-iniciativa-liberal-cobertura-nos-media/"
+        },
 
+        "4" : {
+            "date":   "2019",
+            "title": "Pandemia COVID-19",
+            "description": "Manifestam desagrado para com as políticas adotadas pelo Governo face à pandemia de COVID-19.",
+            "link": "        https://arquivo.pt/wayback/20200602155627/https://iniciativaliberal.pt/programa-nacao-valente/"
+        }
     },
     "Partido Comunista Português" : {
         "1" : {
-            "date": "21-12-1996",
+            "date": "1996",
             "title": "Olá, Mundo",
             "description": "Primeira página arquivada pelo Arquivo.PT",
             "link": "https://arquivo.pt/wayback/19961221131229/http://www.pcp.pt:80/"
         },
 
         "2" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "2011",
+            "title" : "Ajuda Financeira Externa",
+            "description" : "Face ao pedido de Ajuda Financeira Externa por José Sócrates, o partido critica a influência de organizações externas em Portugal.",
+            "link": "https://arquivo.pt/wayback/20110701173306/http://pcp.pt/declara%C3%A7%C3%A3o-pol%C3%ADtica-de-critica-%C3%A0-inger%C3%AAncia-de-organiza%C3%A7%C3%B5es-externas-na-resolu%C3%A7%C3%A3o-dos-problemas-do-p"
         },
 
         "3" : {
-            "date":   "2020-01-01",
-            "title": "Event Title",
-            "description": "pretty description",
-            "link": "pretty description"
+            "date":   "2014",
+            "title": "Eleições Europeias",
+            "description": "Juntamente com os Verdes (CDU), apresenta a candidatura ao Parlamento Europeu, liderada por João Ferreira, que manteve o cargo durante 12 anos, desde 2009.",
+            "link": "https://arquivo.pt/wayback/20200616190147/http://www.pcp.pt/jo%C3%A3o-ferreira-1%C2%BA-candidato-da-cdu-ao-parlamento-europeu"
         },
 
         "4" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "2015",
+            "title" : "XXI Governo Constitucional",
+            "description" : "Firmou bilateralmente um acordo parlamentar com o PS, apoiando o novo governo e uma moção de rejeição do programa do XX Governo Constitucional, que não chegou a exercer funções.",
+            "link": "https://arquivo.pt/wayback/20151110123034/http://www.pcp.pt/programa-eleitoral-do-pcp"
         },
 
 
         "5" : {
-            "date" :   "2020-01-01",
-            "title" : "Event Title",
-            "description" : "pretty description",
-            "link": "pretty description"
+            "date" :   "2019",
+            "title" : "Pandemia COVID-19",
+            "description" : "Face à pandemia de COVID-19, o partido defendeu necessidade de medidas de proteção aos trabalhadores e aos setores mais afetados.",
+            "link": "phttps://arquivo.pt/wayback/20200922013019/http://pcp.pt/medidas-adicionais-urgentes-para-combater-pandemia-de-covid-19"
         }
     },
     "Pessoas-Animais-Natureza" : {

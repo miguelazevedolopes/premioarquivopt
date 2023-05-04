@@ -92,7 +92,7 @@ export default function SearchPage() {
   }, [currentPage, searchTerm, party, dateRange, searchResults]);
 
 
-  const options = [{name: 'PS'}, {name: 'PSD'}, {name: 'CH'}, {name: 'IL'}, {name: 'PCP'}, {name: 'BLOCO'}, {name: 'PAN'}, {name: 'LIVRE'}];
+  const options = [{name: 'PS'}, {name: 'PSD'}, {name: 'CHEGA'}, {name: 'IL'}, {name: 'PCP'}, {name: 'BLOCO'}, {name: 'PAN'}, {name: 'LIVRE'}];
   const [selectedOptions, setSelectedOptions] = useState([]);
 
   const onChangeParties = (selectedList) => {
@@ -133,7 +133,7 @@ export default function SearchPage() {
     <div className='flex-col p-0 px-12 sm:m-auto'>
         {/* Procure a Verdade */}
         <div id="results" className='flex flex-col'>
-            <h2 className='text-3xl lg:text-5xl font-extrabold inline-block select-none mt-5 flex justify-center items-center'>Procure a verdade</h2>
+            <h2 className='text-3xl lg:text-5xl font-extrabold inline-block select-none mt-5 flex justify-center items-center'>Explore o Arquivo</h2>
             <div id = "searchForm">
              {searchTerm ? <Search value={searchTerm}/> : <></>}
             </div> 
