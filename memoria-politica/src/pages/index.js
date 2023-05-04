@@ -73,13 +73,14 @@ export default function Home() {
 
           {/* Titulo do Projecto */}
           <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>Memória Política</a>
-          <h3 id = "party-desc" className='sm:text-2xl mt-0 select-none'>Coleção de informação e documentos dos websites de todos os partidos políticos com representação parlamentar em Portugal atualmente</h3>
+          <h3 id = "party-desc" className='sm:text-2xl mt-0 select-none'>Arquivo de informação e documentos dos websites de todos os partidos políticos com representação parlamentar atual em Portugal.</h3>
 
           {/* WordCloud */}
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
             {isClient && <WordCloud data={parseData(commonWordsData['full'])} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
               rotate={0} fill='white' />}
           </div>
+          <h2 className='text-xl font-bold select-none inline-block select-none mt-3 w-full text-center'>Palavras Mais Frequentes em toda a Coleção</h2>
 
           {/* Conheça os Partidos */}
           <div className='flex flex-wrap w-full sm:justify-around mt-10 sm:px-36 sm:py-10 p-0 items-center bg-gray-200 shadow-lg '>
@@ -182,7 +183,7 @@ export default function Home() {
                 </div>
             </div> 
             {/* Representação da Assembleia da República */}
-            <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'>A sua representatividade na Assembleia da República</h2>
+            <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'> Representação atual na Assembleia da República</h2>
             <div id="parlamento" className='flex justify-center items-center w-full h-full'>
               <HemiCycle width={900} height={540} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]}/>
             </div>

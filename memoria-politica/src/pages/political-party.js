@@ -67,6 +67,7 @@ export default function PoliticalParty() {
             {isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
               rotate={0} fill='white' />}
           </div>
+          <h2 className='text-xl font-bold select-none inline-block select-none mt-3 w-full text-center'>Palavras Mais Frequentes para o Partido</h2>
 
           {/* Personalidades */}
           <Personalities party={query.name} />
@@ -75,7 +76,8 @@ export default function PoliticalParty() {
 
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>
-            <h3 className='text-2xl mt-2 mb-10 select-none'>É preciso meter isto bonitinho.</h3>
+            <h3 className='text-2xl mt-2 mb-10 select-none'>O impacto dos partidos na sociedade é marcado por eventos que moldam os seus percursos políticos e sociais. Reunimos alguns
+            dos momentos mais relevantes para cada partido ao longo da sua história numa cronologia visual, com referências adequadas às respetivas páginas que ilustram esses momentos. </h3>
             <div className='flex justify-around'>
               <Timeline width={1000} height={500} party={query.name}></Timeline>
             </div>
