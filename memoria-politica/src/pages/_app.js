@@ -1,8 +1,13 @@
 import '@/styles/globals.css'
 
-import { Epilogue } from 'next/font/google'
+import localFont from 'next/font/local';
 import Layout from '@/pages/layout'
-const epilogue = Epilogue({ subsets: ['latin'] })
+const epilogue = localFont({
+  src: '../../public/font/Epilogue-VariableFont_wght.ttf',
+  variable: '--font-epilogue',
+});
+
+
 
 
 export default function App({ Component, pageProps }) {
@@ -18,3 +23,5 @@ export default function App({ Component, pageProps }) {
     </Layout>
   </>
 }
+
+export { epilogue }

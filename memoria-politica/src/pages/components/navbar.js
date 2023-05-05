@@ -20,7 +20,7 @@ export default function Navbar() {
     <>
       <div className="flex w-full justify-between">
         <div className="sm:ml-12 py-7 pl-10 sm:px-12 flex">
-          {router.route=='/' ? "" : <a href="/" className="self-center font-bold text-2xl sm:text-3xl">Memória Política</a>}
+          {router.route=='/' ? "" : <Link href="/" className="self-center font-bold text-2xl sm:text-3xl">Memória Política</Link>}
           
         </div>
         <ul className="bg-white flex justify-end p-6 relative">
@@ -97,10 +97,10 @@ export default function Navbar() {
             </div>
           </li>
           <li className="mr-3 items-center p-3 sm:p-7">
-            <a className="font-bold sm:text-xl" href="/#procure-verdade">Explore o Arquivo</a>
+            <Link className="font-bold sm:text-xl" href="/#procure-verdade">Explore o Arquivo</Link>
           </li>
           <li className="mr-3 items-center p-3 sm:p-7 mr-10">
-            <a className="font-bold sm:text-xl" href="/faq">FAQ</a>
+            <Link className="font-bold sm:text-xl" href="/faq">FAQ</Link>
           </li>
         </ul>
       </div>

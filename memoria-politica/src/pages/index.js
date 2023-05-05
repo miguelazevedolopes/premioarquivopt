@@ -6,6 +6,8 @@ import Search from './components/search'
 import HemiCycle from './components/hemicycle'
 import Link from 'next/link'
 import commonWordsData from '../../public/common-words.json'
+import { epilogue } from './_app'
+
 
 import ps from '../../public/images/ps.png'
 import psd from '../../public/images/psd.png'
@@ -15,7 +17,6 @@ import pan from '../../public/images/pan.png'
 import livre from '../../public/images/livre.png'
 import be from '../../public/images/bloco.png'
 import pcp from '../../public/images/pcp.png'
-
 
 function parseData(party) {
   const data = [];
@@ -72,12 +73,12 @@ export default function Home() {
         <div className='flex-col p-0 sm:m-auto'>
 
           {/* Titulo do Projecto */}
-          <a href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>Memória Política</a>
+          <Link href='/' className='text-5xl lg:text-8xl font-extrabold inline-block select-none'>Memória Política</Link>
           <h3 id = "party-desc" className='sm:text-2xl mt-0 select-none'>Arquivo de informação e documentos dos websites de todos os partidos políticos com representação parlamentar atual em Portugal.</h3>
 
           {/* WordCloud */}
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
-            {isClient && <WordCloud data={parseData(commonWordsData['full'])} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
+            {isClient && <WordCloud data={parseData(commonWordsData['full'])} height={200} font={`${epilogue.style.fontFamily}`} fontWeight="bold" spiral='rectangular'
               rotate={0} fill='white' />}
           </div>
           <h2 className='text-xl font-bold select-none inline-block select-none mt-3 w-full text-center'>Palavras Mais Frequentes em toda a Coleção</h2>
@@ -185,7 +186,7 @@ export default function Home() {
             {/* Representação da Assembleia da República */}
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'> Representação Atual na Assembleia da República</h2>
             <div id="parlamento" className='flex justify-center items-center w-full h-full'>
-              <HemiCycle width={900} height={540} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]}/>
+              <HemiCycle width={900} height={540} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]} arcsLength={8}/>
             </div>
           </div>
 
@@ -195,15 +196,15 @@ export default function Home() {
             <h3 className='text-2xl mt-2 mb-10 select-none'>O Arquivo.PT contém páginas de web arquivadas desde 1996. Aqui poderá pesquisar sobre as páginas web dos partidos políticos representados na Assembleia da República desde 1996 ou, em muitos casos, desde a primeira página web que o partido teve.</h3>
             <Search/>
             <div className='transition-all h-48 flex flex-wrap w-full justify-between mt-10 items-stretch flex-nowrap'>
-              <a href="/search-results?q=Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?&abv=programa^3 eleitoral legislativas^3&date=[2019-01-01T00:00:00Z TO 2019-12-31T23:59:59Z]&party=IL&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <Link href="/search-results?q=Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?&abv=programa^3 eleitoral legislativas^3&date=[2019-01-01T00:00:00Z TO 2019-12-31T23:59:59Z]&party=IL&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-white text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?</h5>
-              </a>
-              <a href="/search-results?q=Qual a posição dos partidos sobre o aborto?&abv=aborto&party=&date=&start" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              </Link>
+              <Link href="/search-results?q=Qual a posição dos partidos sobre o aborto?&abv=aborto&party=&date=&start" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual a posição dos partidos sobre o aborto?</h5>
-              </a>
-              <a href="/search-results?q=Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?&abv=candidato presidencial&date=[2015-01-01T00:00:00Z TO 2016-02-01T23:59:59Z]&party=BLOCO&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              </Link>
+              <Link href="/search-results?q=Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?&abv=candidato presidencial&date=[2015-01-01T00:00:00Z TO 2016-02-01T23:59:59Z]&party=BLOCO&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?</h5>
-              </a>
+              </Link>
             </div>
           </div>
 

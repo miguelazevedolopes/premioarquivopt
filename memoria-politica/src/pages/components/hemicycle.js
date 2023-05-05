@@ -25,7 +25,7 @@ const textColor = {
   livre: 'text-[#00CD8C]'
 }
 
-const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs }) => {
+const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs, arcsLength }) => {
   const [popoverVisible, setPopoverVisible] = useState({active: false, name: "", deps: 0, color: "#e5e7eb", sig: ""});
 
   const handlePopoverVisibility = (isVisible, name, deps, color, sig) => {
@@ -36,12 +36,12 @@ const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs }) => 
   const baseX = width - circleRadius;
 
   const circles = [];
-  for (let j = arcs.length - 1; j >= 0; j--){
+  for (let j = arcsLength - 1; j >= 0; j--){
     for(let i = 0; i < arcs[j]; i++){
 
       const angle = (Math.PI/ (arcs[j]-1))
-      const cx = Math.round(Math.cos(-angle * i)*(hemiRadius - offset*(arcs.length - j)) + baseX/2, 2)
-      const cy = Math.round(Math.sin(-angle * i)*(hemiRadius - offset*(arcs.length - j)) + baseY/2, 2)
+      const cx = Math.round(Math.cos(-angle * i)*(hemiRadius - offset*(arcsLength - j)) + baseX/2, 2)
+      const cy = Math.round(Math.sin(-angle * i)*(hemiRadius - offset*(arcsLength - j)) + baseY/2, 2)
 
       const key = `a-${j}-${i}`
 
@@ -55,9 +55,9 @@ const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs }) => 
       else if ( psd.includes(key) || (j >= 4 && i <= 11) || (j >= 0 && i <= 8)) party = parties.PSD
 
       circles.push(
-        <a key={key} data-popover-target="popover-no-arrow" data-popover-placement="left" onMouseEnter={() => handlePopoverVisibility(true, party.name, party.deps, party.color, party.sig)} onMouseLeave={() => handlePopoverVisibility(false, "", "", "")}className='flex flex-col w-fit p-5'>
+        <g key={key} data-popover-target="popover-no-arrow" data-popover-placement="left" onMouseEnter={() => handlePopoverVisibility(true, party.name, party.deps, party.color, party.sig)} onMouseLeave={() => handlePopoverVisibility(false, "", "", "")}className='flex flex-col w-fit p-5'>
           <circle key={`circle-${j}-${i}`} cx={cx} cy={cy} r={circleRadius} fill={party.color} />
-        </a>
+        </g>
       )
     }
   }
