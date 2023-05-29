@@ -196,13 +196,13 @@ export default function Home() {
             <h3 className='text-2xl mt-2 mb-10 select-none'>O Arquivo.PT contém páginas de web arquivadas desde 1996. Aqui poderá pesquisar sobre as páginas web dos partidos políticos representados na Assembleia da República desde 1996 ou, em muitos casos, desde a primeira página web que o partido teve.</h3>
             <Search/>
             <div className='transition-all h-48 flex flex-wrap w-full justify-between mt-10 items-stretch flex-nowrap'>
-              <Link href="/search-results?q=Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?&abv=programa^3 eleitoral legislativas^3&date=[2019-01-01T00:00:00Z TO 2019-12-31T23:59:59Z]&party=IL&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <Link href="/search-results?q=programa eleitoral legislativas&date=[2019-01-01T00:00:00Z TO 2019-12-31T23:59:59Z]&party=IL&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-white text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?</h5>
               </Link>
-              <Link href="/search-results?q=Qual a posição dos partidos sobre o aborto?&abv=aborto&party=&date=&start" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <Link href="/search-results?q=aborto&party=&date=&start" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual a posição dos partidos sobre o aborto?</h5>
               </Link>
-              <Link href="/search-results?q=Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?&abv=candidato presidencial&date=[2015-01-01T00:00:00Z TO 2016-02-01T23:59:59Z]&party=BLOCO&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+              <Link href="/search-results?q=candidato presidencial&date=[2015-01-01T00:00:00Z TO 2016-02-01T23:59:59Z]&party=BLOCO&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
                 <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?</h5>
               </Link>
             </div>

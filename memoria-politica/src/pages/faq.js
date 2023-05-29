@@ -26,10 +26,9 @@ const faqs = [
   {
     id: 3,
     title: "A Análise de Sentimento é confiável?",
-    description:
-      "A Análise de Sentimento é baseada em modelos de linguagem pré-treinados e aplicada aos textos retirados do Arquivo.pt. Para mais informação acerca da confiança do modelo, visite este <Link href='https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis'>link.</Link>"
+    description: `A Análise de Sentimento é baseada em modelos de linguagem pré-treinados e aplicada aos textos retirados do Arquivo.pt. Para mais informação acerca da confiança do modelo, visite este <a href={"https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis"}></a>`
   },
-
+  
 ];
 
 
