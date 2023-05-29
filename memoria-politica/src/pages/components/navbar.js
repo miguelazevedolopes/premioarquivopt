@@ -27,7 +27,7 @@ export default function Navbar() {
 
           <li className="mr-0">
             <button id="dropdownParties" data-dropdown-toggle="dropdownParties" onClick={toggleDropdown} className="flex items-center justify-between w-full p-3 sm:p-7 sm:text-xl hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:w-auto font-bold"> Partidos Políticos <svg className="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></button>
-            <div id="dropdownParties" className={`fixed z-10 font-normal bg-white divide-y divide-gray-100 shadow w-44 ${showDropdown ? "" : "hidden"}`}>
+            <div id="dropdownParties" className={`absolute z-10 font-normal bg-white divide-y divide-gray-100 shadow w-44 ${showDropdown ? "" : "hidden"}`}>
               <ul className="py-2 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
                 <li>
                   <Link href={{

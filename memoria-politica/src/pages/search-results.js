@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import Search from './components/search'
 import MultiSelect from 'multiselect-react-dropdown';
 import Link from 'next/link'
+import Head from 'next/head'
 
 
 const textColor = {
@@ -144,6 +145,14 @@ export default function SearchPage() {
 
 
   return (
+    <>
+
+    <Head>
+      <title >Explore o Arquivo</title>
+      <meta name="description" content="Um arquivo das páginas web dos partidos políticos Portugueses." />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <div className='flex-col p-0 px-12 sm:m-auto'>
       {/* Procure a Verdade */}
       <div id="results" className='flex flex-col'>
@@ -197,5 +206,6 @@ export default function SearchPage() {
         </div>
       </div>
     </div>
+  </>
   )
 }
