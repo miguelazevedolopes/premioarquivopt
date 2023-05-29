@@ -6,7 +6,7 @@ const Search = ({value}) => {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    window.location.href = `/search-results?q=${searchTerm}&abv=&party=&date=`;
+    window.location.href = `/search-results?q=${searchTerm}&party=&date=`;
   }
 
   return (

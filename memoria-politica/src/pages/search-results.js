@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
 import Search from './components/search'
-import MultiSelect from 'multiselect-react-dropdown';
 import Link from 'next/link'
 
 
@@ -17,7 +16,7 @@ const textColor = {
 
 async function solrSearch(searchTerm, party, start = 0, dateRange) {
 
-  const baseRequestUrl = "http://localhost:8983/solr/parties/select?hl=on&hl.method=unified&defType=edismax&indent=true";
+  const baseRequestUrl = "http://localhost:8983/solr/parties/select?hl=on&hl.method=unified&defType=edismax&indent=true&facet=true&facet.field=party";
   party = (party != null && party != '') ? '&fq=party:' + party : ''
   const query = '&q=' + searchTerm;
   start = (start != null && start != '') ? '&start=' + start : ''
@@ -42,15 +41,14 @@ export default function SearchPage() {
   const [searchResults, setSearchResults] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [abv, setAbv] = useState(null);
   const [party, setParty] = useState(null);
   const [dateRange, setDateRange] = useState(null);
   const [start, setStart] = useState(null);
   const [totalResults, setTotalResults] = useState(0);
-  const options = [{ name: 'PS' }, { name: 'PSD' }, { name: 'CHEGA' }, { name: 'IL' }, { name: 'PCP' }, { name: 'BLOCO' }, { name: 'PAN' }, { name: 'LIVRE' }];
-  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [options, setOptions] = useState([{ name: 'PS', label:'PS', selected : false }, { name: 'PSD', label: 'PSD', selected: false }, { name: 'CHEGA', label: 'CHEGA', selected: false  }, { name: 'IL' , label: 'IL', selected: false }, 
+                { name: 'PCP', label:'PCP', selected : false }, { name: 'BLOCO', label:'BLOCO', selected: false }, { name: 'PAN', label:'PAN', selected: false }, { name: 'LIVRE', label:'LIVRE', selected: false }]);
 
-
+  // makes the Solr query for the results with updated search results by each party
   useEffect(() => {
     (
       async () => {
@@ -58,34 +56,67 @@ export default function SearchPage() {
         const queryParam = urlParams.get('q');
         setSearchTerm(queryParam);
 
-        setAbv(urlParams.get('abv'))
         party ? setParty(party) : setParty(urlParams.get('party'))
         dateRange ? setDateRange(dateRange) : setDateRange(urlParams.get('date'))
         setStart(urlParams.get('start'))
 
-        const results = await solrSearch(abv ? abv : searchTerm, party, start, dateRange);
+        const results = await solrSearch(searchTerm, party, start, dateRange);
         setSearchResults(results.response.docs);
+        setTotalResults(results.response.numFound);
 
+        const facets = results.facet_counts.facet_fields.party
+        const facetedOptions = [];
+        for (let i = 0; i < facets.length; i += 2) {
+          const name = facets[i];
+          const results = i + 1 < facets.length ? facets[i + 1] : 0;
+          const label = name + ' (' + results + ')';
+          const selected = options.find(option => option.name == name).selected;
+          facetedOptions.push({name, label, selected});
+        }
+
+        setOptions(facetedOptions);
+
+      })();
+  }, [searchTerm, dateRange]);
+
+  // makes the Solr query for the results to filter by party, keeping the search results
+  useEffect(() => {
+    (
+      async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryParam = urlParams.get('q');
+        setSearchTerm(queryParam);
+
+        party ? setParty(party) : setParty(urlParams.get('party'))
+        dateRange ? setDateRange(dateRange) : setDateRange(urlParams.get('date'))
+        setStart(urlParams.get('start'))
+
+        const results = await solrSearch(searchTerm, party, start, dateRange);
+        setSearchResults(results.response.docs);
         setTotalResults(results.response.numFound);
 
       })();
-  }, [searchTerm, party, dateRange]);
+  }, [party]);
 
+  
+
+  // updates the parameters to filter by party and year
   useEffect(() => {
     (async () => {
       const urlParams = new URLSearchParams(window.location.search);
-      setSelectedOptions(urlParams.get('party') != '' ? [{ name: urlParams.get('party') }] : [])
-      console.log(urlParams.get('date'))
+      const updatedOptions = options.map((option) => option.name == urlParams.get('party') ? {name: urlParams.get('party'), label:option.label, selected: true} : option)
+      setOptions(updatedOptions)
       setYear(urlParams.get('date')==='' ? "": urlParams.get('date').substring(1,5))
     })();
   }, []);
 
+  // handles previous pagination
   const handlePrevious = useCallback(() => {
     if (currentPage > 1) {
       const newPage = currentPage - 1;
       setCurrentPage(newPage);
       const newStart = (newPage - 1) * 10;
-      solrSearch(abv ? abv : searchTerm, party, newStart, dateRange)
+      solrSearch(searchTerm, party, newStart, dateRange)
         .then((results) => {
           setSearchResults(results.response.docs);
         })
@@ -93,13 +124,14 @@ export default function SearchPage() {
     }
   }, [currentPage, searchTerm, party, dateRange]);
 
+  // handles next pagination
   const handleNext = useCallback(() => {
     if (searchResults.length === 10) {
       const newPage = currentPage + 1;
       setCurrentPage(newPage);
       const newStart = (newPage - 1) * 10;
 
-      solrSearch(abv ? abv : searchTerm, party, newStart, dateRange)
+      solrSearch(searchTerm, party, newStart, dateRange)
         .then((results) => {
           setSearchResults(results.response.docs);
         })
@@ -107,25 +139,31 @@ export default function SearchPage() {
     }
   }, [currentPage, searchTerm, party, dateRange, searchResults]);
 
-
-
-  const onChangeParties = (selectedList) => {
+  // handles party selection
+  const onSelectParty = (option) => {
+    const updatedOptions = options.map((item) =>
+      item.name === option.name ? { ...item, selected: !item.selected } : item
+    );
 
     let partyFilter = "("
-    for (let option in selectedList) {
-      partyFilter = partyFilter + selectedList[option].name + ' OR ';
+    let anyParty = false;
+    for (let option in updatedOptions) {
+      if(updatedOptions[option].selected){
+        partyFilter = partyFilter + updatedOptions[option].name + ' OR ';
+        anyParty = true;
+      }
     }
     partyFilter = partyFilter.slice(0, -4);
     partyFilter = partyFilter + ')';
 
-
-    if (selectedList.length === 0) partyFilter = "";
-
+    if(!anyParty) partyFilter = "";
+    
     setParty(partyFilter);
-    setSelectedOptions(selectedList);
+    setOptions(updatedOptions);
     setCurrentPage(1);
   }
 
+  // updates years available
   const optionsYear = (() => {
     let options = [<option key={"empty-year"} value="" ></option>]
     for (let y = 1996; y < 2021; y++) {
@@ -134,6 +172,7 @@ export default function SearchPage() {
     return options
   })();
 
+  // handles dropdown changes for year
   const handleDropdownChange = (event) => {
     const year = event.target.value;
     const date = year === "" ? year : `[${year}-01-01T00:00:00Z TO ${year}-12-31T23:59:59Z]`;
@@ -142,20 +181,28 @@ export default function SearchPage() {
     setCurrentPage(1);
   }
 
-
   return (
     <div className='flex-col p-0 px-12 sm:m-auto'>
       {/* Procure a Verdade */}
       <div id="results" className='flex flex-col'>
         <h2 className='text-3xl lg:text-5xl font-extrabold inline-block select-none mt-5 flex justify-center items-center'>Explore o Arquivo</h2>
         <div id="searchForm">
-          {searchTerm ? <Search value={abv ? abv : searchTerm} /> : <></>}
+          {searchTerm ? <Search value={searchTerm} /> : <></>}
         </div>
         <div id="partyFilter" className='flex justify-between'>
           <div className='w-4/5 mr-10'>
-            <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Partido</h1>
-            <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true}
-              className='accent-gray-900' />
+            <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Partido</h1> 
+            <div className='flex justify-start mt-2'>
+              {options.length > 0 ? options.map((option) => (
+                <div  key={option.name} className='mx-2' >
+                  { option.selected ? 
+                    <button htmlFor={option.name} onClick={() => onSelectParty(option)} className="text-white bg-black text-sm py-3 px-4 rounded-full cursor-pointer transition-colors duration-200 ease-in-out "> {option.label} </button>
+                  : <button htmlFor={option.name} onClick={() => onSelectParty(option)} className="bg-gray-300 hover:text-white hover:bg-black text-sm py-3 px-4 border-gray-300 rounded-full cursor-pointer transition-colors duration-200 ease-in-out"> {option.label} </button>}
+                </div>
+              )): <></>}
+              {/* <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true}
+              className='accent-gray-900' /> */}
+            </div> 
           </div>
           <div className='w-1/5'>
             <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Ano</h1>
@@ -164,10 +211,10 @@ export default function SearchPage() {
             </select>
           </div>
         </div>
-        <div className='pt-7'>
+        <div className='pt-2'>
           <h5 className='text-gray-400'> {totalResults} Resultados Encontrados</h5>
           {searchResults.length > 0 ? searchResults.map((result) => (
-            <Link key={result.id} href={result.link}>
+            <a key={result.id} href={result.link} suppressHydrationWarning>
               <div className="bg-white p-4 my-2 shadow-lg">
                 <div className='flex justify-between'>
                   <h2 className="text-xl font-bold mb-2">{result.title}</h2>
@@ -178,7 +225,7 @@ export default function SearchPage() {
                 </div>
                 <p className="text-gray-700">{result.text.slice(0, 400)}...</p>
               </div>
-            </Link>
+            </a>
           )) :
             <h2 className="text-xl text-center mb-2">Não foram encontrados resultados.</h2>
           }
