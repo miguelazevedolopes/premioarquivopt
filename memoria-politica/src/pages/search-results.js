@@ -216,7 +216,10 @@ export default function SearchPage() {
           </div>
         </div>
         <div className='pt-2'>
-          <h5 className='text-gray-400'> {1 + (currentPage - 1) * 10} - {(currentPage * 10) > totalResults ? (currentPage * 10) - (currentPage % 10) : (currentPage * 10) } de {totalResults} resultados encontrados</h5>
+          {totalResults != 0 ? 
+            <h5 className='text-gray-400'> {1 + (currentPage - 1) * 10} - {(currentPage * 10) > totalResults ? (currentPage * 10) - (currentPage % 10) : (currentPage * 10) } de {totalResults} resultados encontrados</h5> :
+            <h5 className='text-gray-400'>{totalResults} resultados encontrados </h5>
+          }
           {searchResults.length > 0 ? searchResults.map((result) => (
             <a key={result.id} href={result.link}>
               <div className="bg-white p-4 my-2 shadow-lg">
