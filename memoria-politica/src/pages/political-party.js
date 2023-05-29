@@ -43,6 +43,8 @@ function parseData(party) {
 export default function PoliticalParty() {
   const router = useRouter();
   const [isClient, setIsClient] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(900);
+
 
   const query = router.query;
   let data = query.name ? parseData(commonWordsData[query.name][0]) : [];
@@ -51,7 +53,10 @@ export default function PoliticalParty() {
 
   useEffect(() => {
     setIsClient(true)
-  }, [])
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.outerWidth);
+    }
+  }, [windowWidth])
 
   return (
     <>
@@ -61,7 +66,7 @@ export default function PoliticalParty() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='mt-5'>
+      <div className='sm:px-7 mt-5'>
         <div className='flex-col m-auto'>
           <h1 href='' className={`text-5xl lg:text-8xl ${textColor[query.name]} font-extrabold inline-block select-none`}>{query.name}</h1>
           <h3 id="party-desc" className='text-2xl mt-0 select-none'>{description}</h3>
@@ -79,9 +84,9 @@ export default function PoliticalParty() {
           <div id="procure-verdade" className='flex flex-col'>
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Perca-se no Tempo</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>O impacto dos partidos na sociedade é marcado por eventos que moldam os seus percursos políticos e sociais. Reunimos alguns
-            dos momentos mais relevantes para cada partido ao longo da sua história numa cronologia visual, com referências adequadas às respetivas páginas que ilustram esses momentos. </h3>
-            <div className='flex justify-around'>
-              <Timeline width={1000} height={500} party={query.name}></Timeline>
+              dos momentos mais relevantes para cada partido ao longo da sua história numa cronologia visual, com referências adequadas às respetivas páginas que ilustram esses momentos. </h3>
+            <div className='flex justify-around w-full px-2 overflow-x-auto'>
+              <Timeline width={1000} height={800} party={query.name}></Timeline>
             </div>
           </div>
 
@@ -92,7 +97,7 @@ export default function PoliticalParty() {
           </div>
 
         </div>
-      </main>
+      </div>
     </>
   )
 }

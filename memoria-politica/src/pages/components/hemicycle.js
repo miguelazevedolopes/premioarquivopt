@@ -25,7 +25,7 @@ const textColor = {
   livre: 'text-[#00CD8C]'
 }
 
-const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs, arcsLength }) => {
+const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs, arcsLength, translate }) => {
   const [popoverVisible, setPopoverVisible] = useState({active: false, name: "", deps: 0, color: "#e5e7eb", sig: ""});
 
   const handlePopoverVisibility = (isVisible, name, deps, color, sig) => {
@@ -65,15 +65,15 @@ const HemiCycle = ({width, height, circleRadius, hemiRadius, offset, arcs, arcsL
   return (
     <div className="flex flex-col items-center">
       <svg width={width} height={height}>
-        <g transform="translate(0, 250)">
+        <g transform={`translate(0, ${translate})`}>
           {circles}
         </g>
       </svg>
-      <div data-popover id="popover-no-arrow" role="tooltip" className={`absolute z-10 justify-center inline-block w-96 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm ${popoverVisible.active ? "opacity-100 visible" : "opacity-0 invisible"}`}>
+      <div data-popover id="popover-no-arrow" role="tooltip" className={`absolute z-10 justify-center inline-block sm:w-96 text-xs sm:text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm ${popoverVisible.active ? "opacity-100 visible" : "opacity-0 invisible"}`}>
         <div className={`px-3 text-center border-gray-300 py-2`}>
-            <h3 className={`text-center text-2xl font-semibold pt-3 ${textColor[popoverVisible.sig]}`}>{popoverVisible.name}</h3>
+            <h3 className={`text-center text-base sm:text-2xl font-semibold pt-1 sm:pt-3 ${textColor[popoverVisible.sig]}`}>{popoverVisible.name}</h3>
         </div>
-        <div className="px-3 text-xl text-center pb-3">
+        <div className="px-3 text-sm sm:text-xl text-center pb-1 sm:pb-3">
             <p>{`${popoverVisible.deps} deputados `}</p>
         </div>
       </div>

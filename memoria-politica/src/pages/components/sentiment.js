@@ -77,8 +77,8 @@ const Sentiment = ({ party }) => {
             </div>
             <h3 className='text-2xl mt-2 mb-10 select-none'>Através da utilização de modelos de linguagem natural, classificamos o discurso presente nas páginas de cada partido ao longo de cada uma das legislaturas. Fornecemos uma medida referente ao quão positivo ou negativo o discurso de cada partido é (polaridade), bem como uma classificação referente à subjectividade do mesmo.</h3>
 
-            <div className='flex w-full justify-around'>
-                <div className='flex flex-col w-[45%]'>
+            <div className='flex flex-col sm:flex-row w-full justify-around flex-wrap sm:flex-nowrap'>
+                <div className='flex flex-col sm:w-[45%]'>
                     <h2 className='mb-1 ms-1'>Selecione a legislatura:</h2>
                     <div className="flex justify-around">
                         <select name="year" value={legislature} onChange={handleDropdownChange} className="bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 font-extrabold">
@@ -86,7 +86,7 @@ const Sentiment = ({ party }) => {
                         </select>
                     </div>
 
-                    <div>
+                    <div className='text-center sm:text-left'>
                         <div className='flex justify-around my-10'>
 
                             {governingImages}
@@ -98,8 +98,8 @@ const Sentiment = ({ party }) => {
                         <h2><b>Data de Fim:&nbsp; </b> {legislatureInfo["end"]}</h2>
                     </div>
                 </div>
-                <div className='w-0.5 bg-gray-300'></div>
-                <div className='flex flex-col w-[45%] justify-around'>
+                <div className='h-0.5 my-7 sm:my-0 sm:h-full sm:w-0.5 bg-gray-300'></div>
+                <div className='flex flex-col w-full sm:w-[45%] justify-around'>
                     <div className='flex flex-col items-center self-center w-full'>
                         <h2 className='text-center text-xl font-bold justify-around mb-1'>Polaridade</h2>
                         <p className='mx-[5%] text-justify text-sm'>Com base na linguagem determinada nos textos presentes nas páginas web dos partidos, é possível classificar o seu conteúdo como positivo ou negativo.</p>
@@ -122,6 +122,7 @@ const Sentiment = ({ party }) => {
                             <h2 className='w-[20%] h-fit text-end'>Objectivo</h2>
                             <div className='w-[60%] flex h-12 border-solid border-black bg-gradient-to-r from-emerald-400  via-sky-400 to-indigo-400 border-[3px]  mx-5'>
                                 <div style={{ "transform": `translate(${subjectivity}00%)` }} className="w-[0.5%] h-full bg-black"></div>
+
                             </div>
                             <h2 className='w-[20%] h-fit text-start'>Subjectivo</h2>
                         </div>

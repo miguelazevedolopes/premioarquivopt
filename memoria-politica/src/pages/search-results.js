@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import Search from './components/search'
 import Link from 'next/link'
+import Head from 'next/head'
 
 
 const textColor = {
@@ -182,6 +183,14 @@ export default function SearchPage() {
   }
 
   return (
+    <>
+    <Head>
+      <title >Explore o Arquivo</title>
+      <meta name="description" content="Um arquivo das páginas web dos partidos políticos Portugueses." />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    
     <div className='flex-col p-0 px-12 sm:m-auto'>
       {/* Procure a Verdade */}
       <div id="results" className='flex flex-col'>
@@ -190,7 +199,7 @@ export default function SearchPage() {
           {searchTerm ? <Search value={searchTerm} /> : <></>}
         </div>
         <div id="partyFilter" className='flex justify-between'>
-          <div className='w-4/5 mr-10'>
+          <div className='w-2/3 sm:w-4/5 mr-5 sm:mr-10'>
             <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Partido</h1> 
             <div className='flex justify-start mt-2'>
               {options.length > 0 ? options.map((option) => (
@@ -204,7 +213,7 @@ export default function SearchPage() {
               className='accent-gray-900' /> */}
             </div> 
           </div>
-          <div className='w-1/5'>
+          <div className='w-1/3 sm:w-1/5'>
             <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Ano</h1>
             <select name="year" value={year} onChange={handleDropdownChange} className="bg-gray-50 border border-gray-300 rounded-lg w-full h-12 focus:ring-blue-500 focus:border-blue-500 block p-2.5 font-extrabold">
               {optionsYear}
@@ -214,9 +223,9 @@ export default function SearchPage() {
         <div className='pt-2'>
           <h5 className='text-gray-400'> {totalResults} Resultados Encontrados</h5>
           {searchResults.length > 0 ? searchResults.map((result) => (
-            <a key={result.id} href={result.link} suppressHydrationWarning>
+            <Link key={result.id} href={result.link}>
               <div className="bg-white p-4 my-2 shadow-lg">
-                <div className='flex justify-between'>
+                <div className='flex justify-between flex-wrap sm:flex-nowrap'>
                   <h2 className="text-xl font-bold mb-2">{result.title}</h2>
                   <div className='flex'>
                     <h2 className={`text-xl ${textColor[result.party]} font-bold mb-2`}>{result.party}</h2>
@@ -225,7 +234,7 @@ export default function SearchPage() {
                 </div>
                 <p className="text-gray-700">{result.text.slice(0, 400)}...</p>
               </div>
-            </a>
+            </Link>
           )) :
             <h2 className="text-xl text-center mb-2">Não foram encontrados resultados.</h2>
           }
@@ -244,5 +253,6 @@ export default function SearchPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }
