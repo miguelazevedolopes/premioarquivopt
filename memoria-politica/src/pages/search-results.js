@@ -96,7 +96,7 @@ export default function SearchPage() {
       setParty(urlParams.get('party'));
       setDateRange(urlParams.get('date'));
       setOptions(updatedOptions);
-      setYear(urlParams.get('date')==='' ? "": urlParams.get('date').substring(1,5));
+      setYear(urlParams.get('date') == null ? "": urlParams.get('date').substring(1,5));
     })();
   }, []);
 
@@ -212,7 +212,7 @@ export default function SearchPage() {
         <div className='pt-2'>
           <h5 className='text-gray-400'> {totalResults} Resultados Encontrados</h5>
           {searchResults.length > 0 ? searchResults.map((result) => (
-            <Link key={result.id} href={result.link}>
+            <a key={result.id} href={result.link}>
               <div className="bg-white p-4 my-2 shadow-lg">
                 <div className='flex justify-between flex-wrap sm:flex-nowrap'>
                   <h2 className="text-xl font-bold mb-2">{result.title}</h2>
@@ -223,7 +223,7 @@ export default function SearchPage() {
                 </div>
                 <p className="text-gray-700">{result.text.slice(0, 400)}...</p>
               </div>
-            </Link>
+            </a>
           )) :
             <h2 className="text-xl text-center mb-2">Não foram encontrados resultados.</h2>
           }

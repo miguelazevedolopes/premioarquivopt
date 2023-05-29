@@ -54,7 +54,7 @@ const Timeline = ({ width, height, party }) => {
 
   return (
 
-    <div style={{ width: `${width+diamEvents}px`, height: `${height}px`, "padding-top": `${Math.round(height / 2)}px`, "padding-left":`${diamEvents/2}px`, "padding-right":`${diamEvents/2}px` }} className="my-10 overflow-x-auto">
+    <div style={{ width: `${width+diamEvents}px`, height: `${height}px`, "paddingTop": `${Math.round(height / 2)}px`, "paddingLeft":`${diamEvents/2}px`, "padding-right":`${diamEvents/2}px` }} className="my-10 overflow-x-auto">
       <div className="h-[2px] bg-black" style={{ width: `${width}px`}} ></div>
       <div className="flex items-center">
         {eventDivs}

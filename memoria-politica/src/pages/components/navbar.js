@@ -101,7 +101,7 @@ export default function Navbar() {
             </div>
           </li>
           <li className="mr-3 items-center p-3 sm:p-7">
-            <Link className="font-bold sm:text-xl" href="/#procure-verdade">{windowWidth < 700 ? 'Explore' : 'Explore o Arquivo'}</Link>
+            <Link className="font-bold sm:text-xl" href="/#explore-o-arquivo">{windowWidth < 700 ? 'Explore' : 'Explore o Arquivo'}</Link>
           </li>
           <li className="mr-3 items-center p-3 sm:p-7 mr-10">
             <Link className="font-bold sm:text-xl" href="/faq">FAQ</Link>
