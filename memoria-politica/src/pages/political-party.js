@@ -8,6 +8,8 @@ import Timeline from './components/timeline';
 import Personalities from './components/personalities';
 import partyDescription from '../../public/parties-description.json'
 import Sentiment from './components/sentiment';
+import { epilogue } from './_app'
+
 
 const textColor = {
   'Partido Socialista': 'text-[#ff66ff]',
@@ -64,7 +66,7 @@ export default function PoliticalParty() {
           <h1 href='' className={`text-5xl lg:text-8xl ${textColor[query.name]} font-extrabold inline-block select-none`}>{query.name}</h1>
           <h3 id="party-desc" className='text-2xl mt-0 select-none'>{description}</h3>
           <div className='bg-black mt-10 py-3 sm:pt-10 shadow-lg'>
-            {isClient && <WordCloud data={data} height={200} font='__Epilogue_dfeb11' fontWeight="bold" spiral='rectangular'
+            {isClient && <WordCloud data={data} height={200} font={`${epilogue.style.fontFamily}`} fontWeight="bold" spiral='rectangular'
               rotate={0} fill='white' />}
           </div>
           <h2 className='text-xl font-bold select-none inline-block select-none mt-3 w-full text-center'>Palavras Mais Frequentes para o Partido</h2>

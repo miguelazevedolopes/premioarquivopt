@@ -3,6 +3,8 @@ import pandas as pd
 from spacytextblob.spacytextblob import SpacyTextBlob
 import datetime
 from os import system
+from googletrans import Translator
+
 import json
 
 
@@ -55,8 +57,9 @@ legislaturas = {
 
 def clear(): return system('clear')
 
+translator = Translator()
 
-nlp = spacy.load("pt_core_news_lg")
+nlp = spacy.load("en_core_web_lg")
 nlp.add_pipe('spacytextblob')
 
 
@@ -81,7 +84,7 @@ def get_legislatura(date):
 
 
 # parties = ['bloco', 'il', 'livre', 'pan', 'pcp', 'ps', 'psd']
-parties = ['psd']
+parties = ['chega']
 
 for k in range(len(parties)):
     party = parties[k]
@@ -112,8 +115,9 @@ for k in range(len(parties)):
                 clear()
                 print("Party "+str(k+1)+"/"+str(len(parties)))
                 print("Status: " + str(i*100/size)+"%")
-
-                doc = nlp(t)
+                translation = translator.translate(t)
+                text = translation.text
+                doc = nlp(text)
                 dictionary[legislatura]["subjectivity"].append(doc._.blob.subjectivity)
                 dictionary[legislatura]["polarity"].append(doc._.blob.polarity)
         else:
@@ -122,7 +126,8 @@ for k in range(len(parties)):
             clear()
             print("Party "+str(k+1)+"/"+str(len(parties)))
             print("Status: " + str(i*100/size)+"%")
-
+            translation = translator.translate(t)
+            text = translation.text
             doc = nlp(text)
             dictionary[legislatura]["subjectivity"].append(doc._.blob.subjectivity)
             dictionary[legislatura]["polarity"].append(doc._.blob.polarity)
