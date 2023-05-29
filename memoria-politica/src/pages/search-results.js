@@ -18,6 +18,7 @@ const textColor = {
 async function solrSearch(searchTerm, party, start = 0, dateRange) {
 
   const baseRequestUrl = "http://localhost:8983/solr/parties/select?hl=on&hl.method=unified&defType=edismax&indent=true&facet=true&facet.field=party";
+
   party = (party != null && party != '') ? '&fq=party:' + party : ''
   const query = '&q=' + searchTerm;
   start = (start != null && start != '') ? '&start=' + start : ''
@@ -34,6 +35,8 @@ async function solrSearch(searchTerm, party, start = 0, dateRange) {
   })
 
   const data = await response.json();
+
+  console.log(data)
   return data;
 }
 
@@ -53,17 +56,19 @@ export default function SearchPage() {
   useEffect(() => {
     (
       async () => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const queryParam = urlParams.get('q');
-        setSearchTerm(queryParam);
+        if(searchTerm){
+          const results = await solrSearch(searchTerm, party, start, dateRange);
+          setSearchResults(results.response.docs);
+          setTotalResults(results.response.numFound);
+        }
+      })();
+  }, [searchTerm, dateRange, party]);
 
-        party ? setParty(party) : setParty(urlParams.get('party'))
-        dateRange ? setDateRange(dateRange) : setDateRange(urlParams.get('date'))
-        setStart(urlParams.get('start'))
 
-        const results = await solrSearch(searchTerm, party, start, dateRange);
-        setSearchResults(results.response.docs);
-        setTotalResults(results.response.numFound);
+  useEffect(() => {
+    (
+      async () => {
+        const results = await solrSearch(searchTerm, '', '', dateRange);
 
         const facets = results.facet_counts.facet_fields.party
         const facetedOptions = [];
@@ -80,34 +85,18 @@ export default function SearchPage() {
       })();
   }, [searchTerm, dateRange]);
 
-  // makes the Solr query for the results to filter by party, keeping the search results
-  useEffect(() => {
-    (
-      async () => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const queryParam = urlParams.get('q');
-        setSearchTerm(queryParam);
-
-        party ? setParty(party) : setParty(urlParams.get('party'))
-        dateRange ? setDateRange(dateRange) : setDateRange(urlParams.get('date'))
-        setStart(urlParams.get('start'))
-
-        const results = await solrSearch(searchTerm, party, start, dateRange);
-        setSearchResults(results.response.docs);
-        setTotalResults(results.response.numFound);
-
-      })();
-  }, [party]);
-
-  
 
   // updates the parameters to filter by party and year
   useEffect(() => {
     (async () => {
       const urlParams = new URLSearchParams(window.location.search);
       const updatedOptions = options.map((option) => option.name == urlParams.get('party') ? {name: urlParams.get('party'), label:option.label, selected: true} : option)
-      setOptions(updatedOptions)
-      setYear(urlParams.get('date')==='' ? "": urlParams.get('date').substring(1,5))
+
+      setSearchTerm(urlParams.get('q'));
+      setParty(urlParams.get('party'));
+      setDateRange(urlParams.get('date'));
+      setOptions(updatedOptions);
+      setYear(urlParams.get('date')==='' ? "": urlParams.get('date').substring(1,5));
     })();
   }, []);
 
