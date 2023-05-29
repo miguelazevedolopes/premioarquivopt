@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(900);
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
@@ -14,14 +15,17 @@ export default function Navbar() {
 
   useEffect(() => {
     setShowDropdown(false); // close dropdown on route change
-  }, [router]);
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.outerWidth);
+    }
+  }, [router,windowWidth]);
 
   return (
     <>
       <div className="flex w-full justify-between">
-        <div className="sm:ml-12 py-7 pl-10 sm:px-12 flex">
-          {router.route=='/' ? "" : <Link href="/" className="self-center font-bold text-2xl sm:text-3xl">Memória Política</Link>}
-          
+        <div className="sm:ml-12 py-7 pl-7 sm:pl-10 sm:px-12 flex h-fit">
+          {router.route == '/' ? "" : <Link href="/" className="self-center font-bold text-lg sm:text-3xl">Memória Política</Link>}
+
         </div>
         <ul className="bg-white flex justify-end p-6 relative">
 
@@ -97,7 +101,7 @@ export default function Navbar() {
             </div>
           </li>
           <li className="mr-3 items-center p-3 sm:p-7">
-            <Link className="font-bold sm:text-xl" href="/#procure-verdade">Explore o Arquivo</Link>
+            <Link className="font-bold sm:text-xl" href="/#procure-verdade">{windowWidth < 700 ? 'Explore' : 'Explore o Arquivo'}</Link>
           </li>
           <li className="mr-3 items-center p-3 sm:p-7 mr-10">
             <Link className="font-bold sm:text-xl" href="/faq">FAQ</Link>

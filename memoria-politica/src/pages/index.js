@@ -36,30 +36,15 @@ function parseData(party) {
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false)
-  /*const [hoveredWord, setHoveredWord] = useState(null);*/
+  const [windowWidth, setWindowWidth] = useState(900);
 
   useEffect(() => {
     setIsClient(true)
-  }, [])
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.outerWidth);
+    }
+  }, [windowWidth])
 
-  const data = [
-    { text: 'Democracia', value: 7000 },
-    { text: 'Parlamento', value: 4500 },
-    { text: 'Eleições', value: 200 },
-    { text: 'Governo', value: 500 },
-    { text: 'Constituição', value: 3000 },
-    { text: 'Cidadania', value: 5000 },
-    { text: 'Direitos', value: 2000 },
-    { text: 'Deveres', value: 2000 },
-    { text: 'Transparência', value: 1000 },
-    { text: 'Justiça', value: 1000 },
-    { text: 'Corrupção', value: 200 },
-    { text: 'Liberdade', value: 2000 },
-    { text: 'Segurança', value: 500 },
-    { text: 'Orçamento', value: 400 },
-    { text: 'Política', value: 3000 },
-    { text: 'Igualdade', value: 700 },
-  ];
 
   return (
     <>
@@ -84,10 +69,10 @@ export default function Home() {
           <h2 className='text-xl font-bold select-none inline-block select-none mt-3 w-full text-center'>Palavras Mais Frequentes em toda a Coleção</h2>
 
           {/* Conheça os Partidos */}
-          <div className='flex flex-wrap w-full sm:justify-around mt-10 sm:px-36 sm:py-10 p-0 items-center bg-gray-200 shadow-lg '>
+          <div className='flex flex-wrap w-full justify-around mt-10 sm:px-36 py-10 p-0 items-center bg-gray-200 shadow-lg '>
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center'>Conheça os Partidos</h2>
 
-            <div className='flex flex-col w-1/6 m-10 items-strech'>
+            <div className='flex flex-col w-1/3 sm:w-1/6  sm:m-10 m-5 items-strech'>
                 <Link href={{
                     pathname: "/political-party",
                     query: {
@@ -99,7 +84,7 @@ export default function Home() {
                 </div>
             </div>
 
-             <div className='flex flex-col w-1/6 m-10'>
+             <div className='flex flex-col w-1/3 sm:w-1/6 sm:m-10 m-5'>
                 <Link href={{
                     pathname: "/political-party",
                     query: {
@@ -111,7 +96,7 @@ export default function Home() {
                 </div>
             </div>
 
-             <div className='flex flex-col w-1/6 m-10'>
+             <div className='flex flex-col w-1/3 sm:w-1/6 sm:m-10 m-5'>
                 <Link href={{
                       pathname: "/political-party",
                       query: {
@@ -123,7 +108,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='flex flex-col w-1/6 m-10'>
+            <div className='flex flex-col w-1/3 sm:w-1/6 sm:m-10 m-5'>
                 <Link href={{
                       pathname: "/political-party",
                       query: {
@@ -135,7 +120,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='flex flex-col w-1/6 m-10'>
+            <div className='flex flex-col w-1/3 sm:w-1/6 sm:m-10 m-5'>
                 <Link href={{
                       pathname: "/political-party",
                       query: {
@@ -147,7 +132,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='flex flex-col w-1/6 m-10'>
+            <div className='flex flex-col w-1/3 sm:w-1/6 sm:m-10 m-5'>
                 <Link href={{
                       pathname: "/political-party",
                       query: {
@@ -159,7 +144,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='flex flex-col w-1/6 m-10'>
+            <div className='flex flex-col w-1/3 sm:w-1/6 sm:m-10 m-5'>
                 <Link href={{
                       pathname: "/political-party",
                       query: {
@@ -172,7 +157,7 @@ export default function Home() {
             </div>
 
             
-            <div className='flex flex-col w-1/6 m-10'>
+            <div className='flex flex-col w-1/3 sm:w-1/6 sm:m-10 m-5'>
                 <Link href={{
                       pathname: "/political-party",
                       query: {
@@ -186,7 +171,7 @@ export default function Home() {
             {/* Representação da Assembleia da República */}
             <h2 className='text-3xl lg:text-4xl font-extrabold select-none inline-block select-none mt-10 m-5 w-full text-center z-10'> Representação Atual na Assembleia da República</h2>
             <div id="parlamento" className='flex justify-center items-center w-full h-full'>
-              <HemiCycle width={900} height={540} circleRadius={12} hemiRadius={400} offset={25} arcs={[18,21,24,27,30,33,36,41]} arcsLength={8}/>
+              <HemiCycle width={windowWidth<700 ? 300 :900} height={windowWidth<700 ? 180 :540} circleRadius={windowWidth<700 ? 4 :12} hemiRadius={windowWidth<700 ? 133.33 :400} offset={windowWidth<700 ? 8.333 :25} arcs={[18,21,24,27,30,33,36,41]} arcsLength={8} translate={windowWidth<700 ? 80 :250}/>
             </div>
           </div>
 
@@ -195,15 +180,15 @@ export default function Home() {
             <h2 className='text-3xl lg:text-4xl font-extrabold inline-block select-none mt-10'>Explore o Arquivo</h2>
             <h3 className='text-2xl mt-2 mb-10 select-none'>O Arquivo.PT contém páginas de web arquivadas desde 1996. Aqui poderá pesquisar sobre as páginas web dos partidos políticos representados na Assembleia da República desde 1996 ou, em muitos casos, desde a primeira página web que o partido teve.</h3>
             <Search/>
-            <div className='transition-all h-48 flex flex-wrap w-full justify-between mt-10 items-stretch flex-nowrap'>
-              <Link href="/search-results?q=programa eleitoral legislativas&date=[2019-01-01T00:00:00Z TO 2019-12-31T23:59:59Z]&party=IL&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
-                <h5 className="text-white text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?</h5>
+            <div className='transition-all sm:h-48 flex flex-wrap w-full justify-between mt-10 items-stretch sm:flex-nowrap'>
+              <Link href="/search-results?q=programa eleitoral legislativas&date=[2019-01-01T00:00:00Z TO 2019-12-31T23:59:59Z]&party=IL&start=" className="transition-all duration-1000 flex sm:basis-1/3 sm:hover:basis-1/2 p-6 m-4 sm:ml-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+                <h5 className="text-white sm:text-2xl font-bold tracking-tight text-center text-gray-900"> Qual foi o programa eleitoral da Iniciativa Liberal para as Legislativas de 2019?</h5>
               </Link>
-              <Link href="/search-results?q=aborto&party=&date=&start" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
-                <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual a posição dos partidos sobre o aborto?</h5>
+              <Link href="/search-results?q=aborto&party=&date=&start" className="transition-all duration-1000 flex sm:basis-1/3 sm:hover:basis-1/2 p-6 m-4 border bg-black border-gray-200 justify-around items-center shadow hover:bg-black-900">
+                <h5 className="sm:text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual a posição dos partidos sobre o aborto?</h5>
               </Link>
-              <Link href="/search-results?q=candidato presidencial&date=[2015-01-01T00:00:00Z TO 2016-02-01T23:59:59Z]&party=BLOCO&start=" className="transition-all duration-1000 flex basis-1/3 hover:basis-1/2 p-6 m-4 mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
-                <h5 className="text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?</h5>
+              <Link href="/search-results?q=candidato presidencial&date=[2015-01-01T00:00:00Z TO 2016-02-01T23:59:59Z]&party=BLOCO&start=" className="transition-all duration-1000 flex sm:basis-1/3 sm:hover:basis-1/2 p-6 m-4 sm:mr-0 bg-black border border-gray-200 justify-around items-center shadow hover:bg-black-900">
+                <h5 className="sm:text-2xl font-bold text-white tracking-tight text-gray-900 text-center">Qual foi o candidato do Bloco de Esquerda às Eleições Presidenciais de 2016?</h5>
               </Link>
             </div>
           </div>

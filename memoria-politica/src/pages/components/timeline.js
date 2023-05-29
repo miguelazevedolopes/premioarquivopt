@@ -20,6 +20,8 @@ const Timeline = ({ width, height, party }) => {
   const data = party ? eventsData[party] : "";
 
   const eventDivs = []
+  const diamEvents = width*1.2/Object.keys(data).length;
+
   for (let key in data) {
     const event = data[key];
     const yOffset = -1 * ((Number(key) - 1) % 2)
@@ -30,13 +32,15 @@ const Timeline = ({ width, height, party }) => {
     }
 
     let styleDescription = {
-      transform: `translate(-50%,${yOffset == 0 ? '32%' : '-100%'})`
+      transform: `translate(-50%,${yOffset == 0 ? '32%' : '-100%'})`,
+      width: `${diamEvents}px`,
+      height: `${diamEvents}px`,
     }
 
     eventDivs.push(
       event ? 
       <div key={key} style={style} className="block w-[2px] bg-black">
-        <Link href={event.link} style={styleDescription} className={`h-64 rounded-full hover:opacity-75 hover:text-white ${color} text-white w-64 px-4 flex flex-col justify-center text-center`}>
+        <Link href={event.link} style={styleDescription} className={`rounded-full hover:opacity-75 hover:text-white ${color} text-white px-4 flex flex-col justify-center text-center`}>
           <h4>{event.date}</h4>
           <h2 className="text-xl font-bold" >{event.title}</h2>
           <p className="text-xs px-3 ">
@@ -50,8 +54,8 @@ const Timeline = ({ width, height, party }) => {
 
   return (
 
-    <div style={{ width: `${width}px`, height: `${height}px`, "paddingTop": `${Math.round(height / 2)}px` }} className="my-40">
-      <div className="h-[2px] w-full bg-black"></div>
+    <div style={{ width: `${width+diamEvents}px`, height: `${height}px`, "padding-top": `${Math.round(height / 2)}px`, "padding-left":`${diamEvents/2}px`, "padding-right":`${diamEvents/2}px` }} className="my-10 overflow-x-auto">
+      <div className="h-[2px] bg-black" style={{ width: `${width}px`}} ></div>
       <div className="flex items-center">
         {eventDivs}
       </div>

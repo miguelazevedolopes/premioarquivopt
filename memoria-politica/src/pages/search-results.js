@@ -77,7 +77,7 @@ export default function SearchPage() {
       const urlParams = new URLSearchParams(window.location.search);
       setSelectedOptions(urlParams.get('party') != '' ? [{ name: urlParams.get('party') }] : [])
       console.log(urlParams.get('date'))
-      setYear(urlParams.get('date')==='' ? "": urlParams.get('date').substring(1,5))
+      setYear(urlParams.get('date') === '' ? "" : urlParams.get('date').substring(1, 5))
     })();
   }, []);
 
@@ -147,65 +147,65 @@ export default function SearchPage() {
   return (
     <>
 
-    <Head>
-      <title >Explore o Arquivo</title>
-      <meta name="description" content="Um arquivo das páginas web dos partidos políticos Portugueses." />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <div className='flex-col p-0 px-12 sm:m-auto'>
-      {/* Procure a Verdade */}
-      <div id="results" className='flex flex-col'>
-        <h2 className='text-3xl lg:text-5xl font-extrabold inline-block select-none mt-5 flex justify-center items-center'>Explore o Arquivo</h2>
-        <div id="searchForm">
-          {searchTerm ? <Search value={abv ? abv : searchTerm} /> : <></>}
-        </div>
-        <div id="partyFilter" className='flex justify-between'>
-          <div className='w-4/5 mr-10'>
-            <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Partido</h1>
-            <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true}
-              className='accent-gray-900' />
+      <Head>
+        <title >Explore o Arquivo</title>
+        <meta name="description" content="Um arquivo das páginas web dos partidos políticos Portugueses." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className='flex-col p-0 sm:px-12 sm:m-auto'>
+        {/* Procure a Verdade */}
+        <div id="results" className='flex flex-col'>
+          <h2 className='text-3xl lg:text-5xl font-extrabold inline-block select-none mt-5 flex justify-center items-center'>Explore o Arquivo</h2>
+          <div id="searchForm">
+            {searchTerm ? <Search value={abv ? abv : searchTerm} /> : <></>}
           </div>
-          <div className='w-1/5'>
-            <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Ano</h1>
-            <select name="year" value={year} onChange={handleDropdownChange} className="bg-gray-50 border border-gray-300 rounded-lg w-full h-12 focus:ring-blue-500 focus:border-blue-500 block p-2.5 font-extrabold">
-              {optionsYear}
-            </select>
+          <div id="partyFilter" className='flex justify-between'>
+            <div className='w-2/3 sm:w-4/5 mr-5 sm:mr-10'>
+              <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Partido</h1>
+              <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true}
+                className='accent-gray-900' />
+            </div>
+            <div className='w-1/3 sm:w-1/5'>
+              <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Ano</h1>
+              <select name="year" value={year} onChange={handleDropdownChange} className="bg-gray-50 border border-gray-300 rounded-lg w-full h-12 focus:ring-blue-500 focus:border-blue-500 block p-2.5 font-extrabold">
+                {optionsYear}
+              </select>
+            </div>
           </div>
-        </div>
-        <div className='pt-7'>
-          <h5 className='text-gray-400'> {totalResults} Resultados Encontrados</h5>
-          {searchResults.length > 0 ? searchResults.map((result) => (
-            <Link key={result.id} href={result.link}>
-              <div className="bg-white p-4 my-2 shadow-lg">
-                <div className='flex justify-between'>
-                  <h2 className="text-xl font-bold mb-2">{result.title}</h2>
-                  <div className='flex'>
-                    <h2 className={`text-xl ${textColor[result.party]} font-bold mb-2`}>{result.party}</h2>
-                    <h2 className="text-xl mb-2 ml-2 ">{result.date.slice(0, 10)}</h2>
+          <div className='pt-7'>
+            <h5 className='text-gray-400'> {totalResults} Resultados Encontrados</h5>
+            {searchResults.length > 0 ? searchResults.map((result) => (
+              <Link key={result.id} href={result.link}>
+                <div className="bg-white p-4 my-2 shadow-lg">
+                  <div className='flex justify-between flex-wrap sm:flex-nowrap'>
+                    <h2 className="text-xl font-bold mb-2">{result.title}</h2>
+                    <div className='flex'>
+                      <h2 className={`text-xl ${textColor[result.party]} font-bold mb-2`}>{result.party}</h2>
+                      <h2 className="text-xl mb-2 ml-2 ">{result.date.slice(0, 10)}</h2>
+                    </div>
                   </div>
+                  <p className="text-gray-700">{result.text.slice(0, 400)}...</p>
                 </div>
-                <p className="text-gray-700">{result.text.slice(0, 400)}...</p>
-              </div>
-            </Link>
-          )) :
-            <h2 className="text-xl text-center mb-2">Não foram encontrados resultados.</h2>
-          }
-        </div>
-        <div id="pagination" className='flex justify-center mt-10'>
-          {currentPage > 1 ?
-            <div className="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" onClick={handlePrevious}>
-              <svg aria-hidden="true" className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path></svg>
-              Previous
-            </div> : <></>
-          }
-          <div className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" onClick={handleNext}>
-            Next
-            <svg aria-hidden="true" className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+              </Link>
+            )) :
+              <h2 className="text-xl text-center mb-2">Não foram encontrados resultados.</h2>
+            }
+          </div>
+          <div id="pagination" className='flex justify-center mt-10'>
+            {currentPage > 1 ?
+              <div className="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" onClick={handlePrevious}>
+                <svg aria-hidden="true" className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path></svg>
+                Previous
+              </div> : <></>
+            }
+            <div className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" onClick={handleNext}>
+              Next
+              <svg aria-hidden="true" className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </>
+    </>
   )
 }
