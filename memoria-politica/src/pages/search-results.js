@@ -198,9 +198,9 @@ export default function SearchPage() {
         <div id="partyFilter" className='flex justify-between flex-wrap sm:flex-nowrap'>
           <div className='w-full sm:w-2/3 sm:w-4/5 mr-5 sm:mr-10'>
             <h1 className='text-gray-900 text-lg mt-5 font-bold pb-2'> Filtrar por Partido</h1> 
-            <div className='flex flex-wrap sm:flex-nowrap justify-start mt-2'>
+            <div className='flex flex-wrap sm:flex-nowrap justify-around mt-2'>
               {options.length > 0 ? options.map((option) => (
-                <div  key={option.name} className='my-2 sm:my-0 mx-2' >
+                <div  key={option.name} className='my-2 sm:my-0' >
                   { option.selected ? 
                     <button htmlFor={option.name} onClick={() => onSelectParty(option)} className="text-white bg-black text-xs py-3 px-4 rounded-full cursor-pointer transition-colors duration-200 ease-in-out "> {option.label} </button>
                   : <button htmlFor={option.name} onClick={() => onSelectParty(option)} className="bg-gray-300 hover:text-white hover:bg-black text-xs py-3 px-4 border-gray-300 rounded-full cursor-pointer transition-colors duration-200 ease-in-out"> {option.label} </button>}
