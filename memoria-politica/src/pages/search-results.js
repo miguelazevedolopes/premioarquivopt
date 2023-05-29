@@ -47,24 +47,28 @@ export default function SearchPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [party, setParty] = useState(null);
   const [dateRange, setDateRange] = useState(null);
-  const [start, setStart] = useState(null);
   const [totalResults, setTotalResults] = useState(0);
+  const [highlights, setHighlights] = useState(0);
   const [options, setOptions] = useState([{ name: 'PS', label:'PS', selected : false }, { name: 'PSD', label: 'PSD', selected: false }, { name: 'CHEGA', label: 'CHEGA', selected: false  }, { name: 'IL' , label: 'IL', selected: false }, 
                 { name: 'PCP', label:'PCP', selected : false }, { name: 'BLOCO', label:'BLOCO', selected: false }, { name: 'PAN', label:'PAN', selected: false }, { name: 'LIVRE', label:'LIVRE', selected: false }]);
 
-  // makes the Solr query for the results with updated search results by each party
+  // makes the Solr query for the results
   useEffect(() => {
     (
       async () => {
         if(searchTerm){
-          const results = await solrSearch(searchTerm, party, start, dateRange);
+          const results = await solrSearch(searchTerm, party, '', dateRange);
           setSearchResults(results.response.docs);
           setTotalResults(results.response.numFound);
+          setHighlights(results.highlighting);
+
+          console.log(results.highlighting);
         }
       })();
   }, [searchTerm, dateRange, party]);
 
 
+  // gets the facet results
   useEffect(() => {
     (
       async () => {
@@ -194,12 +198,10 @@ export default function SearchPage() {
               {options.length > 0 ? options.map((option) => (
                 <div  key={option.name} className='mx-2' >
                   { option.selected ? 
-                    <button htmlFor={option.name} onClick={() => onSelectParty(option)} className="text-white bg-black text-sm py-3 px-4 rounded-full cursor-pointer transition-colors duration-200 ease-in-out "> {option.label} </button>
-                  : <button htmlFor={option.name} onClick={() => onSelectParty(option)} className="bg-gray-300 hover:text-white hover:bg-black text-sm py-3 px-4 border-gray-300 rounded-full cursor-pointer transition-colors duration-200 ease-in-out"> {option.label} </button>}
+                    <button htmlFor={option.name} onClick={() => onSelectParty(option)} className="text-white bg-black text-xs py-3 px-4 rounded-full cursor-pointer transition-colors duration-200 ease-in-out "> {option.label} </button>
+                  : <button htmlFor={option.name} onClick={() => onSelectParty(option)} className="bg-gray-300 hover:text-white hover:bg-black text-xs py-3 px-4 border-gray-300 rounded-full cursor-pointer transition-colors duration-200 ease-in-out"> {option.label} </button>}
                 </div>
               )): <></>}
-              {/* <MultiSelect options={options} selectedValues={selectedOptions} onSelect={onChangeParties} onRemove={onChangeParties} avoidHighlightFirstOption={true} placeholder="" displayValue="name" showCheckbox={true}
-              className='accent-gray-900' /> */}
             </div> 
           </div>
           <div className='w-1/3 sm:w-1/5'>
@@ -221,7 +223,7 @@ export default function SearchPage() {
                     <h2 className="text-xl mb-2 ml-2 ">{result.date.slice(0, 10)}</h2>
                   </div>
                 </div>
-                <p className="text-gray-700">{result.text.slice(0, 400)}...</p>
+                <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: highlights[result.id].text.toString().replaceAll('<em>', '<strong>').replaceAll('</em>', '</strong>') }}/>
               </div>
             </a>
           )) :
