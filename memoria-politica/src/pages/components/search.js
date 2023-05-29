@@ -11,7 +11,7 @@ const Search = ({value}) => {
 
   return (
     <form onSubmit={handleSearch} className="flex items-center bg-gray-200 px-3 py-2 shadow-lg ">
-      <input type="text" placeholder="Descubra a verdade sobre..." className="w-full outline-none bg-gray-200 text-gray-900 p-2 text-lg placeholder-gray-400" value={searchTerm}
+      <input type="text" placeholder="Explore o Arquivo..." className="w-full outline-none bg-gray-200 text-gray-900 p-2 text-lg placeholder-gray-400" value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button type="submit" className="outline-none focus:outline-none">

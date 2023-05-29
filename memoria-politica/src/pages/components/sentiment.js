@@ -122,6 +122,7 @@ const Sentiment = ({ party }) => {
                             <h2 className='w-[20%] h-fit text-end'>Objectivo</h2>
                             <div className='w-[60%] flex h-12 border-solid border-black bg-gradient-to-r from-emerald-400  via-sky-400 to-indigo-400 border-[3px]  mx-5'>
                                 <div style={{ "transform": `translate(${subjectivity}00%)` }} className="w-[0.5%] h-full bg-black"></div>
+
                             </div>
                             <h2 className='w-[20%] h-fit text-start'>Subjectivo</h2>
                         </div>
