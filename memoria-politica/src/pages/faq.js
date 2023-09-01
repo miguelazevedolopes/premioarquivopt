@@ -25,8 +25,8 @@ const faqs = [
   },
   {
     id: 3,
-    title: "A Análise de Sentimento é confiável?",
-    description: `A Análise de Sentimento é baseada em modelos de linguagem pré-treinados e aplicada aos textos retirados do Arquivo.pt. Para mais informação acerca da confiança do modelo, visite <a class='underline' target="_blank" href="https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis">este link.</a>`
+    title: "Como funciona a análise de sentimento?",
+    description: `A análise de sentimento dos textos extraídos das páginas dos partidos retiradas do Arquivo.pt utiliza padrões de linguagem e associações de palavras para determinar as emoções subjacentes transmitidas, se são positivas, negativas ou neutras, bem como a sua subjetividade. Para mais informação acerca do modelo utilizado, visite <a class='underline' target="_blank" href="https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis">este link.</a>`
   },
   
 ];

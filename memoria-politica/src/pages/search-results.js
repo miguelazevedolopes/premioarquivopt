@@ -17,26 +17,25 @@ const textColor = {
 
 async function solrSearch(searchTerm, party, start = 0, dateRange) {
 
-  const baseRequestUrl = "http://localhost:8983/solr/parties/select?hl=on&hl.method=unified&defType=edismax&indent=true&facet=true&facet.field=party";
+  const requestUrl = "http://127.0.0.1:5000/search";
 
-  party = (party != null && party != '') ? '&fq=party:' + party : ''
-  const query = '&q=' + searchTerm;
-  start = (start != null && start != '') ? '&start=' + start : ''
-  dateRange = (dateRange != null && dateRange != '') ? '&fq=date:' + dateRange : ''
+  party ='&party=' + party
+  let query = '&query=' + searchTerm;
+  start ='&start=' + start
+  dateRange = '&date=' + dateRange
 
-  let requestUrl = baseRequestUrl + '&q.op=AND';
+  const body =query + party + dateRange + start
   let response = await fetch(requestUrl, {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
     method: 'POST',
     mode: 'cors',
-    body: query + '&qf=title^5 text' + party + dateRange + '&rows=10' + start + "&stopwords=true&synonyms=true"
+    body: body
   })
 
   const data = await response.json();
 
-  console.log(data)
   return data;
 }
 
@@ -62,7 +61,6 @@ export default function SearchPage() {
           setTotalResults(results.response.numFound);
           setHighlights(results.highlighting);
 
-          console.log(results.highlighting);
         }
       })();
   }, [searchTerm, dateRange, party]);

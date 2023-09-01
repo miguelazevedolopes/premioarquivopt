@@ -3,6 +3,7 @@ import pandas as pd
 from spacytextblob.spacytextblob import SpacyTextBlob
 import datetime
 from os import system
+import time
 from googletrans import Translator
 
 import json
@@ -66,12 +67,12 @@ nlp.add_pipe('spacytextblob')
 def divide_text(text):
     t = text
     start = 0
-    end = 1000000
+    end = 100000
     texts = []
-    while (len(text[start:]) >= 1000000):
+    while (len(text[start:]) >= 100000):
         texts.append(text[start:end])
         start = end
-        end += 1000000
+        end += 100000
     texts.append(text[end:])
     return texts
 
@@ -83,13 +84,13 @@ def get_legislatura(date):
             return l
 
 
-# parties = ['bloco', 'il', 'livre', 'pan', 'pcp', 'ps', 'psd']
-parties = ['chega']
+parties = [ 'livre', 'pan', 'pcp', 'ps', 'psd','be']
+# parties = ['chega']
 
 for k in range(len(parties)):
     party = parties[k]
 
-    df = pd.read_json('./data/'+party+'.json')
+    df = pd.read_json('../solr/data/'+party+'.json')
 
     dictionary = {}
 
@@ -107,15 +108,23 @@ for k in range(len(parties)):
         if(legislatura==None):
             continue
 
-        if (len(text) >= 1000000):
+        if (len(text) >= 100000):
             texts = divide_text(text)
             for t in texts:
+                flag=True
                 # Status print
                 i += 1/len(texts)
                 clear()
                 print("Party "+str(k+1)+"/"+str(len(parties)))
                 print("Status: " + str(i*100/size)+"%")
-                translation = translator.translate(t)
+                while(flag):
+                    try:
+                        translation = translator.translate(t)
+                        flag=False
+                    except:
+                        flag=True
+                        pass
+                    
                 text = translation.text
                 doc = nlp(text)
                 dictionary[legislatura]["subjectivity"].append(doc._.blob.subjectivity)
@@ -124,9 +133,17 @@ for k in range(len(parties)):
             # Status print
             i += 1
             clear()
+            flag=True
+
             print("Party "+str(k+1)+"/"+str(len(parties)))
             print("Status: " + str(i*100/size)+"%")
-            translation = translator.translate(t)
+            while(flag):
+                try:
+                    translation = translator.translate(text)
+                    flag=False
+                except:
+                    flag=True
+                    pass
             text = translation.text
             doc = nlp(text)
             dictionary[legislatura]["subjectivity"].append(doc._.blob.subjectivity)
@@ -144,12 +161,5 @@ for k in range(len(parties)):
     json_object = json.dumps(dictionary, indent=4)
 
     # Writing to file
-    with open("./output/sentiment/"+party+"_sentiment.json", "w") as outfile:
+    with open("./output/copia/sentiment/"+party+"_sentiment.json", "w") as outfile:
         outfile.write(json_object)
-
-# text = 'I had a really horrible day. It was the worst day ever! But every now and then I have a really good day that makes me happy.'
-# doc = nlp(text)
-# doc._.blob.polarity                            # Polarity: -0.125
-# doc._.blob.subjectivity                        # Subjectivity: 0.9
-# doc._.blob.sentiment_assessments.assessments   # Assessments: [(['really', 'horrible'], -1.0, 1.0, None), (['worst', '!'], -1.0, 1.0, None), (['really', 'good'], 0.7, 0.6000000000000001, None), (['happy'], 0.8, 1.0, None)]
-# doc._.blob.ngrams()
